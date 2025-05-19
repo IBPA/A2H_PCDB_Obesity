@@ -1,0 +1,11 @@
+CATEGORICAL_COLS = ['preclinical_dosage_amount_unit',
+                    'preclinical_administration_route',
+                    'preclinical_animal_strain',
+                    'preclinical_animal_species',
+                    'preclinical_animal_sex',
+                    'preclinical_disease_model',
+                    'preclinical_dosage_frequency',
+                    'clinical_age_groups',
+                    'clinical_phases',
+                    'intervention',
+                    'clinical_dosage_frequency']
