@@ -66,6 +66,9 @@ def load_pmc_ids(csv_path: str) -> list:
     Returns: 
         list: list of unique PMC IDs
     """
+    #df = pd.read_csv(csv_path, sep="\t", engine="python", on_bad_lines='skip')
+    # Uncomment and run above line instead if .tsv file 
+    
     df = pd.read_csv(csv_path)
     
     if "pmcid" not in df.columns:
