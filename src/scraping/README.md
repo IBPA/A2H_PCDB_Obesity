@@ -80,6 +80,7 @@ python3 scrape_figures.py ../../data/cleaned_t2dm_a2h.tsv test
 
 ## 📌 Notes
 - The input CSV/TSV for `scrape_figures.py` must include a `pmcid` column with values formatted like `"PMC1823903"`.
+- The first few articles may experience timeouts due to cold-start (e.g., no Python bytecode cache, fresh network/FTP session setup). This typically resolves after initial retries (try again after `__pycache__` compiles) or increasing the timeout threshold.
 
 ---
 
