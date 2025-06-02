@@ -72,9 +72,12 @@ Run the script as follows:
 ```bash
 # Example: Runs script for t2dm_a2h dataset and organizes into /test directory
 python3 scrape_figures.py ../../data/cleaned_t2dm_a2h.tsv test
-
-
 ```
+
+---
+## 📸 Example Run 
+
+![Sample Output](screenshots/ExampleRun.png)
 
 ---
 
