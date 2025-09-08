@@ -214,12 +214,72 @@ class PMCArticleScraper:
 
         return captions
     
-   
-            
     
+    def extract_fig_number(self, label: str): 
+        if not label: 
+            return None 
+        
+        label = label.strip() 
+        
+        number_match = re.search(r'(\d{1,2})(?!\d)', label)
+        
+        if number_match: 
+            return int(number_match.group(1))
+        
+        return None 
+        
 
+        
+        pass 
+    
+    def _retrieve_fig_caption_map(self, root_dir: str, id_list: list) : 
+        """
+        
+        """
+        fig_to_caption_dict = {} 
+        
+        for pmc_id in id_list: 
+            
+            file_path_prefix = root_dir + "/" + "PMC" + str(pmc_id)
+            
+            
+            xml_data = self._fetch_article_xml(pmc_id)
+            root = etree.fromstring(xml_data)
+            
+            
+            figures = root.findall(".//jats:fig", namespaces=self.ns)
+
+            for fig in figures: 
+                fig_label  = fig.find(".//jats:label", namespaces=self.ns)
+                
+                if fig_label is None: 
+                    continue
+                
+                figure_id = fig_label.text
+
+                
+                graphic_info  = fig.find(".//jats:graphic", namespaces=self.ns)
+                href = graphic_info.get('{http://www.w3.org/1999/xlink}href')
+
+                if figure_id and href: 
+                    figure_number = self.extract_fig_number(figure_id)
+                    
+                    
+                    figure_name = href + ".jpg"
+                    
+                    file_path = file_path_prefix + "/" + figure_name
+                    
+                    if os.path.isfile(file_path_prefix + "/" +  "Figure_" + str(figure_number) + "_Caption.txt"): 
+                        
+                        fig_to_caption_dict[file_path] = file_path_prefix + "/" +  "Figure_" + str(figure_number) + "_Caption.txt"
+            print("Extracted article")    
+                    
+        return fig_to_caption_dict
+    
+    
 #For Testing
 if __name__ == "__main__":
     rand_object = PMCArticleScraper()
     print(rand_object._retrieve_figure_captions(9796023))
     rand_object.fetch_and_extract(8953658, "test")
+    rand_object._retrieve_figure_to_caption(7383507)
