@@ -14,9 +14,9 @@ class PMCArticleScraper:
         Initializes PMCArticleScraper with some base_urls and namespaces for text extraction
         
         """
-        self.base_url = "https://www.ncbi.nlm.nih.gov/pmc/oai/oai.cgi" #OAI-PMH API 
+        self.base_url = "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/" #OAI-PMH API 
         self.ns = {
-            'jats': 'https://jats.nlm.nih.gov/ns/archiving/1.3/'
+            "jats": "https://jats.nlm.nih.gov/ns/archiving/1.4/",
         }
         
     def _fetch_article_xml(self, pmc_id: int) -> bytes: 
@@ -244,42 +244,45 @@ class PMCArticleScraper:
             
             
             xml_data = self._fetch_article_xml(pmc_id)
-            root = etree.fromstring(xml_data)
-            
-            
-            figures = root.findall(".//jats:fig", namespaces=self.ns)
 
+            root = etree.fromstring(xml_data)
+         
+            figures = root.findall(".//jats:fig", namespaces=self.ns)
+            
             for fig in figures: 
+                
                 fig_label  = fig.find(".//jats:label", namespaces=self.ns)
                 
                 if fig_label is None: 
                     continue
                 
                 figure_id = fig_label.text
-
+                
                 
                 graphic_info  = fig.find(".//jats:graphic", namespaces=self.ns)
                 href = graphic_info.get('{http://www.w3.org/1999/xlink}href')
 
+                
                 if figure_id and href: 
                     figure_number = self.extract_fig_number(figure_id)
                     
                     
-                    figure_name = href + ".jpg"
+                    figure_name = href 
                     
                     file_path = file_path_prefix + "/" + figure_name
-                    
                     if os.path.isfile(file_path_prefix + "/" +  "Figure_" + str(figure_number) + "_Caption.txt"): 
                         
                         fig_to_caption_dict[file_path] = file_path_prefix + "/" +  "Figure_" + str(figure_number) + "_Caption.txt"
-            print("Extracted article")    
-                    
-        return fig_to_caption_dict
-    
+                        
+             
+           
+        print("Finished Mapping Captions to Figures")
+          
+        return fig_to_caption_dict   
+        
     
 #For Testing
 if __name__ == "__main__":
     rand_object = PMCArticleScraper()
-    print(rand_object._retrieve_figure_captions(9796023))
-    rand_object.fetch_and_extract(8953658, "test")
-    rand_object._retrieve_figure_to_caption(7383507)
+    print(rand_object._fetch_article_xml(9796023))
+

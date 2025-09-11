@@ -33,8 +33,11 @@ def main(file_dir: str, target_value: str, write_file_name: str):
     
     for folder in os.listdir(file_dir): 
         folder_path = os.path.join(file_dir, folder)
-        article_ids.append(folder[3:])
         
+        article_id = folder[3:]
+        
+        if article_id.isdigit():
+            article_ids.append(article_id)
         
         if os.path.isdir(folder_path): 
             for file in os.listdir(folder_path): 
@@ -44,15 +47,15 @@ def main(file_dir: str, target_value: str, write_file_name: str):
     
     
     fig_to_caption_dict = scraper._retrieve_fig_caption_map(file_dir, article_ids)
-    
-    
+  
     figure_captions = []
     classification_results = []
     
     for figure_path in files: 
+        
         encoded_img_url = to_data_url(figure_path)
         figure_caption = get_figure_caption(fig_to_caption_dict.get(figure_path, None))
-
+        
         figure_captions.append(str(figure_caption))
         
         prompt = f"""
@@ -86,6 +89,7 @@ def main(file_dir: str, target_value: str, write_file_name: str):
                         # model = "o3",
                         model="gpt-4.1",     
                        
+            
                         input = [{
                             "role": "user", 
                             "content": [ 
@@ -115,6 +119,7 @@ def main(file_dir: str, target_value: str, write_file_name: str):
                     )
             
         classification_result = response.output_text
+        print(classification_result)
         classification_results.append(classification_result)
     
     data = {
@@ -127,9 +132,6 @@ def main(file_dir: str, target_value: str, write_file_name: str):
     df = pd.DataFrame(data) 
     
     df.to_csv(write_file_name,index=False)
-
-if __name__ == '__main__': 
-    main("test", "Body Weight")
 
 if __name__ == "__main__":
     if len(sys.argv) < 4:
