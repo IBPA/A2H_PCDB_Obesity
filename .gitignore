@@ -1,1 +1,29 @@
-*__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# macOS metadata
+.DS_Store
+
+# System files
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS swap files
+*.swp
+*.swo
