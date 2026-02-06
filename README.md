@@ -6,6 +6,44 @@ This repository focuses on reproducible PCDB construction, including the entity 
 
 ![](./assets/A2H_PCDB_Obesity_overview.png)
 
+## Getting Started
+The pipeline is routinely exercised on Ubuntu 22.04 with Python 3.11. The steps below assume a Conda-based workflow; feel free to adapt them to your environment management tool of choice.
+
+### Clone the repository
+```console
+git clone https://github.com/IBPA/A2H_PCDB_Obesity.git
+cd A2H_PCDB_Obesity
+```
+
+### Create and activate a Conda environment
+```console
+conda create -n A2H_PCDB_obesity python=3.11.9
+conda activate A2H_PCDB_obesity
+```
+You can leave the environment at any point with `conda deactivate`.
+
+### Install Python dependencies
+```console
+pip install -r requirements.txt
+```
+
+
+## Generate A2H obesity visualizations:
+### Exploratory data analysis
+```console
+sh scripts/plot_a2h_obesity_eda.sh
+```
+### Analysis on machine learning model:
+```console
+sh scripts/plot_a2h_obesity_model_analysis.sh
+```
+### Machine learning model performance analysis:
+```console
+sh scripts/run_cross_drug_analysis.sh
+sh scripts/plot_a2h_obesity_model_performance.sh
+```
+
+
 ## Authors
 - Kaichi Xie — Graduate Student<sup>1,2,3</sup>
 - Riyan Townsley — undergraduate Student<sup>1,3</sup>
