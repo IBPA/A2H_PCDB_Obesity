@@ -1,0 +1,7 @@
+Drug,EC50(nM),Native_GLP-1_EC50(nM),EC50_ratio,half_life(hrs),elimination_rate_constant
+Tirzepatide,6.54,0.366,17.86885246,120,0.0058
+Semaglutide,0.025,0.016,1.5625,168,0.0041
+Survodutide,0.015,0.016,0.9375,114,0.0061
+Medi0382,0.0069,0.002,3.45,11,0.063
+Liraglutide,0.0032,0.002,1.6,13,0.053
+Exenatide,0.0355,0.22,0.16136364,2,0.289

@@ -1,2 +1,5 @@
 *__pycache__
-_*
+__*
+src/MSAP
+
+!src/obesity_model_performance/ML_pipeline/utils/__init__.py

@@ -1,0 +1,531 @@
+preclinical_dosage_amount_value(mg/kg)	preclinical_dosage_frequency	preclinical_dosage_duration(days)	preclinical_administration_route	preclinical_animal_age_before_experiment(days)	preclinical_animal_age_before_treatment(days)	preclinical_animal_weight_before_experiment(grams)	preclinical_animal_weight_before_treatment(grams)	preclinical_animal_strain	preclinical_animal_species	preclinical_animal_sex	preclinical_animal_subject_size	preclinical_disease_model	preclinical_total_doses	preclinical_total_dosage_amount(mg/kg)	clinical_age_groups	clinical_phases	clinical_sample_size	clinical_dosage_amount_value(mg)	clinical_dosage_duration(days)	clinical_total_doses	clinical_total_dosage_amount(mg)	result_translation	prediction	model_name	intervention
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	10.943890274314212	13.605148	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	18.74389027431421	15.508096	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	16.113890274314215	15.167187	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	13.133890274314217	15.59696	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	13.563890274314216	15.59696	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	10.893890274314211	15.167187	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	13.353890274314214	15.59696	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	8.443890274314214	15.167187	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	11.043890274314212	13.961964	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	13.923890274314212	13.573564	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	14.443890274314214	15.551364	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	10.943890274314214	13.654021	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	7.543890274314213	14.399346	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	10.143890274314217	14.399346	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	13.543890274314212	13.940576	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	CHILD	PHASE3	131	2.4	476	68	163.2	5.343890274314212	14.299354	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	10.843890274314212	14.434793	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	9.943890274314214	14.403755	xg	semaglutide
+0.6	1 + every 1 day	7	intraperitoneal	42.0	133.0		40.1	C57BL/6J	mice	male		diet:high-fat	7.0	4.2	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	7.643890274314215	14.006564	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	54.75000000000003	38.496273	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	62.550000000000026	40.450382	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	59.92000000000003	39.219738	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	56.940000000000026	40.314205	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	57.37000000000003	40.314205	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	54.70000000000003	39.219738	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	57.160000000000025	40.314205	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	52.25000000000003	39.219738	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	54.85000000000003	39.1016	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	57.730000000000025	38.0006	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	58.25000000000003	39.968857	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	54.75000000000003	38.624107	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	51.35000000000003	39.080334	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	53.95000000000003	39.080334	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	57.35000000000003	39.08415	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD	PHASE3	131	2.4	476	68	163.2	49.15000000000003	38.87262	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	54.65000000000003	39.290764	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	53.75000000000003	39.506317	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		20.5	C57BL/6JC	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	51.45000000000003	38.967564	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	52.85643564356435	38.559605	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	60.65643564356435	40.51232	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	58.02643564356436	39.281677	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	55.04643564356435	40.376144	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	55.47643564356436	40.376144	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	52.80643564356436	39.281677	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	55.26643564356435	40.376144	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	50.35643564356435	39.281677	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	52.95643564356436	39.169476	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	55.83643564356435	38.07565	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	56.35643564356435	40.01456	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	52.85643564356435	38.67888	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	49.45643564356436	39.1467	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	52.05643564356436	39.1467	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	55.45643564356436	39.152023	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD	PHASE3	131	2.4	476	68	163.2	47.25643564356435	38.919594	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	52.75643564356435	39.339733	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	51.85643564356435	39.563347	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	126.0	19.700000000000003	20.2	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	49.55643564356436	39.023655	xg	semaglutide
+468.0	1 + every 1 day	36	intragastric			20.0	21.49	ICR	mice	both	10.0	diet:high-fat+high-cholesterol	36.0	16848.0	ADULT	PHASE4	54	60.0	168	504	30240.0	22.27818655981187	45.934494	xg	orlistat
+150.0	Unknown	42	Unknown	42.0	112.0	20.0	35.0	C57BL/6J	mice	male	12.0	diet:high-fat			CHILD	PHASE2	53	2000.0	180	360	720000.0	13.01200957649065	11.914541	xg	metformin
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	16.625	13.281598	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	24.425	15.294912	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	21.795	14.383799	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	18.815	15.312577	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	19.245	15.312577	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	16.575	14.383799	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	19.035	15.312577	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	14.125	14.383799	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	16.725	13.634604	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	19.605	13.117613	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	20.125	15.014012	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	16.625	13.436848	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	13.225	13.957137	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	15.825	13.957137	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	19.225	13.619339	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	CHILD	PHASE3	131	2.4	476	68	163.2	11.025	13.840798	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	16.525	13.748599	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	15.625	13.671608	xg	semaglutide
+0.12	1 + every 1 day	84	subcutaneous	91.0	266.0		48.0	Ldlr−/−.Leiden	mice	male	15.0	diet:high-fat+high-fructose	84.0	10.08	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	13.325	13.684883	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	-2.5000000000000018	15.233141	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	5.3	18.234596	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	2.670000000000001	16.578028	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	-0.3099999999999987	18.236523	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	0.120000000000001	18.236523	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-2.5500000000000007	16.578028	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-0.0899999999999998	18.236523	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-5.0	16.578028	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	-2.4000000000000004	15.953591	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	0.4799999999999986	14.961993	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	1.0	17.055542	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	-2.5	15.385214	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-5.9	16.034811	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	-3.299999999999999	16.034811	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	0.0999999999999996	15.907778	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	CHILD	PHASE3	131	2.4	476	68	163.2	-8.100000000000001	16.57625	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	-2.6000000000000014	16.552511	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	-3.5	16.72929	xg	semaglutide
+0.05	1 + every 1 day	42	subcutaneous	70.0	77.0		48.0	db/db	mice	male	10.0	genetic	42.0	2.1	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-5.799999999999999	15.779014	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	-2.5000000000000018	2.36158	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	5.3	5.4938855	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	2.670000000000001	4.9351463	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	-0.3099999999999987	5.946596	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	0.120000000000001	5.946596	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-2.5500000000000007	4.9351463	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-0.0899999999999998	5.946596	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-5.0	4.9351463	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	-2.4000000000000004	1.0530572	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	0.4799999999999986	3.0648193	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	1.0	4.813891	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	-2.5	3.190217	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-5.9	3.0008893	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	-3.299999999999999	3.0008893	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	0.0999999999999996	2.0714855	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	CHILD	PHASE3	131	2.4	476	68	163.2	-8.100000000000001	3.558415	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	-2.6000000000000014	3.7835412	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	-3.5	1.788742	xg	semaglutide
+0.025	1 + every 1 day	21	subcutaneous	154.0	154.0		650.0	Sprague–Dawley	rats	male	5.0	diet:high-fat	21.0	0.525	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-5.799999999999999	3.086506	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	5.499999999999998	10.864065	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	13.3	12.969878	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	10.670000000000002	11.744068	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	7.690000000000001	12.993219	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	8.120000000000001	12.993219	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	5.449999999999999	11.744068	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	7.91	12.993219	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	3.0	11.744068	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	5.6	11.140019	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	8.479999999999999	10.733243	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	9.0	12.428307	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	5.5	10.932343	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	2.1	11.611049	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	4.700000000000001	11.611049	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	8.1	11.142316	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	CHILD	PHASE3	131	2.4	476	68	163.2	-0.1000000000000014	11.433291	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	5.399999999999999	11.478099	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	4.5	11.468209	xg	semaglutide
+0.04113641	2 + every 1 day	28	subcutaneous	154.0	154.0		45.5	C57BL/6J	mice	male	9.0	diet:high-fat	56.0	2.30363896	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	2.200000000000001	11.210829	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	19.409090909090907	25.849543	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	27.209090909090907	28.358864	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	24.579090909090908	27.55018	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	21.599090909090908	28.29723	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	22.029090909090908	28.29723	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	19.359090909090902	27.55018	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	21.819090909090907	28.29723	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	16.909090909090907	27.55018	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	19.509090909090908	26.378849	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	22.389090909090903	25.622412	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	22.909090909090907	28.169493	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	19.409090909090907	26.340841	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	16.009090909090908	26.618732	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	18.60909090909091	26.618732	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	22.009090909090908	26.31753	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	CHILD	PHASE3	131	2.4	476	68	163.2	13.809090909090903	27.127544	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	19.309090909090905	27.075014	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	18.409090909090907	27.065426	xg	semaglutide
+0.06	1 + every 1 day	28	subcutaneous	56.0	189.0	20.1	55.0	C57BL/6J	mice	male	3.0	diet:high-fat	28.0	1.68	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	16.10909090909091	26.654093	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	-6.954545454545456	3.8894188	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	0.8454545454545457	6.2527905	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	-1.784545454545453	5.618492	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	-4.764545454545453	6.3186646	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-4.334545454545453	6.3186646	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-7.004545454545455	5.618492	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-4.544545454545454	6.3186646	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-9.454545454545451	5.618492	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	-6.854545454545455	4.154592	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	-3.974545454545456	4.0018897	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	-3.454545454545454	5.8833528	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	-6.954545454545454	3.9483821	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-10.354545454545455	4.7400227	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	-7.754545454545453	4.7400227	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	-4.354545454545455	4.124531	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	CHILD	PHASE3	131	2.4	476	68	163.2	-12.554545454545456	4.806544	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	-7.054545454545456	4.5859857	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	-7.954545454545454	4.586644	xg	semaglutide
+0.23	1 + every 1 day	3	oral	28.0	231.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	0.6900000000000001	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-10.254545454545454	4.3840327	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	-6.227272727272732	13.021584	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	1.5727272727272696	15.192389	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	-1.0572727272727294	14.849386	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	-4.037272727272729	15.258265	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-3.607272727272729	15.258265	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-6.277272727272731	14.849386	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-3.81727272727273	15.258265	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-8.72727272727273	14.849386	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	-6.1272727272727305	13.29143	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	-3.2472727272727315	13.186374	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	-2.72727272727273	15.087159	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	-6.22727272727273	13.089866	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-9.62727272727273	13.849621	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	-7.027272727272729	13.849621	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	-3.6272727272727305	13.261369	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	CHILD	PHASE3	131	2.4	476	68	163.2	-11.827272727272732	13.677187	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	-6.327272727272732	13.698027	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	-7.22727272727273	13.694043	xg	semaglutide
+0.7	1 + every 1 day	3	oral	28.0	252.0		32.0	C57BL/6J	mice	male	6.0	diet:high-fat	3.0	2.1	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-9.52727272727273	13.5041	xg	semaglutide
+0.003	1 + every 1 day	1	intraperitoneal				513.4	Sprague–Dawley	rats	male	11.0	diet:high-fat	1.0	0.003	ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	0.3022860329906806	6.010088	xg	exenatide
+0.003	1 + every 1 day	1	intraperitoneal				513.4	Sprague–Dawley	rats	male	11.0	diet:high-fat	1.0	0.003	ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	-0.5477402877816347	4.226378	xg	exenatide
+300.0	1 + every 1 day	42	gavage	28.0	70.0		21.9	C57BL/6	mice	male	8.0	diet:high-fat	42.0	12600.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	64.36230311856502	45.87938	xg	metformin
+300.0	1 + every 1 day	70	gavage	28.0	28.0		33.0	ob/ob	mice	male	6.0	genetic	70.0	21000.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	1.5834381479192237	16.142609	xg	metformin
+300.0	1 + every 1 day	9	oral	98.0	224.0		38.4	C57BL/6J	mice	Unknown	6.0	diet:high-fat	9.0	2700.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	1.858735766966852	10.102568	xg	metformin
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	4.397435897435884	7.9316564	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	12.197435897435884	10.149121	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	9.567435897435884	9.617819	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	6.587435897435887	10.051536	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	7.017435897435886	10.051536	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	4.347435897435885	9.617819	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	6.8074358974358855	10.051536	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	1.8974358974358847	9.617819	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	4.497435897435885	8.204268	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	7.377435897435884	7.757287	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	7.897435897435885	10.151284	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	4.397435897435885	8.13361	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	0.997435897435885	8.44304	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	3.5974358974358864	8.44304	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	6.997435897435885	8.148428	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	CHILD	PHASE3	131	2.4	476	68	163.2	-1.202564102564116	8.709544	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	4.297435897435884	8.627308	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	3.3974358974358854	8.540785	xg	semaglutide
+0.12340923	1 + every 1 day	56	subcutaneous	35.0	308.0		39.0	C57BL/6JRj	mice	male	8.0	diet:high-fat+high-fructose+high-cholesterol	56.0	6.910916879999999	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	1.0974358974358864	8.428343	xg	semaglutide
+15.6	1 + every 1 day	28	gavage	28.0	98.0	15.0	29.8	C57BL/6J	mice	male	9.0	diet:high-fat	28.0	436.8	ADULT	PHASE4	54	60.0	168	504	30240.0	21.34807649510856	15.227147	xg	orlistat
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	7.666666666666673	5.1405187	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	15.466666666666676	8.2502165	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	12.836666666666677	6.7393417	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	9.856666666666676	8.226053	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	10.286666666666676	8.226053	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	7.616666666666674	6.7393417	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	10.076666666666677	8.226053	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	5.166666666666675	6.7393417	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	7.766666666666675	5.374682	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	10.646666666666674	4.949901	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	11.166666666666677	7.2162533	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	7.666666666666675	5.209021	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	4.266666666666675	5.8428445	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	6.866666666666676	5.8428445	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	10.266666666666676	5.354374	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	CHILD	PHASE3	131	2.4	476	68	163.2	2.066666666666673	5.807051	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	7.5666666666666735	5.7351623	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	6.666666666666675	5.655803	xg	semaglutide
+0.12	1 + every 1 day	14	subcutaneous	84.0	168.0		49.9	C57BL/6J	mice	male	9.0	diet:high-fat	14.0	1.68	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	4.366666666666676	5.569112	xg	semaglutide
+200.0	1 + every 2 days	18	intragastric	56.0	112.0		44.0	C57BL/6J	mice	male	8.0	diet:high-fat	9.0	1800.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	1.5509706154516891	12.086239	xg	metformin
+0.15	1 + every 1 day	16	Unknown					Long-Evans	rats	male	11.0	diet:high-fat	16.0	2.4	ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	11.081600407747196	8.465627	xg	exenatide
+0.15	1 + every 1 day	16	Unknown					Long-Evans	rats	male	11.0	diet:high-fat	16.0	2.4	ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	10.23157408697488	6.1636615	xg	exenatide
+20.0	2 + every 1 day	30	oral			275.0	404.0	Wistar	rats	female	9.0	diet:high-fat	60.0	1200.0	ADULT	PHASE4	54	60.0	168	504	30240.0	0.4115427786454289	16.573742	xg	orlistat
+50.0	1 + every 1 day	30	intragastric	21.0	140.0		34.0	C57BL/6J	mice	male	4.0	diet:high-fat	30.0	1500.0	ADULT	PHASE4	54	60.0	168	504	30240.0	12.394652854358885	13.135018	xg	orlistat
+200.0	1 + every 1 day	56	intragastric	63.0	147.0		490.0	Wistar	rats	male	10.0	diet:high-fat	56.0	11200.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	11.1752748826131	16.910294	xg	metformin
+0.03	2 + every 1 day	14	subcutaneous	56.0	182.0		47.3	C57BL/6JRj	mice	male	12.0	diet:high-fat+high-sugar	28.0	0.84	ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	4.888154318952281	14.970587	xg	exenatide
+0.03	2 + every 1 day	14	subcutaneous	56.0	182.0		47.3	C57BL/6JRj	mice	male	12.0	diet:high-fat+high-sugar	28.0	0.84	ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	4.038127998179966	13.210778	xg	exenatide
+0.03	1 + every 1 day	14	subcutaneous	42.0	147.0		38.0	C57BL/6J	mice	male	8.0	diet:high-fat	14.0	0.42	ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	4.3447583024840455	9.890106	xg	exenatide
+0.03	1 + every 1 day	14	subcutaneous	42.0	147.0		38.0	C57BL/6J	mice	male	8.0	diet:high-fat	14.0	0.42	ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	3.4947319817117304	7.354341	xg	exenatide
+10.0	1 + every 1 day	98	oral	28.0	28.0		19.1	C57BL/6J	mice	male	10.0	diet:high-fat	98.0	980.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	33.889985766966866	46.28731	xg	metformin
+50.0	1 + every 1 day	98	oral	28.0	28.0		19.1	C57BL/6J	mice	male	10.0	diet:high-fat	98.0	4900.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	51.5983191003002	46.28731	xg	metformin
+0.003	1 + every 1 day	14	subcutaneous				700.0	Sprague–Dawley	rats	male	6.0	diet:high-fat	14.0	0.042	ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	4.081600407747197	5.906735	xg	exenatide
+0.003	1 + every 1 day	14	subcutaneous				700.0	Sprague–Dawley	rats	male	6.0	diet:high-fat	14.0	0.042	ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	3.2315740869748817	4.7817745	xg	exenatide
+50.0	5 + every 1 week	56	oral gavage	42.0	77.0		30.4	C57BL/6	mice	male	8.0	diet:high-fat	40.0	2000.0	ADULT	PHASE4	54	60.0	168	504	30240.0	29.492049189942307	16.378923	xg	orlistat
+250.0	1 + every 1 day	28	Unknown	63.0	63.0			ob/ob	mice	male	10.0	genetic	28.0	7000.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	-2.060847566366492	16.654182	xg	metformin
+150.0	1 + every 1 day	28	intraperitoneal	21.0	84.0		28.0	C57BL/6J	mice	male	13.0	diet:high-fat	28.0	4200.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	6.583438147919221	45.76866	xg	metformin
+10.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	27.5	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	280.0	ADULT	PHASE4	54	60.0	168	504	30240.0	8.799881612528818	45.96985	xg	orlistat
+15.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	420.0	ADULT,OLDER_ADULT	PHASE2	95	50.0	84	84	4200.0	10.21111111111111	45.11192	xg	canagliflozin
+15.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	420.0	ADULT,OLDER_ADULT	PHASE2	85	100.0	84	84	8400.0	9.411111111111111	45.69944	xg	canagliflozin
+15.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	420.0	ADULT,OLDER_ADULT	PHASE2	93	300.0	84	84	25200.0	9.71111111111111	45.26209	xg	canagliflozin
+15.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	420.0	ADULT,OLDER_ADULT	PHASE2	78	300.0	182	182	54600.0	9.81111111111111	45.120895	xg	canagliflozin
+60.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	1680.0	ADULT,OLDER_ADULT	PHASE2	95	50.0	84	84	4200.0	13.914814814814813	45.11192	xg	canagliflozin
+60.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	1680.0	ADULT,OLDER_ADULT	PHASE2	85	100.0	84	84	8400.0	13.114814814814814	45.69944	xg	canagliflozin
+60.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	1680.0	ADULT,OLDER_ADULT	PHASE2	93	300.0	84	84	25200.0	13.414814814814813	45.26209	xg	canagliflozin
+60.0	1 + every 1 day	28	intragastric	28.0	56.0	17.5	28.0	C57BL/6J	mice	male	8.0	diet:high-fat	28.0	1680.0	ADULT,OLDER_ADULT	PHASE2	78	300.0	182	182	54600.0	13.514814814814812	45.120895	xg	canagliflozin
+250.0	1 + every 1 day	98	oral	70.0	70.0			Ldlr−/−	mice	male	8.0	diet:high-fat	98.0	24500.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	-10.130847566366493	20.694984	xg	metformin
+250.0	1 + every 1 day	56	oral	70.0	112.0			Ldlr−/−	mice	male	8.0	diet:high-fat	56.0	14000.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	5.869152433633508	16.815466	xg	metformin
+100.0	1 + every 1 day	14	intraperitoneal			21.0	42.5	CD-1	mice	male	6.0	diet:high-fat+high-sugar	14.0	1400.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	12.339740668927623	12.967091	xg	metformin
+200.0	Unknown	84	oral	28.0	35.0		16.8	C57BL/6	mice	male	14.0	diet:high-fat			CHILD	PHASE2	53	2000.0	180	360	720000.0	31.58343814791923	46.13196	xg	metformin
+150.0	1 + every 1 day	35	oral	21.0	77.0		35.0	C57BL/6J	mice	male	5.0	diet:high-fat	35.0	5250.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	4.440581005062079	15.481822	xg	metformin
+100.0	1 + every 1 day	56	intragastric	49.0	273.0	200.0	590.0	Wistar	rats	male	6.0	diet:high-fructose	56.0	5600.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	-0.8008475663664925	20.42318	xg	metformin
+60.0	Unknown	30	intragastric	21.0	28.0	22.19	22.19	C57BL/6J	mice	male	8.0	diet:high-fat			ADULT	PHASE4	54	60.0	168	504	30240.0	23.215912717658163	46.412186	xg	orlistat
+120.0	1 + every 1 day	56	intraperitoneal	28.0	98.0		33.0	C57BL/6J	mice	male	8.0	diet:high-fat	56.0	6720.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	17.08127364575472	15.166825	xg	metformin
+15.0	1 + every 1 day	20	oral gavage				21.5	C57BL/6J	mice	male	5.0	diet:high-fat	20.0	300.0	ADULT	PHASE4	54	60.0	168	504	30240.0	6.991096082813052	47.048306	xg	orlistat
+300.0	1 + every 1 day	14	oral gavage	56.0	70.0		365.3	Zucker fatty	rats	male	8.0	genetic	14.0	4200.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	-6.340340201391049	10.6322975	xg	metformin
+300.0	1 + every 1 day	14	oral gavage	28.0	126.0		528.1	Sprague–Dawley	rats	male	8.0	diet:high-fat	14.0	4200.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	5.536197458226777	10.026022	xg	metformin
+50.0	3 + every 1 week	84	oral	42.0	70.0		34.0	C57BL/6	mice	Unknown	7.0	diet:high-fat	36.0	1800.0	ADULT	PHASE4	54	60.0	168	504	30240.0	-2.3112294985822937	16.465492	xg	orlistat
+200.0	1 + every 1 day	56	intragastric	49.0	203.0		41.0	C57BL/6J	mice	female	6.0	diet:high-fat	56.0	11200.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	6.869152433633502	19.416927	xg	metformin
+120.0	1 + every 1 day	30	oral			172.5	160.0	Wistar	rats	Unknown	6.0	diet:high-fat	30.0	3600.0	ADULT	PHASE4	54	60.0	168	504	30240.0	28.938770501417707	19.99787	xg	orlistat
+200.0	3 + every 1 week	56	oral	42.0	70.0		30.0	C57BL/6J	mice	male	10.0	diet:high-fat	24.0	4800.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	23.20248576696685	15.016233	xg	metformin
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	-0.5000000000000018	4.214895	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	7.3	6.082722	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	4.670000000000001	5.8962574	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	1.6900000000000013	6.1787553	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	2.120000000000001	6.1787553	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-0.5500000000000007	5.8962574	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	1.91	6.1787553	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-3.0	5.8962574	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	-0.4000000000000003	4.45498	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	2.479999999999998	4.058828	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	3.0	6.2760525	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	-0.5	4.242984	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-3.9	4.8610373	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	-1.299999999999999	4.8610373	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	2.1	4.383756	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	CHILD	PHASE3	131	2.4	476	68	163.2	-6.100000000000001	5.0745416	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	-0.6000000000000014	4.9269266	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	-1.5	4.9278226	xg	semaglutide
+0.04	1 + every 1 day	12	subcutaneous	42.0	126.0		50.0	C57BL/6	mice	male	6.0	diet:high-fat	12.0	0.48	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-3.799999999999999	4.579198	xg	semaglutide
+280.0	1 + every 1 day	84	intragastric	28.0	28.0		36.0	db/db	mice	male	10.0	genetic	84.0	23520.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	6.980263544744618	18.30453	xg	metformin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		38.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	95	50.0	84	84	4200.0	-19.321052631578944	14.500183	xg	canagliflozin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		38.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	85	100.0	84	84	8400.0	-20.121052631578944	16.435352	xg	canagliflozin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		38.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	93	300.0	84	84	25200.0	-19.821052631578944	14.516866	xg	canagliflozin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		38.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	78	300.0	182	182	54600.0	-19.721052631578942	15.992636	xg	canagliflozin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		40.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	95	50.0	84	84	4200.0	-10.9	14.500183	xg	canagliflozin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		40.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	85	100.0	84	84	8400.0	-11.7	16.435352	xg	canagliflozin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		40.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	93	300.0	84	84	25200.0	-11.4	14.516866	xg	canagliflozin
+30.0	1 + every 1 day	56	oral gavage	42.0	42.0		40.0	db/db	mice	male	10.0	genetic	56.0	1680.0	ADULT,OLDER_ADULT	PHASE2	78	300.0	182	182	54600.0	-11.3	15.992636	xg	canagliflozin
+10.0	1 + every 1 day	42	oral gavage	63.0	112.0	225.0	254.4	Sprague–Dawley	rats	male	6.0	diet:high-fat	42.0	420.0	ADULT	PHASE4	54	60.0	168	504	30240.0	28.51314326127433	13.98946	xg	orlistat
+5.0	1 + every 1 day	42	oral	35.0	126.0	170.0	180.8	Wistar NIN	rats	male	6.0	diet:high-fat	42.0	210.0	ADULT	PHASE4	54	60.0	168	504	30240.0	92.8120581726506	12.318585	xg	orlistat
+10.0	1 + every 1 day	35	oral	56.0	112.0	20.0	28.0	C57BL/6N	mice	male	8.0	diet:high-fat	35.0	350.0	ADULT	PHASE4	54	60.0	168	504	30240.0	16.188770501417704	46.044094	xg	orlistat
+20.0	1 + every 1 day	35	oral	56.0	112.0	20.0	28.0	C57BL/6N	mice	male	8.0	diet:high-fat	35.0	700.0	ADULT	PHASE4	54	60.0	168	504	30240.0	23.83162764427485	46.044094	xg	orlistat
+250.0	7 + every 1 month	150	oral	21.0	360.0		410.0	Wistar	rats	female	6.0	diet:high-fat+high-sugar	35.0	8750.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	15.381347555584728	23.730394	xg	metformin
+100.0	1 + every 1 day	56	oral	56.0	168.0		49.0	C57BL/6J	mice	male	10.0	diet:high-fat	56.0	5600.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	16.27731569893963	15.511432	xg	metformin
+25.0	1 + every 1 day	28	gavage	56.0	154.0	18.0	33.2	C57BL/6	mice	male	6.0	diet:high-caloric	28.0	700.0	ADULT	PHASE4	54	60.0	168	504	30240.0	-2.6097369612688444	20.705093	xg	orlistat
+300.0	1 + every 1 day	42	oral gavage	35.0	119.0		45.0	C57BL/6	mice	male	15.0	diet:high-fat	42.0	12600.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	15.869152433633507	14.755604	xg	metformin
+100.0	1 + every 1 day	42	oral gavage	56.0	126.0			C57BL/6J	mice	male	4.0	diet:high-fat	42.0	4200.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	10.869152433633507	18.261728	xg	metformin
+100.0	1 + every 1 day	42	oral gavage	56.0	126.0			C57BL/6J	mice	male	4.0	diet:high-fat	42.0	4200.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	9.869152433633507	18.261728	xg	metformin
+800.0	1 + every 1 day	40	gastric gavage	35.0	112.0		57.2	ob/ob	mice	male	6.0	genetic + diet:high-fat	40.0	32000.0	ADULT	PHASE4	54	60.0	168	504	30240.0	7.653805466452677	10.564407	xg	orlistat
+1.0	1 + every 1 day	42	intraperitoneal			225.0	416.38	Wistar	rats	female	10.0	diet:high-fat	42.0	42.0	ADULT,OLDER_ADULT	Unknown	10	25.0	56	56	1400.0	-4.508676220970163	19.347204	xg	naltrexone
+80.0	1 + every 1 day	42	Unknown	56.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	42.0	3360.0	ADULT	PHASE4	54	60.0	168	504	30240.0	27.688770501417707	18.28869	xg	orlistat
+432.0	1 + every 1 day	15	oral	21.0	112.0	24.82	24.82	C57BL/6N	mice	female	11.0	diet:high-fat	15.0	6480.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	15.706424808681929	44.87241	xg	metformin
+7.0	1 + every 1 day	28	intraperitoneal			150.0	150.0	Wistar	rats	female	6.0	diet:high-caloric	28.0	196.0	ADULT,OLDER_ADULT	PHASE3	104	7.5	196	196	1470.0	9.533333333333331	16.827526	xg	phentermine
+7.0	1 + every 1 day	28	intraperitoneal			150.0	150.0	Wistar	rats	female	6.0	diet:high-caloric	28.0	196.0	ADULT,OLDER_ADULT	PHASE3	106	15.0	196	196	2940.0	8.93333333333333	16.827526	xg	phentermine
+7.0	1 + every 1 day	28	intraperitoneal			150.0	150.0	Wistar	rats	female	6.0	diet:high-caloric	28.0	196.0	ADULT,OLDER_ADULT	PHASE2	76	15.0	182	182	2730.0	9.83333333333333	19.508049	xg	phentermine
+100.0	1 + every 1 day	14	intragastric	42.0	56.0	170.0	260.0	Sprague–Dawley	rats	male	8.0	diet:high-fat	14.0	1400.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	13.176844741325814	9.878316	xg	metformin
+120.0	1 + every 1 day	56	gavage	21.0	105.0		30.0	C57BL/6J	mice	male	20.0	diet:high-fat	56.0	6720.0	ADULT	PHASE4	54	60.0	168	504	30240.0	14.355437168084372	11.274149	xg	orlistat
+100.0	1 + every 1 day	28	oral	21.0	105.0	11.8	31.5	C57BL/6	mice	male	8.0	diet:high-fat	28.0	2800.0	ADULT	PHASE4	54	60.0	168	504	30240.0	7.21258002522723	14.972622	xg	orlistat
+10.0	1 + every 1 day	42	oral gavage	63.0	105.0	205.0	228.4	Sprague–Dawley	rats	male	6.0	diet:high-fat+high-cholesterol	42.0	420.0	ADULT	PHASE4	54	60.0	168	504	30240.0	23.728157809951632	13.826847	xg	orlistat
+250.0	1 + every 1 day	56	oral	56.0	119.0		49.0	ICR	mice	male	8.0	diet:high-fat+high-sugar	56.0	14000.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	10.418332761502365	16.872906	xg	metformin
+10.0	1 + every 1 day	14	oral gavage	35.0	35.0		133.0	SDT fatty	rats	male	8.0	genetic	14.0	140.0	ADULT,OLDER_ADULT	PHASE2	95	50.0	84	84	4200.0	1.3388059701492492	6.9765167	xg	canagliflozin
+10.0	1 + every 1 day	14	oral gavage	35.0	35.0		133.0	SDT fatty	rats	male	8.0	genetic	14.0	140.0	ADULT,OLDER_ADULT	PHASE2	85	100.0	84	84	8400.0	0.5388059701492494	7.9688973	xg	canagliflozin
+10.0	1 + every 1 day	14	oral gavage	35.0	35.0		133.0	SDT fatty	rats	male	8.0	genetic	14.0	140.0	ADULT,OLDER_ADULT	PHASE2	93	300.0	84	84	25200.0	0.8388059701492492	7.017922	xg	canagliflozin
+10.0	1 + every 1 day	14	oral gavage	35.0	35.0		133.0	SDT fatty	rats	male	8.0	genetic	14.0	140.0	ADULT,OLDER_ADULT	PHASE2	78	300.0	182	182	54600.0	0.9388059701492492	7.632823	xg	canagliflozin
+150.0	1 + every 1 day	56	intraperitoneal	49.0	126.0			C57BL/6	mice	male	6.0	diet:high-fat	56.0	8400.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	5.869152433633508	20.048363	xg	metformin
+250.0	1 + every 1 day	28	oral				37.6	C57BL/6	mice	male	10.0	diet:high-fat	28.0	7000.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	1.188301369803721	15.728686	xg	metformin
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	18.5	12.391493	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	26.300000000000004	14.389655	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	23.670000000000005	13.651505	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	20.690000000000005	14.371889	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	21.120000000000005	14.371889	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	18.450000000000003	13.651505	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	20.910000000000004	14.371889	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	16.000000000000004	13.651505	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	18.6	12.787614	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	21.480000000000004	12.241839	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	22.000000000000004	14.367536	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	18.500000000000004	12.486876	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	15.100000000000003	13.12287	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	17.700000000000003	13.12287	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	21.1	12.770159	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD	PHASE3	131	2.4	476	68	163.2	12.900000000000002	13.065492	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	18.4	13.045899	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	17.500000000000004	13.0190735	xg	semaglutide
+0.12340923	1 + every 1 day	84	subcutaneous	42.0	126.0		40.0	C57BL/6J	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	15.200000000000005	12.76674	xg	semaglutide
+0.012696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	0.38088	ADULT,OLDER_ADULT	PHASE2	76	0.6	322	46	27.6	7.629999999999999	13.190678	xg	survodutide
+0.012696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	0.38088	ADULT,OLDER_ADULT	PHASE2	78	2.4	182	26	62.4	1.3100000000000005	12.255605	xg	survodutide
+0.012696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	0.38088	ADULT,OLDER_ADULT	PHASE2	76	3.6	182	26	93.6	0.5999999999999996	11.975666	xg	survodutide
+0.012696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	0.38088	ADULT,OLDER_ADULT	PHASE2	76	4.8	182	26	124.8	-1.1199999999999992	11.975666	xg	survodutide
+0.04232	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	1.2696	ADULT,OLDER_ADULT	PHASE2	76	0.6	322	46	27.6	11.63	13.531714	xg	survodutide
+0.04232	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	1.2696	ADULT,OLDER_ADULT	PHASE2	78	2.4	182	26	62.4	5.3100000000000005	12.649993	xg	survodutide
+0.04232	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	1.2696	ADULT,OLDER_ADULT	PHASE2	76	3.6	182	26	93.6	4.6	12.359671	xg	survodutide
+0.04232	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	1.2696	ADULT,OLDER_ADULT	PHASE2	76	4.8	182	26	124.8	2.880000000000001	12.359671	xg	survodutide
+0.08464	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.5392	ADULT,OLDER_ADULT	PHASE2	76	0.6	322	46	27.6	19.63	13.726555	xg	survodutide
+0.08464	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.5392	ADULT,OLDER_ADULT	PHASE2	78	2.4	182	26	62.4	13.31	12.889878	xg	survodutide
+0.08464	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.5392	ADULT,OLDER_ADULT	PHASE2	76	3.6	182	26	93.6	12.6	12.587727	xg	survodutide
+0.08464	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.5392	ADULT,OLDER_ADULT	PHASE2	76	4.8	182	26	124.8	10.88	12.587727	xg	survodutide
+0.12696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	3.8088000000000006	ADULT,OLDER_ADULT	PHASE2	76	0.6	322	46	27.6	28.63	15.595068	xg	survodutide
+0.12696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	3.8088000000000006	ADULT,OLDER_ADULT	PHASE2	78	2.4	182	26	62.4	22.31	14.686936	xg	survodutide
+0.12696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	3.8088000000000006	ADULT,OLDER_ADULT	PHASE2	76	3.6	182	26	93.6	21.6	14.368714	xg	survodutide
+0.12696	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	3.8088000000000006	ADULT,OLDER_ADULT	PHASE2	76	4.8	182	26	124.8	19.880000000000003	14.368714	xg	survodutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	13.499999999999998	11.827919	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	21.3	14.14648	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	18.67	12.901524	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	15.69	14.145914	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	16.12	14.145914	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	13.45	12.901524	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	15.91	14.145914	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	11.0	12.901524	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	13.6	12.212217	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	16.479999999999997	11.746419	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	17.0	13.621666	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	13.5	11.913291	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	10.1	12.670817	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	12.7	12.670817	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	16.1	12.190759	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	CHILD	PHASE3	131	2.4	476	68	163.2	7.899999999999999	12.883371	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	13.4	12.872122	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	12.5	12.881582	xg	semaglutide
+0.08227282	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	2.4681846	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	10.2	12.19545	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	15.499999999999998	12.639326	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	23.3	15.219571	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	20.67	13.696884	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	17.69	15.24411	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	18.12	15.24411	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	15.45	13.696884	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	17.91	15.24411	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	13.0	13.696884	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	15.6	13.036065	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	18.48	12.584368	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	19.0	14.497286	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	15.5	12.662913	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	12.1	13.527107	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	14.7	13.527107	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	18.1	13.015757	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	CHILD	PHASE3	131	2.4	476	68	163.2	9.9	13.675657	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	15.4	13.58244	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	14.5	13.555142	xg	semaglutide
+0.4113640999999999	1 + every 1 day	30	subcutaneous	112.0	154.0			C57BL/6J	mice	male	11.0	diet:high-fat	30.0	12.340922999999998	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	12.2	12.957544	xg	semaglutide
+0.03174	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.3174	ADULT,OLDER_ADULT	PHASE2	76	0.6	322	46	27.6	4.629999999999999	4.816554	xg	survodutide
+0.03174	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.3174	ADULT,OLDER_ADULT	PHASE2	78	2.4	182	26	62.4	-1.6899999999999995	3.8143973	xg	survodutide
+0.03174	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.3174	ADULT,OLDER_ADULT	PHASE2	76	3.6	182	26	93.6	-2.4000000000000004	3.6837752	xg	survodutide
+0.03174	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.3174	ADULT,OLDER_ADULT	PHASE2	76	4.8	182	26	124.8	-4.119999999999999	3.6837752	xg	survodutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	-1.5000000000000018	3.0392718	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	6.3	5.421116	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	3.670000000000001	4.9590416	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	0.6900000000000013	5.6478534	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	1.120000000000001	5.6478534	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-1.5500000000000007	4.9590416	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	0.91	5.6478534	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-4.0	4.9590416	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	-1.4000000000000004	3.7248247	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	1.4799999999999986	3.0124981	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	2.0	5.2917447	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	-1.5	3.101624	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-4.9	4.198955	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	-2.299999999999999	4.198955	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	1.0999999999999996	3.6872447	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	CHILD	PHASE3	131	2.4	476	68	163.2	-7.100000000000001	3.6983917	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	-1.6000000000000014	3.5961668	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	-2.5	3.801319	xg	semaglutide
+0.04113641	1 + every 1 day	10	subcutaneous	112.0	112.0			C57BL/6J	mice	male	11.0	diet:high-fat	10.0	0.4113641	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-4.799999999999999	3.4328277	xg	semaglutide
+250.0	1 + every 1 day	31	oral gavage				35.0	Ay	mice	male	6.0	genetic	31.0	7750.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	8.085368649849713	17.084055	xg	metformin
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	47.95945945945946	38.578735	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	55.75945945945946	40.48367	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	53.12945945945946	39.357952	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	50.14945945945946	40.360615	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	50.57945945945946	40.360615	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	47.909459459459455	39.357952	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	50.36945945945946	40.360615	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	45.45945945945946	39.357952	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	48.05945945945946	39.161633	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	50.93945945945946	38.09398	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	51.45945945945946	40.036278	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	47.95945945945946	38.693054	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	44.55945945945946	39.110294	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	47.15945945945946	39.110294	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	50.55945945945946	39.14418	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD	PHASE3	131	2.4	476	68	163.2	42.35945945945946	38.94286	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	47.85945945945946	39.361004	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	46.95945945945946	39.567215	xg	semaglutide
+0.12340923	1 + every 1 day	84	intraperitoneal	42.0	133.0		21.0	C57BL/6	mice	male	8.0	diet:high-fat	84.0	10.36637532	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	44.65945945945946	39.027676	xg	semaglutide
+25.0	1 + every 1 day	56	oral	35.0	42.0		18.0	C57BL/6	mice	male	6.0	diet:high-fat	56.0	1400.0	ADULT	PHASE4	54	60.0	168	504	30240.0	19.91099272363994	45.805878	xg	orlistat
+0.2	Unknown	56	subcutaneous	28.0	28.0		30.0	db/db	mice	male	8.0	genetic			ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	-20.41839959225281	20.99821	xg	exenatide
+0.2	Unknown	56	subcutaneous	28.0	28.0		30.0	db/db	mice	male	8.0	genetic			ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	-21.268425913025126	19.009178	xg	exenatide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	3.2899999999999974	11.795697	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	11.09	14.465468	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	8.46	12.903983	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	5.48	14.405569	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	5.91	14.405569	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	3.2399999999999984	12.903983	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	5.699999999999999	14.405569	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	0.7899999999999991	12.903983	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	3.389999999999999	11.883976	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	6.269999999999998	11.558565	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	6.789999999999999	13.685297	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	3.289999999999999	12.026408	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-0.1100000000000012	12.329256	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	2.49	12.329256	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	5.889999999999999	11.857322	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	CHILD	PHASE3	131	2.4	476	68	163.2	-2.3100000000000023	12.307634	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	3.1899999999999977	12.393404	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	2.289999999999999	12.224941	xg	semaglutide
+0.0082272819999999	1 + every 1 day	28	subcutaneous				55.0	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	28.0	0.2303638959999999	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-0.0099999999999997	12.262853	xg	semaglutide
+250.0	1 + every 1 day	84	gavage	56.0	63.0			C57BL/6J	mice	male	10.0	diet:high-fat	84.0	21000.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	20.86915243363351	18.68941	xg	metformin
+250.0	1 + every 1 day	35	gavage	56.0	119.0		41.1	C57BL/6J	mice	male	12.0	diet:high-fat	35.0	8750.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	2.8691524336335075	13.425877	xg	metformin
+0.01004784	1 + every 1 day	28	subcutaneous					ob/ob	mice	male	10.0	genetic	28.0	0.28133952	ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	3.3816004077471966	13.170711	xg	exenatide
+0.01004784	1 + every 1 day	28	subcutaneous					ob/ob	mice	male	10.0	genetic	28.0	0.28133952	ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	2.531574086974881	10.672289	xg	exenatide
+0.03014352	1 + every 1 day	28	subcutaneous				489.0	DIO-prone Sprague–Dawley	rats	male	6.0	diet:high-fat	28.0	0.8440185600000001	ADULT,OLDER_ADULT	PHASE4	10	0.005	30	60	0.3	6.581600407747197	15.3846855	xg	exenatide
+0.03014352	1 + every 1 day	28	subcutaneous				489.0	DIO-prone Sprague–Dawley	rats	male	6.0	diet:high-fat	28.0	0.8440185600000001	ADULT	PHASE3	31	0.01	35	70	0.7000000000000001	5.731574086974882	13.066132	xg	exenatide
+0.03728092	1 + every 1 day	28	subcutaneous	77.0	182.0		43.0	C57BL/6	mice	male	11.0	diet:high-fat	28.0	1.04386576	ADULT,OLDER_ADULT	PHASE2	14	0.3	42	42	12.6	20.92	21.186914	xg	medi0382
+0.11184276	1 + every 1 day	28	subcutaneous	77.0	182.0		43.0	C57BL/6	mice	male	11.0	diet:high-fat	28.0	3.1315972800000003	ADULT,OLDER_ADULT	PHASE2	14	0.3	42	42	12.6	29.92	22.53342	xg	medi0382
+300.0	1 + every 1 day	21	oral gavage	42.0	42.0	21.31	21.31	C57BL/6J	mice	male	5.0	diet:high-fat	21.0	6300.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	6.869152433633508	45.434616	xg	metformin
+60.0	1 + every 1 day	28	oral	63.0	84.0		340.0	DIO-prone Sprague–Dawley	rats	male	9.0	diet:high-fat	28.0	1680.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	-2.1308475663664925	15.976006	xg	metformin
+100.0	1 + every 1 day	28	oral	63.0	84.0		340.0	DIO-prone Sprague–Dawley	rats	male	9.0	diet:high-fat	28.0	2800.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	17.86915243363351	15.976006	xg	metformin
+50.0	1 + every 1 day	98	subcutaneous	315.0	357.0		337.82	Sprague–Dawley	rats	female	7.0	diet:high-fat+high-carbohydrate	98.0	4900.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	-2.7908475663664927	16.475939	xg	metformin
+50.0	1 + every 1 day	98	subcutaneous	315.0	357.0		556.31	Sprague–Dawley	rats	male	8.0	diet:high-fat+high-carbohydrate	98.0	4900.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	0.6991524336335058	9.598343	xg	metformin
+300.0	1 + every 1 day	27	oral gavage			287.5	609.7	Sprague–Dawley	rats	male	15.0	diet:high-caloric	27.0	8100.0	CHILD	PHASE2	53	2000.0	180	360	720000.0	1.869152433633508	12.370958	xg	metformin
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	407	2.4	476	68	163.2	-5.500000000000002	1.3338968	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE2	92	0.05	364	364	18.2	2.3	3.4293475	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE2	96	0.1	364	364	36.4	-0.3299999999999992	2.8773658	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE2	94	0.2	364	364	72.8	-3.3099999999999987	3.190059	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-2.879999999999999	3.190059	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-5.550000000000001	2.8773658	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE2	95	0.3	364	364	109.2	-3.09	3.190059	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE2	100	0.4	364	364	145.6	-8.0	2.8773658	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	246	2.4	364	52	124.8	-5.4	1.7179937	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	7474	2.4	728	104	249.6	-2.5200000000000014	0.38081202	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	98	1.7	476	68	115.6	-2.0	3.3479283	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	193	2.4	476	68	163.2	-5.5	1.2875792	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	535	2.4	336	48	115.2	-8.9	2.2995358	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	520	2.4	336	48	115.2	-6.299999999999999	2.2995358	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	238	2.4	308	44	105.6	-2.9000000000000004	1.5010239	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	CHILD	PHASE3	131	2.4	476	68	163.2	-11.1	1.8201066	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	CHILD,ADULT,OLDER_ADULT	PHASE3	144	2.4	728	104	249.6	-5.600000000000001	1.8577044	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	CHILD,ADULT,OLDER_ADULT	PHASE3	149	2.4	364	52	124.8	-6.5	1.9499509	xg	semaglutide
+0.0041136409999999	1 + every 1 day	8	subcutaneous				50.9	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	8.0	0.0329091279999999	ADULT,OLDER_ADULT	PHASE3	117	2.4	476	68	163.2	-8.799999999999999	1.4514986	xg	semaglutide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	70	10.0	364	52	520.0	1.0	5.662066	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	68	15.0	364	52	780.0	-4.5	5.662066	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	70	10.0	140	20	200.0	5.0	5.241134	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	68	15.0	140	20	300.0	2.6000000000000014	5.241134	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	623	5.0	504	72	360.0	-0.5999999999999996	4.1457496	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	629	10.0	504	72	720.0	-6.0	4.227742	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	625	15.0	504	72	1080.0	-7.100000000000001	4.4001484	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	59	10.0	504	72	720.0	-3.1000000000000014	5.881368	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	65	15.0	504	72	1080.0	-8.0	5.9635024	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	332	15.0	616	88	1320.0	-3.5	2.999136	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	284	8.75	504	72	630.0	-11.400000000000002	3.0159304	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	309	10.0	504	72	720.0	2.8999999999999986	3.0159304	xg	tirzepatide
+0.00481052	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.0962104	ADULT,OLDER_ADULT	PHASE3	309	15.0	504	72	1080.0	0.6000000000000014	3.1844585	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	70	10.0	364	52	520.0	13.0	6.237058	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	68	15.0	364	52	780.0	7.5	6.237058	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	70	10.0	140	20	200.0	17.0	5.8161273	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	68	15.0	140	20	300.0	14.6	5.8161273	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	623	5.0	504	72	360.0	11.4	4.7045197	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	629	10.0	504	72	720.0	6.0	4.7865114	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	625	15.0	504	72	1080.0	4.899999999999999	4.9589186	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	59	10.0	504	72	720.0	8.899999999999999	6.4563603	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	65	15.0	504	72	1080.0	4.0	6.5384955	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	332	15.0	616	88	1320.0	8.5	3.557906	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	284	8.75	504	72	630.0	0.5999999999999979	3.5747	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	309	10.0	504	72	720.0	14.9	3.5747	xg	tirzepatide
+0.01443156	1 + every 1 day	20	subcutaneous				61.2	C57BL/6J	mice	male	8.0	diet:high-fat+high-sugar	20.0	0.2886312000000001	ADULT,OLDER_ADULT	PHASE3	309	15.0	504	72	1080.0	12.6	3.7432284	xg	tirzepatide
