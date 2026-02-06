@@ -4,6 +4,7 @@ The preclinical database (PCDB) is an open-source database derived from the biom
 
 This repository focuses on reproducible PCDB construction, including the entity linking and validation logics. It also provides analysis code for the A2H Obesity dataset for generating the insights presented in the research project publication.
 
+![](./assets/A2H_PCDB_Obesity_overview.png)
 
 ## Authors
 - Kaichi Xie — Graduate Student<sup>1,2,3</sup>
