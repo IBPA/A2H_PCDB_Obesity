@@ -35,6 +35,12 @@ You can leave the environment at any point with `conda deactivate`.
 pip install -r requirements.txt
 ```
 
+## PCDB Construction
+```console
+sh scripts/run_external_db_mapping.sh
+sh scripts/create_PCDB.sh
+```
+Additional data files need to be downloaded first (see data/PCDB/README.md) to run the construction code.
 
 ## Generate A2H obesity visualizations:
 ### Exploratory data analysis
