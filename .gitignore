@@ -2,4 +2,9 @@
 __*
 src/MSAP
 *.bak
+data/PCDB/*
+outputs/pcdb/*
+!data/PCDB/README.md
+!outputs/pcdb/README.md
+!data/PCDB/download.sh
 !src/obesity_model_performance/ML_pipeline/utils/__init__.py
