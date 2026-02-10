@@ -23,17 +23,12 @@ git clone https://github.com/IBPA/A2H_PCDB_Obesity.git
 cd A2H_PCDB_Obesity
 ```
 
-### Create and activate a Conda environment
+### Create and activate a Conda environment (Install dependencies via Conda)
 ```console
-conda create -n A2H_PCDB_obesity python=3.11.9
+conda env create -f environment.yml
 conda activate A2H_PCDB_obesity
 ```
 You can leave the environment at any point with `conda deactivate`.
-
-### Install Python dependencies
-```console
-pip install -r requirements.txt
-```
 
 ## PCDB Construction
 ```console
