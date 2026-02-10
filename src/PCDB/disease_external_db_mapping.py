@@ -41,14 +41,6 @@ def disease_mapping(row, lookup_table, ontology_name):
 
     return mapped_diseases, missed_diseases
 
-
-# def unmapped_disease_stats(pcdb):
-#     unmapped_disease_all = \
-#         list(itertools.chain(*(pcdb[pcdb['unmapped_diseases'] != ""]["unmapped_diseases"].to_list())))
-#     unmapped_disease_counter = Counter(unmapped_disease_all)
-#     return unmapped_disease_counter
-
-
 def get_llm_mapped_disease_mesh_id(df, llm_mapped_mesh_LUT):
     for i, row in df.iterrows():
         unmapped_diseases = row["unmapped_diseases"]

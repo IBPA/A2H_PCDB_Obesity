@@ -411,11 +411,6 @@ def main():
         lambda x: clean_drug_names_list(x) if x != "" else x
     )
 
-    # Print unmapped drug statistics
-    # print("\n--- Unmapped Drug Statistics ---")
-    # unmapped_counter = unmapped_drugs_stats(pcdb_mapped_drugs)
-    # print(unmapped_counter)
-
     # Save results
     pcdb_mapped_drugs.to_csv("outputs/pcdb/mapped_drugs.tsv", sep="\t", index=False)
     print("\nResults saved to: outputs/pcdb/mapped_drugs.tsv")

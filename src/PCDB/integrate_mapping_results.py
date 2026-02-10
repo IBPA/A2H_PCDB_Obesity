@@ -106,7 +106,7 @@ def main(input_dir: str, output_dir: str):
     diseases = pd.read_csv(input_path / "mapped_diseases.tsv", sep="\t", dtype=str, keep_default_na=False)
     drugs = pd.read_csv(input_path / "mapped_drugs.tsv", sep="\t", dtype=str, keep_default_na=False)
     animal_models = pd.read_csv(input_path / "mapped_animals.tsv", sep="\t", dtype=str, keep_default_na=False)
-    document_dates = pd.read_csv("data/PCDB/document_dates.tsv", sep="\t", dtype=str, keep_default_na=False)
+    document_dates = pd.read_csv("data/PCDB/external_database_mapping_utils/document_dates.tsv", sep="\t", dtype=str, keep_default_na=False)
 
     # Merge
     drugs = drugs[["pmcid", "mapped_drugs", "unmapped_drugs"]]
