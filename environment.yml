@@ -1,0 +1,28 @@
+name: A2H_PCDB_obesity
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11.9
+  - pandas
+  - seaborn
+  - click
+  - scipy
+  - scikit-learn
+  - imbalanced-learn
+  - xgboost
+  - shap
+  - mlxtend
+  - kneed
+  - pandarallel
+  - inflect
+  - openpyxl
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-gridextra
+  - r-lme4
+  - r-lmertest
+  - r-performance
+  - r-readr
+prefix: /mnt/share/kaichixie/miniconda3/envs/A2H_PCDB_obesity

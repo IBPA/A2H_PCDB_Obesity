@@ -1,0 +1,167 @@
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.3.3 
+Warning message:
+package ‘readr’ was built under R version 4.3.3 
+Loading required package: Matrix
+Warning messages:
+1: package ‘lme4’ was built under R version 4.3.3 
+2: package ‘Matrix’ was built under R version 4.3.3 
+
+Attaching package: ‘lmerTest’
+
+The following object is masked from ‘package:lme4’:
+
+    lmer
+
+The following object is masked from ‘package:stats’:
+
+    step
+
+Warning message:
+package ‘lmerTest’ was built under R version 4.3.3 
+Warning message:
+package ‘performance’ was built under R version 4.3.3 
+Warning message:
+package ‘ggplot2’ was built under R version 4.3.3 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘gridExtra’ was built under R version 4.3.3 
+
+================================================================================
+RATS: WEIGHT AND DURATION EFFECTS ANALYSIS
+================================================================================
+
+Reading data from: ../../data/obesity/obesity_a2h.csv
+
+Rows: 1430 Columns: 33
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (14): pmcid, preclinical_dosage_frequency, preclinical_administration_ro...
+dbl (19): preclinical_arm_id, preclinical_dosage_amount_value(mg/kg), precli...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+================================================================================
+SECTION 1: LIRAGLUTIDE RATS (DIO MODELS)
+================================================================================
+
+Sample size: 220 observations from 7 studies
+
+1.1: MAIN EFFECTS MODEL
+-----------------------
+Sex excluded (adjusted VIF = 18.46, highest multicollinearity)
+Including strain as fixed effect
+Including administration route as fixed effect
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Duration effect:  β =  10.490, SE = 0.285, p = 3.91e-90 ***
+                  95% CI: [9.931, 11.048]
+Weight effect:    β =  -3.613, SE = 0.311, p = 4.49e-24 ***
+                  95% CI: [-4.223, -3.003]
+1.2: WEIGHT × DURATION INTERACTION
+----------------------------------
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Interaction term dropped (rank deficiency or convergence issue)
+
+
+================================================================================
+SECTION 2: SEMAGLUTIDE RATS (DIO MODELS)
+================================================================================
+
+Sample size: 19 observations from 1 studies
+
+⚠ WARNING: Very small sample size (N=%d)
+ 19  Results should be interpreted with extreme caution
+
+2.1: MAIN EFFECTS MODEL
+-----------------------
+Sex excluded (only 1 level)
+Strain excluded (only 1 level)
+⚠ CRITICAL: Duration and weight are CONSTANT (no variation)
+  Cannot estimate duration or weight effects
+  All 19 rats have identical preclinical parameters
+  Only clinical variables vary across observations
+
+Fitting model with CLINICAL PREDICTORS ONLY:
+Model successfully fit with clinical predictors only
+Clinical dose:     β =  -1.956
+Clinical duration: β =   0.072
+Clinical N:        β =   0.890
+
+⚠ NOTE: Duration and weight effects CANNOT be estimated
+  (all preclinical parameters are constant)
+
+2.2: WEIGHT × DURATION INTERACTION
+----------------------------------
+Skipped - insufficient data for interaction test
+
+
+================================================================================
+SECTION 3: CROSS-DRUG COMPARISON (RATS DIO MODELS)
+================================================================================
+
+Combined sample: 239 observations from 8 studies
+  Liraglutide: 220 obs from 7 studies
+  Semaglutide: 19 obs from 1 studies
+
+3.1: DRUG × WEIGHT INTERACTION
+------------------------------
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+Interaction term dropped (semaglutide weight has no variation)
+
+3.2: DRUG × DURATION INTERACTION
+--------------------------------
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+Interaction term dropped (semaglutide duration has no variation)
+
+
+================================================================================
+SECTION 4: SUMMARY TABLE
+================================================================================
+
+        Drug N_obs N_studies Duration_beta Duration_p Weight_beta Weight_p
+ Liraglutide   220         7          10.5   3.91e-90       -3.61 4.49e-24
+ Semaglutide    19         1            NA         NA          NA       NA
+ Interaction_beta Interaction_p
+               NA            NA
+               NA            NA
+
+Significance: *** p<0.001, ** p<0.01, * p<0.05, NS p>=0.05
+Positive β for duration/weight indicates worse translation (larger gap)
+NA indicates insufficient data or model convergence issues
+
+✓ Results exported to: rats_weight_duration_summary.csv
+
+================================================================================
+SECTION 5: INTERPRETATION
+================================================================================
+
+See summary table above for complete results.
+Note: Rat data are limited. Non-significant findings may reflect insufficient power.
+Positive β indicates worse translation (larger animal-to-human gap).
+*** p<0.001, ** p<0.01, * p<0.05, NS p>=0.05
+
+================================================================================
+RATS ANALYSIS COMPLETE
+================================================================================

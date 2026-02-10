@@ -1,0 +1,3 @@
+"Drug","N_obs","N_studies","Duration_beta","Duration_p","Weight_beta","Weight_p","Interaction_beta","Interaction_p"
+"Liraglutide",220,7,10.489800730862,3.91478217119678e-90,-3.61291950174907,4.48888635080375e-24,NA,NA
+"Semaglutide",19,1,NA,NA,NA,NA,NA,NA

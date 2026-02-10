@@ -1,0 +1,169 @@
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.3.3 
+Warning message:
+package ‘readr’ was built under R version 4.3.3 
+Loading required package: Matrix
+Warning messages:
+1: package ‘lme4’ was built under R version 4.3.3 
+2: package ‘Matrix’ was built under R version 4.3.3 
+
+Attaching package: ‘lmerTest’
+
+The following object is masked from ‘package:lme4’:
+
+    lmer
+
+The following object is masked from ‘package:stats’:
+
+    step
+
+Warning message:
+package ‘lmerTest’ was built under R version 4.3.3 
+Warning message:
+package ‘performance’ was built under R version 4.3.3 
+Warning message:
+package ‘ggplot2’ was built under R version 4.3.3 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘gridExtra’ was built under R version 4.3.3 
+
+================================================================================
+MICE: WEIGHT AND DURATION EFFECTS ANALYSIS
+================================================================================
+
+Reading data from: ../../data/obesity/obesity_a2h.csv
+
+Rows: 1430 Columns: 33
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (14): pmcid, preclinical_dosage_frequency, preclinical_administration_ro...
+dbl (19): preclinical_arm_id, preclinical_dosage_amount_value(mg/kg), precli...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+================================================================================
+SECTION 1: LIRAGLUTIDE MICE (DIO MODELS)
+================================================================================
+
+Sample size: 560 observations from 21 studies
+
+1.1: MAIN EFFECTS MODEL
+-----------------------
+Including sex as fixed effect
+Including strain as fixed effect
+Administration route excluded (only 1 level)
+Duration effect:  β =   3.941, SE = 0.532, p = 4.92e-13 ***
+                  95% CI: [2.899, 4.983]
+Weight effect:    β =   5.803, SE = 0.534, p = 6.09e-25 ***
+                  95% CI: [4.755, 6.850]
+1.2: WEIGHT × DURATION INTERACTION
+----------------------------------
+Duration main:    β =   3.095, SE = 0.535, p = 1.27e-08
+Weight main:      β =   5.037, SE = 0.534, p = 1.33e-19
+Interaction:      β =   3.675, SE = 0.624, p = 7.04e-09 ***
+                  95% CI: [2.451, 4.899]
+
+→ SIGNIFICANT interaction: Weight effect varies by duration
+
+
+================================================================================
+SECTION 2: SEMAGLUTIDE MICE (DIO MODELS)
+================================================================================
+
+Sample size: 342 observations from 15 studies
+
+2.1: MAIN EFFECTS MODEL
+-----------------------
+Sex excluded (only 1 level)
+Including strain as fixed effect
+Administration route excluded (adjusted VIF = 11.09, not target variable)
+Duration effect:  β =  13.986, SE = 0.794, p = 6.16e-49 ***
+                  95% CI: [12.430, 15.541]
+Weight effect:    β =  -2.800, SE = 0.749, p = 2.20e-04 ***
+                  95% CI: [-4.268, -1.332]
+2.2: WEIGHT × DURATION INTERACTION
+----------------------------------
+Duration main:    β =  10.441, SE = 0.438, p = 1.77e-72
+Weight main:      β =   3.608, SE = 0.456, p = 4.37e-14
+Interaction:      β = -13.885, SE = 0.489, p = 7.04e-89 ***
+                  95% CI: [-14.843, -12.927]
+
+→ SIGNIFICANT interaction: Weight effect varies by duration
+
+
+================================================================================
+SECTION 3: CROSS-DRUG COMPARISON (MICE DIO MODELS)
+================================================================================
+
+Combined sample: 902 observations from 35 studies
+  Liraglutide: 560 obs from 21 studies
+  Semaglutide: 342 obs from 15 studies
+
+3.1: DRUG × WEIGHT INTERACTION
+------------------------------
+Drug × Weight:    β = -13.157, SE = 0.746, p = 9.86e-60 ***
+
+→ Weight effects DIFFER significantly between drugs
+→ Drug-specific mechanisms, limited generalizability
+
+3.2: DRUG × DURATION INTERACTION
+--------------------------------
+Drug × Duration:  β =  11.331, SE = 0.805, p = 1.25e-40 ***
+
+→ Duration effects DIFFER significantly between drugs
+
+3.3: DRUG × DURATION × WEIGHT INTERACTION
+-----------------------------------------
+Drug × Duration × Weight:  β = -12.373, SE = 0.924, p = 2.77e-37 ***
+
+→ The duration×weight interaction differs significantly between drugs
+  (i.e., weight modifies the duration effect differently for semaglutide vs liraglutide)
+
+
+================================================================================
+SECTION 4: SUMMARY TABLE
+================================================================================
+
+            Drug N_obs N_studies Duration_beta Duration_p Weight_beta Weight_p
+     Liraglutide   560        21          3.94   4.92e-13         5.8 6.09e-25
+     Semaglutide   342        15         13.99   6.16e-49        -2.8 2.20e-04
+ Drug difference   902        35         11.33   1.25e-40       -13.2 9.86e-60
+ Interaction_beta Interaction_p
+             3.68      7.04e-09
+           -13.89      7.04e-89
+               NA            NA
+
+Significance: *** p<0.001, ** p<0.01, * p<0.05, NS p>=0.05
+Positive β for duration/weight indicates worse translation (larger gap)
+
+✓ Results exported to: mice_weight_duration_summary.csv
+
+================================================================================
+SECTION 5: INTERPRETATION
+================================================================================
+
+See summary table above for complete results.
+Positive β indicates worse translation (larger animal-to-human gap).
+*** p<0.001, ** p<0.01, * p<0.05, NS p>=0.05
+
+================================================================================
+MICE ANALYSIS COMPLETE
+================================================================================
