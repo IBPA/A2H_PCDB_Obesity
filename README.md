@@ -1,8 +1,6 @@
 # Animal-to-human (A2H) Translation (Preclinical Database and Obesity case study)
 
-PCDB is now live! Please check out our website: https://www.preclinicaldata.org/ 
-
-![](./assets/PCDB_logo.png)
+<img src="./assets/PCDB_logo.png" width="100"/>Please check out our PCDB website: https://www.preclinicaldata.org</img>
 
 The preclinical database (PCDB) is an open-source database derived from the biomedical literature database, PubMed Central (PMC), and linked diseases, drug compounds, and animal species entities to public databases. Large language models were applied to filter publications searched through PMC via query templates with MeSH disease concepts and extracted entity mentions in the publications. All entites were linked and standardized to the public database based on their ontology structure to ensure proper semantic categories (e.g., disease entities are under MeSH Diseases category). As a case study, we connected preclinical evidence for Obesity drug development to corresponding clinical studies and identified key factors for lowering translation gaps.
 
