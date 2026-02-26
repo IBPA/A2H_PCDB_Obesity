@@ -2,9 +2,9 @@
 
 <img src="./assets/PCDB_logo.png" width="100"/>Please check out our PCDB website: https://www.preclinicaldata.org</img>
 
-The preclinical database (PCDB) is an open-source database derived from the biomedical literature database, PubMed Central (PMC), and linked diseases, drug compounds, and animal species entities to public databases. Large language models were applied to filter publications searched through PMC via query templates with MeSH disease concepts and extracted entity mentions in the publications. All entites were linked and standardized to the public database based on their ontology structure to ensure proper semantic categories (e.g., disease entities are under MeSH Diseases category). As a case study, we connected preclinical evidence for Obesity drug development to corresponding clinical studies and identified key factors for lowering translation gaps.
+The preclinical database (PCDB) is an open-source database derived from the biomedical literature database, PubMed Central (PMC), and linked diseases, drug compounds, and animal species entities to public databases. Large language models were applied to filter publications searched through PMC via query templates with MeSH disease concepts and extracted entity mentions in the publications. All entites were linked and standardized to the public database based on their ontology structure to ensure proper semantic categories (e.g., disease entities are under MeSH Diseases category). As a case study, we connected preclinical evidence for Obesity drug development to corresponding clinical studies and identified key factors for lowering translation gaps. We also provided a preclinical trial recommendation application for obesity trials.
 
-This repository focuses on reproducible PCDB construction, including the entity linking and validation logics. It also provides analysis code for the A2H Obesity dataset for generating the insights presented in the research project publication.
+This repository contains code for reproducible PCDB construction, including the entity linking and validation logics, complete analysis code for the A2H Obesity dataset, and a demonstration of the preclinical trial recommendation system, which can be found: [`recommendation system`](./src/obesity_preclinical_recommendation/demo.ipynb)
 
 ![](./assets/A2H_PCDB_Obesity_overview.png)
 
