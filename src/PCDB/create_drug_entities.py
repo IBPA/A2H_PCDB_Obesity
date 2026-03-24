@@ -22,12 +22,12 @@ def create_tree_id_lut(mesh_desc_path: str):
 
 
 def representative_name_for_cui(
-    mrconso,
+    mrconso_grouped,
     cui,
     tty_priority=("PT", "PN", "MH", "HT", "SY"),
     sab_priority=None,
 ):
-    df = mrconso[mrconso["CUI"] == cui]
+    df = mrconso_grouped.get_group(cui)
 
     tty_rank = {t: (len(tty_priority) - i) for i, t in enumerate(tty_priority)}
     sab_rank = (
@@ -295,9 +295,10 @@ def main(db_file_path: str, mesh_synonyms_path: str, drugbank_synonyms_path: str
         "SCUI", "SDUI", "SAB", "TTY", "CODE", "STR", "SRL", "SUPPRESS", "CVF",
     ]
 
+    mrconso_grouped = mrconso_df.groupby("CUI")
     pandarallel.initialize(progress_bar=True)
     pcdb_drug_entities["drug_name"] = pcdb_drug_entities["drug_name"].parallel_apply(
-        lambda x: representative_name_for_cui(mrconso_df, x[5:]) if x.startswith("UMLS") else x
+        lambda x: representative_name_for_cui(mrconso_grouped, x[5:]) if x.startswith("UMLS") else x
     )
 
     # Reorder columns and save

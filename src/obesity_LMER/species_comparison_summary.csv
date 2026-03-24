@@ -1,3 +1,0 @@
-"Drug","N_total","N_mice","N_rats","Species_main_effect_beta","Species_main_effect_CI_lower","Species_main_effect_CI_upper","Species_main_effect_p"
-"Liraglutide",780,560,220,-8.39024200574881,-9.79192018956911,-6.98856382192852,2.4959796032608e-29
-"Semaglutide",361,342,19,-8.82803104707774,-11.8326323991281,-5.82342969502734,1.92589271237602e-08

@@ -39,26 +39,10 @@ sh scripts/create_PCDB.sh
 ```
 Additional data files need to be downloaded first (see data/PCDB/README.md) to run the construction code.
 
-## Generate A2H obesity visualizations:
-### Exploratory data analysis
+### Retrospective Trial Ranking (Leave-one-drug-out evaluation):
 ```console
-sh scripts/plot_a2h_obesity_eda.sh
+sh scripts/run_ml_pipeline.sh
 ```
-### Analysis on machine learning model:
-```console
-sh scripts/plot_a2h_obesity_model_analysis.sh
-```
-### Machine learning model performance analysis:
-```console
-sh scripts/run_cross_drug_analysis.sh
-sh scripts/plot_a2h_obesity_model_performance.sh
-```
-### (Optional) Reproduce the model selection pipeline.
-```console
-./scripts/run_msap.sh
-```
-Note that this script is dependent on the MSAP pipeline internally used by the authors. For this reason, you will not be able to run this script unless you have access to the MSAP pipeline.
-
 
 ## Authors
 - Kaichi Xie — Graduate Student<sup>1,2,3</sup>
