@@ -11,22 +11,29 @@ def create_LUT(keys, values):
     return lut
 
 
-def find_PCDB_id_for_disease(df, pcdb_disease_entities):
-    first_cover_mesh = pcdb_disease_entities[
-        pcdb_disease_entities["disease_mesh_id"] != ""
-    ].copy()
-    first_cover_mesh_lut = create_LUT(
-        first_cover_mesh["disease_mesh_id"].to_list(),
-        first_cover_mesh["PCDB_id"].to_list(),
-    )
+def create_pcdb_id_LUT(df, value_col: str, key_col: str = "PCDB_id") -> dict[str, list[str]]:
+    """Map every external ID to the PCDB_ids carrying it.
 
-    second_cover_DO = pcdb_disease_entities[
-        pcdb_disease_entities["disease_mesh_id"] == ""
-    ].copy()
-    second_cover_DO_lut = create_LUT(
-        second_cover_DO["diseaseontology_ids"].to_list(),
-        second_cover_DO["PCDB_id"].to_list(),
+    Entity ID columns hold str-encoded lists (e.g. "['D017239']"), so each list is
+    exploded: an ID is matchable even when the entity carries several. One ID may
+    belong to more than one entity, hence a list of PCDB_ids per key.
+    """
+    target_df = df[df[value_col] != ""].copy()
+    target_df[value_col] = target_df[value_col].apply(
+        lambda x: ast.literal_eval(x) if isinstance(x, str) else x
     )
+    target_df = target_df.explode(value_col).reset_index(drop=True)
+    target_df = target_df[[key_col, value_col]].groupby(value_col).agg(list).reset_index()
+    return create_LUT(target_df[value_col].to_list(), target_df[key_col].to_list())
+
+
+def sort_by_pcdb_id(pcdb_ids, prefix: str):
+    return sorted(pcdb_ids, key=lambda x: int(x.split(prefix)[1]))
+
+
+def find_PCDB_id_for_disease(df, pcdb_disease_entities):
+    first_cover_mesh_lut = create_pcdb_id_LUT(pcdb_disease_entities, "mesh_id")
+    second_cover_DO_lut = create_pcdb_id_LUT(pcdb_disease_entities, "diseaseontology_id")
 
     def _find(row):
         disease_external_ids = row["disease_external_ids"]
@@ -39,12 +46,12 @@ def find_PCDB_id_for_disease(df, pcdb_disease_entities):
             if "mesh" in d_eid:
                 for m_id in d_eid["mesh"]:
                     if m_id in first_cover_mesh_lut:
-                        pcdb_ids.add(first_cover_mesh_lut[m_id])
+                        pcdb_ids.update(first_cover_mesh_lut[m_id])
                         resolved = True
             elif "diseaseontology" in d_eid:
                 for do_id in d_eid["diseaseontology"]:
                     if do_id in second_cover_DO_lut:
-                        pcdb_ids.add(second_cover_DO_lut[do_id])
+                        pcdb_ids.update(second_cover_DO_lut[do_id])
                         resolved = True
             if not resolved:
                 unresolved_disease_names.append(d_name)
@@ -63,57 +70,37 @@ def find_PCDB_id_for_disease(df, pcdb_disease_entities):
         df.apply(lambda x: _find(x), axis=1, result_type="expand")
     )
     df["disease_PCDB_id"] = df["disease_PCDB_id"].apply(
-        lambda x: list(x) if x != "" else x
+        lambda x: sort_by_pcdb_id(x, "PCDB_DI") if x != "" else x
     )
     return df
 
 
 def find_PCDB_id_for_drug(df, pcdb_drug_entities):
-    first_cover_drugbank = pcdb_drug_entities[
-        pcdb_drug_entities["drugbank_id"] != ""
-    ].copy()
-    pcdb_id_lut_only_db_ids = create_LUT(
-        first_cover_drugbank["drugbank_id"].tolist(),
-        first_cover_drugbank["PCDB_id"].tolist(),
-    )
-
-    second_cover_mesh = pcdb_drug_entities[
-        pcdb_drug_entities["mesh_id"].apply(lambda x: (x != "") and isinstance(x, str))
-    ]
-    pcdb_id_lut_only_mesh_ids = create_LUT(
-        second_cover_mesh["mesh_id"].tolist(),
-        second_cover_mesh["PCDB_id"].tolist(),
-    )
-
-    third_cover_umls = pcdb_drug_entities[
-        pcdb_drug_entities["UMLS_id"].apply(lambda x: (x != "") and isinstance(x, str))
-    ]
-    pcdb_id_lut_only_umls_ids = create_LUT(
-        third_cover_umls["UMLS_id"].tolist(),
-        third_cover_umls["PCDB_id"].tolist(),
-    )
+    pcdb_id_lut_only_db_ids = create_pcdb_id_LUT(pcdb_drug_entities, "drugbank_id")
+    pcdb_id_lut_only_mesh_ids = create_pcdb_id_LUT(pcdb_drug_entities, "mesh_id")
+    pcdb_id_lut_only_umls_ids = create_pcdb_id_LUT(pcdb_drug_entities, "UMLS_id")
 
     def _find(row):
         d_eids = row["drug_external_ids"]
         drug_names = row["drug_names"]
         unresolved_drug_names = []
         unresolved_drug_external_ids = []
-        pcdb_ids = []
+        pcdb_ids = set()
         for drug_name, drug_eid in zip(drug_names, d_eids):
             resolved = False
             if "drugbank" in drug_eid:
                 for db_id in drug_eid["drugbank"]:
-                    pcdb_ids.append(pcdb_id_lut_only_db_ids[db_id])
+                    pcdb_ids.update(pcdb_id_lut_only_db_ids[db_id])
                     resolved = True
             elif "mesh" in drug_eid:
                 for mesh_id in drug_eid["mesh"]:
                     if mesh_id in pcdb_id_lut_only_mesh_ids:
-                        pcdb_ids.append(pcdb_id_lut_only_mesh_ids[mesh_id])
+                        pcdb_ids.update(pcdb_id_lut_only_mesh_ids[mesh_id])
                         resolved = True
             elif "UMLS" in drug_eid:
                 for umls_id in drug_eid["UMLS"]:
                     if umls_id in pcdb_id_lut_only_umls_ids:
-                        pcdb_ids.append(pcdb_id_lut_only_umls_ids[umls_id])
+                        pcdb_ids.update(pcdb_id_lut_only_umls_ids[umls_id])
                         resolved = True
             if not resolved:
                 unresolved_drug_names.append(drug_name)
@@ -129,6 +116,9 @@ def find_PCDB_id_for_drug(df, pcdb_drug_entities):
 
     df[["drug_PCDB_id", "unresolved_drug_names", "unresolved_drug_external_ids"]] = (
         df.apply(lambda x: _find(x), result_type="expand", axis=1)
+    )
+    df["drug_PCDB_id"] = df["drug_PCDB_id"].apply(
+        lambda x: sort_by_pcdb_id(x, "PCDB_DR") if x != "" else x
     )
 
 

@@ -116,12 +116,15 @@ def main(input_dir: str, output_dir: str):
     a2h_db = pd.merge(left=a2h_db, right=animal_models, on='pmcid', how='outer')
 
     # Create structured columns
+    print("Processing Disease entities")
     a2h_db[["disease_names", "disease_external_ids"]] = a2h_db.progress_apply(
         create_disease_names_and_disease_eids, axis=1, result_type='expand'
     )
+    print("Processing Drug entities")
     a2h_db[["drug_names", "drug_external_ids"]] = a2h_db.progress_apply(
         create_drug_names_and_drug_eids, axis=1, result_type='expand'
     )
+    print("Processing Animal Model entities")
     a2h_db = create_animal_model_columns(a2h_db)
 
     # Merge document dates
