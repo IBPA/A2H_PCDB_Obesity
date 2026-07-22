@@ -2,7 +2,6 @@
 """
 Plot translation_outcome vs preclinical_dosage_duration for liraglutide and semaglutide in DIO mice.
 
-Points are colored by preclinical_animal_weight_before_treatment (darker = higher weight).
 Duration is grouped into four categories: Short (<4 weeks), Medium (4-8 weeks),
 Long (8-12 weeks), and Very Long (>12 weeks).
 
@@ -17,7 +16,6 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
 import seaborn as sns
 from pathlib import Path
 
@@ -29,10 +27,11 @@ COLORS = {
 
 # Define category order
 CATEGORY_ORDER = [
-    "Short\n(<4 weeks)",
-    "Medium\n(4-8 weeks)",
-    "Long\n(8-12 weeks)",
-    "Very Long\n(>12 weeks)"
+    "≤2 weeks",
+    "2–4 weeks",
+    "4–6 weeks",
+    "6–8 weeks",
+    ">8 weeks",
 ]
 
 
@@ -44,14 +43,16 @@ def load_data(data_path: Path) -> pd.DataFrame:
 
 def categorize_duration(days: float) -> str:
     """Categorize treatment duration into groups."""
-    if days < 28:
-        return "Short\n(<4 weeks)"
-    elif days < 56:
-        return "Medium\n(4-8 weeks)"
-    elif days < 84:
-        return "Long\n(8-12 weeks)"
+    if days <= 14:
+        return "≤2 weeks"
+    elif days <= 28:
+        return "2–4 weeks"
+    elif days <= 42:
+        return "4–6 weeks"
+    elif days <= 56:
+        return "6–8 weeks"
     else:
-        return "Very Long\n(>12 weeks)"
+        return ">8 weeks"
 
 
 def create_plot(df: pd.DataFrame, intervention: str, output_dir: Path) -> None:
@@ -77,15 +78,10 @@ def create_plot(df: pd.DataFrame, intervention: str, output_dir: Path) -> None:
     filtered_df['translation_outcome'] = pd.to_numeric(
         filtered_df['translation_outcome'], errors='coerce'
     )
-    filtered_df['preclinical_animal_weight_before_treatment(grams)'] = pd.to_numeric(
-        filtered_df['preclinical_animal_weight_before_treatment(grams)'], errors='coerce'
-    )
-
     # Remove rows with missing values in the columns we need
     filtered_df = filtered_df.dropna(subset=[
         'preclinical_dosage_duration(days)',
         'translation_outcome',
-        'preclinical_animal_weight_before_treatment(grams)'
     ])
 
     print(f"\n{intervention.capitalize()} - Number of data points: {len(filtered_df)}")
@@ -110,29 +106,14 @@ def create_plot(df: pd.DataFrame, intervention: str, output_dir: Path) -> None:
     x = filtered_df['x_pos'].values + jitter
 
     y = filtered_df['translation_outcome']
-    weight = filtered_df['preclinical_animal_weight_before_treatment(grams)']
 
     # Create figure
-    fig, ax = plt.subplots(figsize=(10, 7))
+    fig, ax = plt.subplots(figsize=(8, 7))
 
-    # Normalize weights for colormap (dark = high, light = low)
-    norm = plt.Normalize(vmin=weight.min(), vmax=weight.max())
-
-    # Create custom colormap from light to dark version of intervention color
-    base_color = np.array(COLORS[intervention])
-    light_color = base_color + (1 - base_color) * 0.7  # Lighten
-    dark_color = base_color * 0.3  # Darken significantly
-    cmap = mcolors.LinearSegmentedColormap.from_list(
-        f'{intervention}_cmap',
-        [light_color, base_color, dark_color]
-    )
-
-    # Create scatter plot with solid circles, colored by weight
-    scatter = ax.scatter(
+    # Create scatter plot with solid circles
+    ax.scatter(
         x, y,
-        c=weight,
-        cmap=cmap,
-        norm=norm,
+        color=COLORS[intervention],
         s=80,
         marker='o',
         edgecolors='black',
@@ -140,20 +121,16 @@ def create_plot(df: pd.DataFrame, intervention: str, output_dir: Path) -> None:
         alpha=0.8
     )
 
-    # Add colorbar
-    cbar = plt.colorbar(scatter, ax=ax)
-    cbar.set_label('Animal weight before treatment (grams)', fontsize=11)
-
     # Set x-axis ticks and labels
     ax.set_xticks(range(len(CATEGORY_ORDER)))
     ax.set_xticklabels(CATEGORY_ORDER)
-    ax.tick_params(axis='x', labelsize=12)
+    ax.tick_params(axis='x', labelsize=14)
     ax.set_xlim(-0.5, len(CATEGORY_ORDER) - 0.5)
 
     # Labels and title
-    ax.set_xlabel('Preclinical treatment duration', fontsize=12)
-    ax.set_ylabel('Translation gap\n(Δ in preclinical and clinical body weight % change)', fontsize=12)
-    ax.tick_params(axis='y', labelsize=12)
+    ax.set_xlabel('Preclinical treatment duration', fontsize=14)
+    ax.set_ylabel('Translation gap\n(δ in preclinical and clinical body weight % change)', fontsize=14)
+    ax.tick_params(axis='y', labelsize=14)
     ax.set_title(f'DIO mice treated with {intervention}', fontsize=14)
 
     # Grid for readability (only horizontal)
@@ -184,11 +161,7 @@ def create_combined_plot(df: pd.DataFrame, output_dir: Path) -> None:
         df: The obesity A2H dataset DataFrame.
         output_dir: Directory to save the output plot.
     """
-    fig, ax = plt.subplots(figsize=(12, 8))
-
-    scatters = {}
-    norms = {}
-    cmaps = {}
+    fig, ax = plt.subplots(figsize=(10, 8))
 
     for intervention in ['liraglutide', 'semaglutide']:
         # Filter for intervention, mice, and diet-induced disease models
@@ -206,15 +179,11 @@ def create_combined_plot(df: pd.DataFrame, output_dir: Path) -> None:
         filtered_df['translation_outcome'] = pd.to_numeric(
             filtered_df['translation_outcome'], errors='coerce'
         )
-        filtered_df['preclinical_animal_weight_before_treatment(grams)'] = pd.to_numeric(
-            filtered_df['preclinical_animal_weight_before_treatment(grams)'], errors='coerce'
-        )
 
         # Remove rows with missing values
         filtered_df = filtered_df.dropna(subset=[
             'preclinical_dosage_duration(days)',
             'translation_outcome',
-            'preclinical_animal_weight_before_treatment(grams)'
         ])
 
         print(f"\n{intervention.capitalize()} - Number of data points: {len(filtered_df)}")
@@ -240,26 +209,11 @@ def create_combined_plot(df: pd.DataFrame, output_dir: Path) -> None:
         x = filtered_df['x_pos'].values + jitter + offset
 
         y = filtered_df['translation_outcome']
-        weight = filtered_df['preclinical_animal_weight_before_treatment(grams)']
-
-        # Normalize weights for colormap
-        norm = plt.Normalize(vmin=weight.min(), vmax=weight.max())
-
-        # Create custom colormap
-        base_color = np.array(COLORS[intervention])
-        light_color = base_color + (1 - base_color) * 0.7
-        dark_color = base_color * 0.3
-        cmap = mcolors.LinearSegmentedColormap.from_list(
-            f'{intervention}_cmap',
-            [light_color, base_color, dark_color]
-        )
 
         # Create scatter plot
-        scatter = ax.scatter(
+        ax.scatter(
             x, y,
-            c=weight,
-            cmap=cmap,
-            norm=norm,
+            color=COLORS[intervention],
             s=70,
             marker='o',
             edgecolors='black',
@@ -268,20 +222,17 @@ def create_combined_plot(df: pd.DataFrame, output_dir: Path) -> None:
             label=intervention.capitalize()
         )
 
-        # Store for colorbars
-        scatters[intervention] = scatter
-        norms[intervention] = norm
-        cmaps[intervention] = cmap
-
     # Set x-axis ticks and labels
     ax.set_xticks(range(len(CATEGORY_ORDER)))
     ax.set_xticklabels(CATEGORY_ORDER)
+    ax.tick_params(axis='x', labelsize=14)
     ax.set_xlim(-0.5, len(CATEGORY_ORDER) - 0.5)
 
     # Labels and title
-    ax.set_xlabel('Preclinical Dosage Duration', fontsize=12)
-    ax.set_ylabel('Translation Gap', fontsize=12)
-    ax.set_title('Liraglutide vs Semaglutide in DIO-Induced Mice:\nTreatment Duration, Baseline Weight & Translation Gap', fontsize=14)
+    ax.set_xlabel('Preclinical treatment duration', fontsize=14)
+    ax.set_ylabel('Translation gap\n(δ in preclinical and clinical body weight % change)', fontsize=14)
+    ax.tick_params(axis='y', labelsize=14)
+    ax.set_title('Liraglutide vs Semaglutide in DIO-Induced Mice:\nTreatment Duration & Translation Gap', fontsize=14)
 
     # Grid for readability
     ax.yaxis.grid(True, alpha=0.3)
@@ -293,37 +244,16 @@ def create_combined_plot(df: pd.DataFrame, output_dir: Path) -> None:
     # Add legend
     ax.legend(loc='upper left', fontsize=11)
 
-    # Add a single black-white colorbar for weight reference
-    # Get combined weight range
-    all_weights = []
-    for intervention in ['liraglutide', 'semaglutide']:
-        mask = (
-            (df['intervention'] == intervention) &
-            (df['preclinical_animal_species'] == 'mice') &
-            (df['preclinical_disease_model'].str.startswith('diet:', na=False))
-        )
-        filtered = df[mask].copy()
-        filtered['preclinical_animal_weight_before_treatment(grams)'] = pd.to_numeric(
-            filtered['preclinical_animal_weight_before_treatment(grams)'], errors='coerce'
-        )
-        filtered = filtered.dropna(subset=['preclinical_animal_weight_before_treatment(grams)'])
-        all_weights.extend(filtered['preclinical_animal_weight_before_treatment(grams)'].values)
-
-    # Create a ScalarMappable for black-white colorbar
-    sm = plt.cm.ScalarMappable(
-        cmap='Greys',
-        norm=plt.Normalize(vmin=min(all_weights), vmax=max(all_weights))
-    )
-    sm.set_array([])
-    cbar = plt.colorbar(sm, ax=ax, pad=0.02, aspect=30, shrink=0.7)
-    cbar.set_label('Animal Weight Before Treatment (g)', fontsize=11)
-
     plt.tight_layout()
 
     # Save the plot
     output_path = output_dir / 'combined_mice_plot.svg'
     plt.savefig(output_path, dpi=150)
     print(f"\nCombined plot saved to: {output_path}")
+
+    output_path_png = output_dir / 'combined_mice_plot.png'
+    plt.savefig(output_path_png, dpi=150)
+    print(f"Combined plot saved to: {output_path_png}")
 
     plt.close()
 
@@ -338,7 +268,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
 
     print(f"Loading data from: {data_dir}")
-    df = load_data(data_dir / "obesity_a2h.csv")
+    df = load_data(data_dir / "obesity_a2h_dataset.csv")
     print(f"Total rows: {len(df)}")
 
     # Generate plot for liraglutide

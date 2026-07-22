@@ -7,7 +7,7 @@ preclinical_arm_id,pmcid,preclinical_dosage_amount_value(mg/kg),preclinical_dosa
 16,PMC10131131,0.2,2 + every 1 day,14,subcutaneous,77,105,,,C57BL/6J,mice,male,7,diet:high-fat,-21.0,28.0,5.6000000000000005,liraglutide
 19,PMC10131131,0.2,2 + every 1 day,14,subcutaneous,98,105,,,C57BL/6J,mice,male,10,diet:high-fat+high-sugar,-15.0,28.0,5.6000000000000005,liraglutide
 21,PMC10211343,150.0,,42,,42,112,20.0,35.0,C57BL/6J,mice,male,12,diet:high-fat,-17.142857142857142,,,metformin
-22,PMC10218334,0.120,1 + every 1 day,84,subcutaneous,91,266,,48.0,Ldlr−/−.Leiden,mice,male,15,diet:high-fat+high-fructose,-28.125,84.0,10.08,semaglutide
+22,PMC10218334,0.120,1 + every 1 day,84,subcutaneous,91,266,,48.0,Ldlr−/−.Leiden,mice,male,15,genetic,-28.125,84.0,10.08,semaglutide
 23,PMC10339203,0.05,1 + every 1 day,42,subcutaneous,70,77,,48.0,db/db,mice,male,10,genetic,-9.0,42.0,2.1,semaglutide
 24,PMC10339203,0.025,1 + every 1 day,21,subcutaneous,154,154,,650.0,Sprague–Dawley,rats,male,5,diet:high-fat,-9.0,21.0,0.525,semaglutide
 26,PMC10344952,0.04113641,2 + every 1 day,28,subcutaneous,154,154,,45.5,C57BL/6J,mice,male,9,diet:high-fat,-17.0,56.0,2.30363896,semaglutide
@@ -46,16 +46,16 @@ preclinical_arm_id,pmcid,preclinical_dosage_amount_value(mg/kg),preclinical_dosa
 134,PMC4921942,0.003,1 + every 1 day,14,subcutaneous,,,,700.0,Sprague–Dawley,rats,male,6,diet:high-fat,-4.5,14.0,0.042,exenatide
 137,PMC4939947,50,5 + every 1 week,56,oral gavage,42,77,,30.4,C57BL/6,mice,male,8,diet:high-fat,-31.8032786885246,40.0,2000.0,orlistat
 138,PMC4955985,250,1 + every 1 day,28,,63,63,,,ob/ob,mice,male,10,genetic,-2.0700000000000003,28.0,7000.0,metformin
-144,PMC5348377,0.4,1 + every 1 day,84,subcutaneous,49,56,,31.0,KKAy,mice,male,7,diet:high-fat,-25.806451612903224,84.0,33.6,liraglutide
+144,PMC5348377,0.4,1 + every 1 day,84,subcutaneous,49,56,,31.0,KKAy,mice,male,7,genetic,-25.806451612903224,84.0,33.6,liraglutide
 146,PMC5482143,150,1 + every 1 day,28,intraperitoneal,21,84,,28.0,C57BL/6J,mice,male,13,diet:high-fat,-10.714285714285714,28.0,4200.0,metformin
 150,PMC5493335,10,1 + every 1 day,28,intragastric,28,56,17.5,27.5,C57BL/6J,mice,male,8,diet:high-fat,-11.11111111111111,28.0,280.0,orlistat
 151,PMC5493335,15,1 + every 1 day,28,intragastric,28,56,17.5,28.0,C57BL/6J,mice,male,8,diet:high-fat,-11.11111111111111,28.0,420.0,canagliflozin
 152,PMC5493335,60,1 + every 1 day,28,intragastric,28,56,17.5,28.0,C57BL/6J,mice,male,8,diet:high-fat,-14.814814814814813,28.0,1680.0,canagliflozin
 155,PMC5518799,0.1,2 + every 1 day,56,subcutaneous,28,119,,34.0,C57BL/6J,mice,,6,diet:high-fat,-9.375,112.0,11.200000000000001,liraglutide
-161,PMC5713233,250,1 + every 1 day,98,oral,70,70,,,Ldlr−/−,mice,male,8,diet:high-fat,6.0,98.0,24500.0,metformin
-162,PMC5713233,250,1 + every 1 day,56,oral,70,112,,,Ldlr−/−,mice,male,8,diet:high-fat,-10.0,56.0,14000.0,metformin
+161,PMC5713233,250,1 + every 1 day,98,oral,70,70,,,Ldlr−/−,mice,male,8,genetic,6.0,98.0,24500.0,metformin
+162,PMC5713233,250,1 + every 1 day,56,oral,70,112,,,Ldlr−/−,mice,male,8,genetic,-10.0,56.0,14000.0,metformin
 169,PMC5966539,0.4,1 + every 1 day,84,subcutaneous,21,84,,450.0,Wistar,rats,male,8,diet:high-fat,-31.11111111111111,84.0,33.6,liraglutide
-170,PMC5966539,0.4,1 + every 1 day,84,subcutaneous,21,84,,365.0,Goto-Kakizaki,rats,male,8,diet:high-fat,-8.21917808219178,84.0,33.6,liraglutide
+170,PMC5966539,0.4,1 + every 1 day,84,subcutaneous,21,84,,365.0,Goto-Kakizaki,rats,male,8,genetic,-8.21917808219178,84.0,33.6,liraglutide
 178,PMC6055720,0.05,2 + every 1 day,32,subcutaneous,,,,45.0,C57BL/6N,mice,male,12,diet:high-fat,-10.5,64.0,3.2,liraglutide
 179,PMC6055720,0.04,1 + every 1 day,70,subcutaneous,5840,5840,12.0,11500.0,,cynomolgus monkeys,,9,diet:high-fat+high-sugar,-2.5,70.0,2.8000000000000003,liraglutide
 180,PMC6061715,100,1 + every 1 day,14,intraperitoneal,,,21.0,42.5,CD-1,mice,male,6,diet:high-fat+high-sugar,-16.470588235294116,14.0,1400.0,metformin
@@ -96,7 +96,7 @@ preclinical_arm_id,pmcid,preclinical_dosage_amount_value(mg/kg),preclinical_dosa
 253,PMC8575871,300,1 + every 1 day,42,oral gavage,35,119,,45.0,C57BL/6,mice,male,15,diet:high-fat,-20.0,42.0,12600.0,metformin
 254,PMC8577482,100,1 + every 1 day,42,oral gavage,56,126,,,C57BL/6J,mice,male,4,diet:high-fat,-15.0,42.0,4200.0,metformin
 255,PMC8577482,100,1 + every 1 day,42,oral gavage,56,126,,,C57BL/6J,mice,male,4,diet:high-fat,-14.0,42.0,4200.0,metformin
-263,PMC8663785,0.2,1 + every 1 day,112,subcutaneous,56,56,,24.0,Ldlr−/−,mice,male,9,diet:high-fat+high-cholesterol,-41.666666666666664,112.0,22.400000000000002,liraglutide
+263,PMC8663785,0.2,1 + every 1 day,112,subcutaneous,56,56,,24.0,Ldlr−/−,mice,male,9,genetic,-41.666666666666664,112.0,22.400000000000002,liraglutide
 272,PMC8910281,800,1 + every 1 day,40,gastric gavage,35,112,,57.2,ob/ob,mice,male,6,genetic + diet:high-fat,-9.96503496503497,40.0,32000.0,orlistat
 273,PMC8988407,1,1 + every 1 day,42,intraperitoneal,,,225.0,416.38,Wistar,rats,female,10,diet:high-fat,0.25458006186057436,42.0,42.0,naltrexone
 277,PMC9136616,80,1 + every 1 day,42,,56,126,,40.0,C57BL/6J,mice,male,8,diet:high-fat,-30.0,42.0,3360.0,orlistat

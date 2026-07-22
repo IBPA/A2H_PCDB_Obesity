@@ -175,7 +175,7 @@ def plot_translation_gap(dio_df, output_path, figsize=(7, 6)):
     # Customize axes
     ax.set_xticks([0, 1])
     ax.set_xticklabels(['DIO mice', 'DIO rats'], fontsize=12)
-    ax.set_ylabel('Translation gap\n(Δ in preclinical and clinical body weight % change)', fontsize=12)
+    ax.set_ylabel('Translation gap\n(δ in preclinical and clinical body weight % change)', fontsize=12)
 
     # Add gridlines for y-axis only
     ax.yaxis.grid(True, linestyle='-', alpha=0.4)
@@ -197,7 +197,7 @@ def plot_translation_gap(dio_df, output_path, figsize=(7, 6)):
 @click.option(
     '--data-path',
     type=click.Path(exists=True),
-    default='../../data/obesity/obesity_a2h.csv',
+    default='../../data/obesity/obesity_a2h_dataset.csv',
     help='Path to the obesity A2H dataset CSV.'
 )
 @click.option(

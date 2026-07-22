@@ -22,13 +22,13 @@ from pathlib import Path
 def load_data(data_dir: Path):
     """Load the preclinical, clinical, and A2H datasets."""
     a2h_preclinical_only = pd.read_csv(
-        data_dir / "preclinical_arms_in_a2h.csv", dtype=str, keep_default_na=False
+        data_dir / "preclinical_arms.csv", dtype=str, keep_default_na=False
     )
     a2h_clinical_only = pd.read_csv(
-        data_dir / "clinical_arms_in_a2h.csv", dtype=str, keep_default_na=False
+        data_dir / "clinical_arms.csv", dtype=str, keep_default_na=False
     )
     a2h_dataset = pd.read_csv(
-        data_dir / "obesity_a2h.csv", dtype=str, keep_default_na=False
+        data_dir / "obesity_a2h_dataset.csv", dtype=str, keep_default_na=False
     )
     return a2h_preclinical_only, a2h_clinical_only, a2h_dataset
 

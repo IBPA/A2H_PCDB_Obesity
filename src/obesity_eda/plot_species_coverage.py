@@ -160,7 +160,7 @@ def main():
     output_dir = script_dir / "../../outputs/obesity_eda"
     print(f"Loading data from: {data_dir}")
 
-    df = pd.read_csv(data_dir / "obesity_a2h.csv", dtype=str, keep_default_na=False)
+    df = pd.read_csv(data_dir / "obesity_a2h_dataset.csv", dtype=str, keep_default_na=False)
     print(f"Total rows: {len(df)}")
 
     # Calculate coverage
