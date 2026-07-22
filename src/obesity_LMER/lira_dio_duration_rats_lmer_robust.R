@@ -52,7 +52,7 @@ cat("LIRAGLUTIDE DIO DURATION ANALYSIS: LMER — RATS ONLY\n")
 cat("================================================================================\n\n")
 
 args <- commandArgs(trailingOnly = TRUE)
-data_file <- if (length(args) >= 1) args[1] else "../../data/obesity_a2h_v2.csv"
+data_file <- if (length(args) >= 1) args[1] else "../../data/obesity/obesity_a2h_dataset.csv"
 cat(sprintf("Reading data from: %s\n\n", data_file))
 
 df <- read.csv(data_file, check.names = FALSE)
