@@ -1,0 +1,60 @@
+scope,name,block,n_missing,n_values,pct_missing
+column,preclinical_animal_weight_before_treatment(grams),numeric,308,1430,21.54
+column,preclinical_animal_age_before_treatment(days),numeric,186,1430,13.01
+column,frequency_ratio,numeric,29,1430,2.03
+column,preclinical_animal_subject_size,numeric,19,1430,1.33
+column,cumulative_dose_translation_ratio,numeric,5,1430,0.35
+column,is_route_match,numeric,0,1430,0.0
+column,preclinical_animal_sex_Unknown,one_hot,0,1430,0.0
+column,preclinical_animal_sex_both,one_hot,0,1430,0.0
+column,preclinical_animal_sex_female,one_hot,0,1430,0.0
+column,preclinical_animal_sex_male,one_hot,0,1430,0.0
+column,preclinical_disease_model_diet-induced,one_hot,0,1430,0.0
+column,preclinical_disease_model_genetic,one_hot,0,1430,0.0
+column,preclinical_disease_model_genetic+diet,one_hot,0,1430,0.0
+column,dose_translation_ratio,numeric,0,1430,0.0
+column,duration_ratio,numeric,0,1430,0.0
+column,preclinical_dosage_duration(days),numeric,0,1430,0.0
+column,preclinical_animal_species_rats,one_hot,0,1430,0.0
+column,clinical_age_groups_ADULT,one_hot,0,1430,0.0
+column,"clinical_age_groups_ADULT,OLDER_ADULT",one_hot,0,1430,0.0
+column,clinical_age_groups_CHILD,one_hot,0,1430,0.0
+column,"clinical_age_groups_CHILD,ADULT",one_hot,0,1430,0.0
+column,"clinical_age_groups_CHILD,ADULT,OLDER_ADULT",one_hot,0,1430,0.0
+column,clinical_phases_PHASE2,one_hot,0,1430,0.0
+column,clinical_phases_PHASE3,one_hot,0,1430,0.0
+column,clinical_phases_PHASE4,one_hot,0,1430,0.0
+column,clinical_phases_Unknown,one_hot,0,1430,0.0
+column,clinical_administration_route_oral,one_hot,0,1430,0.0
+column,clinical_sample_size,numeric,0,1430,0.0
+column,preclinical_animal_species_hamsters,one_hot,0,1430,0.0
+column,preclinical_animal_species_mice,one_hot,0,1430,0.0
+column,preclinical_animal_strain_ICR,one_hot,0,1430,0.0
+column,preclinical_administration_route_intraperitoneal,one_hot,0,1430,0.0
+column,preclinical_administration_route_oral,one_hot,0,1430,0.0
+column,preclinical_administration_route_subcutaneous,one_hot,0,1430,0.0
+column,preclinical_administration_route_unknown,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Ay,one_hot,0,1430,0.0
+column,preclinical_animal_strain_C57BL/6,one_hot,0,1430,0.0
+column,preclinical_animal_strain_CD-1,one_hot,0,1430,0.0
+column,preclinical_animal_strain_DIO-prone Sprague–Dawley,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Golden Syrian,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Goto-Kakizaki,one_hot,0,1430,0.0
+column,preclinical_animal_strain_KKAy,one_hot,0,1430,0.0
+column,preclinical_animal_species_cynomolgus monkeys,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Ldlr−/−,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Ldlr−/−.Leiden,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Long-Evans,one_hot,0,1430,0.0
+column,preclinical_animal_strain_SDT fatty,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Sprague-Dawley,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Unknown,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Wistar,one_hot,0,1430,0.0
+column,preclinical_animal_strain_Zucker fatty,one_hot,0,1430,0.0
+column,preclinical_animal_strain_db/db,one_hot,0,1430,0.0
+column,preclinical_animal_strain_ob/ob,one_hot,0,1430,0.0
+column,clinical_administration_route_subcutaneous,one_hot,0,1430,0.0
+TOTAL,all numeric features,numeric,547,14300,3.83
+TOTAL,all one-hot features,one_hot,0,62920,0.0
+TOTAL,all features,all,547,77220,0.71
+TOTAL,candidate pairings with >=1 imputed,pairing,518,1430,36.22
+TOTAL,target (abs_gap),target,0,1430,0.0

@@ -44,12 +44,6 @@ def calculate_stats(data):
     }
 
 
-def perform_ttest(group1, group2):
-    """Perform independent t-test between two groups."""
-    t_stat, p_value = stats.ttest_ind(group1, group2)
-    return p_value
-
-
 def plot_translation_gap(dio_df, output_path, figsize=(7, 6)):
     """Create translation gap plot for DIO mice vs rats."""
 

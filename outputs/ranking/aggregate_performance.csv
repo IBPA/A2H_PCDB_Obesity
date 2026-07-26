@@ -1,0 +1,21 @@
+group,level,metric,mean,ci_lo,ci_hi
+all 9 drugs,drug,norm_rank,0.772,0.617,0.906
+all 9 drugs,drug,baseline_gap,13.297,9.894,17.446
+all 9 drugs,drug,recommended_gap,6.605,2.962,11.146
+all 9 drugs,drug,reduction_pp,6.692,4.219,8.774
+all 9 drugs,drug,reduction_pct,50.328,30.985,72.658
+all 9 drugs,cell,norm_rank,0.652,0.572,0.727
+all 9 drugs,cell,baseline_gap,12.028,11.068,13.032
+all 9 drugs,cell,recommended_gap,5.862,4.764,7.099
+all 9 drugs,cell,reduction_pp,6.166,4.665,7.609
+all 9 drugs,cell,reduction_pct,51.266,40.357,60.821
+"7 drugs (excl. tirzepatide, medi0382)",drug,norm_rank,0.811,0.714,0.914
+"7 drugs (excl. tirzepatide, medi0382)",drug,baseline_gap,12.475,9.78,15.534
+"7 drugs (excl. tirzepatide, medi0382)",drug,recommended_gap,4.261,1.832,7.406
+"7 drugs (excl. tirzepatide, medi0382)",drug,reduction_pp,8.214,6.913,9.634
+"7 drugs (excl. tirzepatide, medi0382)",drug,reduction_pct,65.846,51.437,82.693
+"7 drugs (excl. tirzepatide, medi0382)",cell,norm_rank,0.743,0.69,0.794
+"7 drugs (excl. tirzepatide, medi0382)",cell,baseline_gap,13.064,12.269,13.866
+"7 drugs (excl. tirzepatide, medi0382)",cell,recommended_gap,4.843,3.858,5.963
+"7 drugs (excl. tirzepatide, medi0382)",cell,reduction_pp,8.221,6.919,9.424
+"7 drugs (excl. tirzepatide, medi0382)",cell,reduction_pct,62.931,54.149,70.456

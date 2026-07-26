@@ -1,0 +1,6 @@
+drug,design_id,pmcid,n_cells_selected,n_cells_total,selection_frac,mean_pred_gap,mean_chosen_gap
+liraglutide,rats/SD/DIO/male/SC/21d/n=10/age=?d/w=514g,PMC7211411,13,20,0.65,3.156,3.82
+liraglutide,mice/C57BL6/DIO/male/SC/18d/n=8/age=112d/w=44g,PMC10838268,6,20,0.3,3.273,7.72
+liraglutide,mice/C57BL6/DIO/male/SC/14d/n=8/age=112d/w=42g,PMC9730228,1,20,0.05,3.553,22.9
+semaglutide,mice/C57BL6/DIO/male/SC/8d/n=8/age=?d/w=50g,PMC9305623,17,19,0.89,3.024,5.52
+semaglutide,mice/C57BL6/DIO/male/oral/3d/n=6/age=231d/w=32g,PMC10489807,2,19,0.11,5.702,1.31

@@ -1,18 +1,18 @@
 """
-Generate per_drug_gap_ci.csv from lodo_ranking_results.csv.
+Generate per_drug_gap_ci.csv from the FOLD-SAFE lodo_ranking_results.csv.
 
 Bootstraps evaluation cells within each drug (N=10,000, seed=42) to produce
 95% CI on mean status_quo gap and mean chosen_gap per drug. Drugs with only
 one evaluation cell have no CI (empty bounds).
 
-Output: app/results/ranking_evaluation/per_drug_gap_ci.csv
+Output: outputs/per_drug_gap_ci.csv
 """
 
 import numpy as np
 import pandas as pd
 from pathlib import Path
 
-RESULTS_DIR = Path(__file__).parent.parent.parent / "outputs" / "ranking_evaluation"
+RESULTS_DIR = Path(__file__).parent.parent.parent / "outputs" / "ranking"
 LODO_CSV    = RESULTS_DIR / "lodo_ranking_results.csv"
 OUT_CSV     = RESULTS_DIR / "per_drug_gap_ci.csv"
 N_BOOT      = 10_000

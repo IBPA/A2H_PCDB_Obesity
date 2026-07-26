@@ -1,0 +1,113 @@
+{
+  "model_family": "LightGBM",
+  "folds": {
+    "canagliflozin": {
+      "params": {
+        "n_estimators": 702,
+        "max_depth": 9,
+        "learning_rate": 0.010027646230183526,
+        "subsample": 0.77579697362929,
+        "colsample_bytree": 0.5787067410155966,
+        "reg_alpha": 6.8823920064307496,
+        "reg_lambda": 0.0004726696866194003
+      },
+      "lono_mae": 3.5590989792301633
+    },
+    "exenatide": {
+      "params": {
+        "n_estimators": 346,
+        "max_depth": 8,
+        "learning_rate": 0.024694890262869976,
+        "subsample": 0.9291753959225457,
+        "colsample_bytree": 0.8166912048665729,
+        "reg_alpha": 6.214443068408654,
+        "reg_lambda": 0.001144660785165695
+      },
+      "lono_mae": 3.2912999829519562
+    },
+    "liraglutide": {
+      "params": {
+        "n_estimators": 227,
+        "max_depth": 4,
+        "learning_rate": 0.024878734419814436,
+        "subsample": 0.762378215816119,
+        "colsample_bytree": 0.7159725093210578,
+        "reg_alpha": 0.0028585493941961923,
+        "reg_lambda": 0.11462107403425033
+      },
+      "lono_mae": 4.784271612823391
+    },
+    "medi0382": {
+      "params": {
+        "n_estimators": 225,
+        "max_depth": 10,
+        "learning_rate": 0.028168691399078218,
+        "subsample": 0.65068717724666,
+        "colsample_bytree": 0.7576682578486273,
+        "reg_alpha": 8.847532000887176,
+        "reg_lambda": 0.0003063820083802711
+      },
+      "lono_mae": 3.454437586248675
+    },
+    "metformin": {
+      "params": {
+        "n_estimators": 569,
+        "max_depth": 6,
+        "learning_rate": 0.02777101213359687,
+        "subsample": 0.920870569138197,
+        "colsample_bytree": 0.8309979903290627,
+        "reg_alpha": 6.409571398966453,
+        "reg_lambda": 5.56951245166058
+      },
+      "lono_mae": 3.381208059626107
+    },
+    "orlistat": {
+      "params": {
+        "n_estimators": 401,
+        "max_depth": 9,
+        "learning_rate": 0.022149551984925093,
+        "subsample": 0.6333716260391198,
+        "colsample_bytree": 0.93398009167992,
+        "reg_alpha": 0.002429256068153358,
+        "reg_lambda": 0.001160319341242012
+      },
+      "lono_mae": 3.0551286053849607
+    },
+    "semaglutide": {
+      "params": {
+        "n_estimators": 505,
+        "max_depth": 7,
+        "learning_rate": 0.015876915401565186,
+        "subsample": 0.542576268666326,
+        "colsample_bytree": 0.7901309826110019,
+        "reg_alpha": 8.998488264192604,
+        "reg_lambda": 0.003139072292503155
+      },
+      "lono_mae": 3.68490321247758
+    },
+    "survodutide": {
+      "params": {
+        "n_estimators": 796,
+        "max_depth": 10,
+        "learning_rate": 0.01153295177243623,
+        "subsample": 0.5789656062326256,
+        "colsample_bytree": 0.6284387420965367,
+        "reg_alpha": 8.207347360380055,
+        "reg_lambda": 0.0008527878428271493
+      },
+      "lono_mae": 3.521540569281801
+    },
+    "tirzepatide": {
+      "params": {
+        "n_estimators": 697,
+        "max_depth": 10,
+        "learning_rate": 0.011958198656809313,
+        "subsample": 0.7434349740100332,
+        "colsample_bytree": 0.7505026631019919,
+        "reg_alpha": 6.841411540817521,
+        "reg_lambda": 0.014560168276975169
+      },
+      "lono_mae": 3.398616107025069
+    }
+  }
+}

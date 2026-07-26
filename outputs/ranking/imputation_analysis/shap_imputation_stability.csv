@@ -1,0 +1,4 @@
+variant,n_features,weight_mean_abs_shap,weight_rank,top_feature,spearman_vs_production_model,top10_overlap_vs_production_model,production_model_weight_n_measured,production_model_weight_n_filled,production_model_weight_mean_abs_shap_measured,production_model_weight_mean_abs_shap_filled
+production_model,54,3.948,1,preclinical_animal_weight_before_treatment(grams),1.0,10,1122,308,4.661,1.35
+mice,54,3.018,2,preclinical_dosage_duration(days),0.946,9,1122,308,4.661,1.35
+complete_case,53,5.035,1,preclinical_animal_weight_before_treatment(grams),0.968,9,1122,308,4.661,1.35

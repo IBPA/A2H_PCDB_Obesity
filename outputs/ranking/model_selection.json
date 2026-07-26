@@ -1,0 +1,126 @@
+{
+  "selected_family": "LightGBM",
+  "n_seeds": 10,
+  "seed_wins": {
+    "LightGBM": 6,
+    "XGBoost": 3,
+    "RandomForest": 1
+  },
+  "win_frac": {
+    "LightGBM": 0.6,
+    "XGBoost": 0.3,
+    "RandomForest": 0.1
+  },
+  "mean_pct_rank": {
+    "LightGBM": 70.2,
+    "XGBoost": 62.5,
+    "RandomForest": 62.5
+  },
+  "mean_chosen_gap": {
+    "LightGBM": 8.2,
+    "XGBoost": 8.61,
+    "RandomForest": 9.53
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "LightGBM_score": 70.6,
+      "XGBoost_score": 58.5,
+      "RandomForest_score": 63.0,
+      "LightGBM_gap": 8.56,
+      "XGBoost_gap": 8.87,
+      "RandomForest_gap": 9.31,
+      "winner": "LightGBM"
+    },
+    {
+      "seed": 1,
+      "LightGBM_score": 71.5,
+      "XGBoost_score": 51.9,
+      "RandomForest_score": 61.4,
+      "LightGBM_gap": 8.01,
+      "XGBoost_gap": 9.92,
+      "RandomForest_gap": 10.56,
+      "winner": "LightGBM"
+    },
+    {
+      "seed": 2,
+      "LightGBM_score": 66.1,
+      "XGBoost_score": 66.2,
+      "RandomForest_score": 60.0,
+      "LightGBM_gap": 8.73,
+      "XGBoost_gap": 8.55,
+      "RandomForest_gap": 9.69,
+      "winner": "XGBoost"
+    },
+    {
+      "seed": 3,
+      "LightGBM_score": 68.5,
+      "XGBoost_score": 64.2,
+      "RandomForest_score": 59.5,
+      "LightGBM_gap": 8.69,
+      "XGBoost_gap": 8.7,
+      "RandomForest_gap": 9.76,
+      "winner": "LightGBM"
+    },
+    {
+      "seed": 4,
+      "LightGBM_score": 72.3,
+      "XGBoost_score": 55.0,
+      "RandomForest_score": 64.8,
+      "LightGBM_gap": 7.6,
+      "XGBoost_gap": 9.47,
+      "RandomForest_gap": 9.92,
+      "winner": "LightGBM"
+    },
+    {
+      "seed": 5,
+      "LightGBM_score": 75.5,
+      "XGBoost_score": 58.0,
+      "RandomForest_score": 62.2,
+      "LightGBM_gap": 7.02,
+      "XGBoost_gap": 9.08,
+      "RandomForest_gap": 9.26,
+      "winner": "LightGBM"
+    },
+    {
+      "seed": 6,
+      "LightGBM_score": 76.9,
+      "XGBoost_score": 68.0,
+      "RandomForest_score": 72.4,
+      "LightGBM_gap": 7.03,
+      "XGBoost_gap": 8.18,
+      "RandomForest_gap": 8.48,
+      "winner": "LightGBM"
+    },
+    {
+      "seed": 7,
+      "LightGBM_score": 63.5,
+      "XGBoost_score": 52.6,
+      "RandomForest_score": 63.6,
+      "LightGBM_gap": 9.23,
+      "XGBoost_gap": 9.94,
+      "RandomForest_gap": 9.09,
+      "winner": "RandomForest"
+    },
+    {
+      "seed": 8,
+      "LightGBM_score": 71.6,
+      "XGBoost_score": 74.6,
+      "RandomForest_score": 64.0,
+      "LightGBM_gap": 8.03,
+      "XGBoost_gap": 6.77,
+      "RandomForest_gap": 8.94,
+      "winner": "XGBoost"
+    },
+    {
+      "seed": 9,
+      "LightGBM_score": 65.8,
+      "XGBoost_score": 76.0,
+      "RandomForest_score": 53.9,
+      "LightGBM_gap": 9.11,
+      "XGBoost_gap": 6.57,
+      "RandomForest_gap": 10.27,
+      "winner": "XGBoost"
+    }
+  ]
+}

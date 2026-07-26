@@ -1,0 +1,10 @@
+drug,n_cells,n_ncts,n_preclinical_tot,n_cells_eval,n_sig,status_quo,chosen_gap,improvement,pct_improvement,mean_pct_rank,mean_rho
+exenatide,2,2,8,2,0,6.63,0.43,6.21,93.6,100.0,0.369
+canagliflozin,4,2,5,4,0,11.05,0.91,10.14,91.7,100.0,0.3
+metformin,1,1,41,1,1,12.13,1.86,10.28,84.7,87.5,0.506
+survodutide,4,1,5,4,3,9.84,3.21,6.63,67.4,75.0,0.85
+semaglutide,19,10,20,19,19,15.4,5.08,10.32,67.0,69.5,0.741
+liraglutide,20,12,45,20,20,12.24,5.95,6.29,51.4,70.8,0.375
+orlistat,1,1,21,1,0,20.03,12.39,7.64,38.1,65.0,-0.145
+medi0382,1,1,2,0,0,25.42,20.92,4.5,17.7,100.0,
+tirzepatide,13,6,2,0,0,6.93,8.7,-1.77,-25.5,26.9,
