@@ -39,9 +39,9 @@ sh scripts/create_PCDB.sh
 ```
 Additional data files need to be downloaded first (see data/PCDB/README.md) to run the construction code.
 
-### Retrospective Trial Ranking (Leave-one-drug-out evaluation):
+### Retrospective Trial Ranking
 ```console
-sh scripts/run_ml_pipeline.sh
+sh scripts/run_ml_retrospective_ranking.sh
 ```
 
 ## Authors
