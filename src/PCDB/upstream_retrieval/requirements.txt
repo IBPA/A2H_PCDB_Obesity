@@ -1,0 +1,15 @@
+# Extra packages for the upstream PCDB pipeline, on top of environment.yml.
+# Exact versions of the original runs (Dec 2024 - Jan 2025) were not recorded;
+# torchtune must be >= 0.5.0 for the Llama 3.3 QLoRA recipe.
+#
+# Stage 1 also needs NCBI EDirect (esearch/efetch): https://www.ncbi.nlm.nih.gov/books/NBK179288/
+dask
+tqdm
+ruamel.yaml
+torch
+transformers
+accelerate
+peft
+bitsandbytes
+torchtune>=0.5.0
+torchao

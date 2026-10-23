@@ -1,0 +1,526 @@
+pmcid	label	split	cv_fold
+PMC5127189	yes	train_val	4
+PMC3253318	no	train_val	1
+PMC6356961	no	train_val	4
+PMC5824492	yes	train_val	3
+PMC3761239	no	test	
+PMC2291455	yes	test	
+PMC4747235	no	test	
+PMC8080677	yes	train_val	2
+PMC6106645	no	train_val	2
+PMC6703907	no	train_val	1
+PMC3815346	yes	train_val	1
+PMC9813439	no	test	
+PMC8926208	yes	train_val	1
+PMC8416734	yes	train_val	2
+PMC3725924	no	train_val	3
+PMC6202111	yes	train_val	1
+PMC3256734	no	train_val	1
+PMC4424988	yes	test	
+PMC10315557	no	train_val	1
+PMC7656197	no	train_val	0
+PMC6295833	yes	train_val	3
+PMC7817978	yes	train_val	3
+PMC6017738	no	train_val	3
+PMC7143554	no	train_val	4
+PMC5096416	yes	train_val	0
+PMC2783218	no	train_val	2
+PMC10835138	yes	train_val	1
+PMC4184856	yes	train_val	1
+PMC8110489	no	train_val	0
+PMC9118216	yes	test	
+PMC8469056	no	train_val	1
+PMC9499906	yes	test	
+PMC10699243	no	train_val	2
+PMC3395422	no	train_val	1
+PMC9162414	yes	test	
+PMC5356731	yes	train_val	1
+PMC7108868	no	train_val	1
+PMC4221790	yes	train_val	1
+PMC5335796	yes	train_val	1
+PMC4382513	no	train_val	2
+PMC4145395	yes	test	
+PMC3429656	no	test	
+PMC4117562	yes	test	
+PMC4954799	no	train_val	4
+PMC2034088	yes	train_val	2
+PMC7472203	no	train_val	2
+PMC10430811	no	train_val	2
+PMC6485295	yes	test	
+PMC6196646	yes	train_val	3
+PMC8605905	no	train_val	2
+PMC5354120	no	train_val	1
+PMC5831225	yes	train_val	0
+PMC4433049	yes	train_val	4
+PMC8875072	no	train_val	3
+PMC6157474	no	train_val	0
+PMC4557288	yes	train_val	2
+PMC8639630	yes	train_val	4
+PMC10332232	yes	train_val	3
+PMC4029824	yes	test	
+PMC4600756	yes	train_val	4
+PMC6978697	yes	train_val	2
+PMC6769927	no	train_val	2
+PMC5237379	yes	test	
+PMC3121734	yes	train_val	3
+PMC3730394	no	train_val	2
+PMC10468923	no	test	
+PMC7197070	yes	test	
+PMC3488320	yes	test	
+PMC8980701	yes	train_val	0
+PMC2117949	no	train_val	1
+PMC9290716	no	train_val	0
+PMC7127199	no	train_val	1
+PMC5654284	no	train_val	0
+PMC5159654	no	train_val	3
+PMC2775928	no	train_val	0
+PMC10705513	no	train_val	0
+PMC3783684	no	train_val	0
+PMC4838167	yes	train_val	2
+PMC9217815	no	test	
+PMC3778136	yes	train_val	1
+PMC3261499	no	train_val	4
+PMC6132086	no	train_val	1
+PMC2877006	no	train_val	2
+PMC5669142	yes	train_val	2
+PMC7086351	yes	train_val	0
+PMC7392196	no	test	
+PMC4640941	yes	train_val	1
+PMC6269934	yes	train_val	2
+PMC8683535	yes	train_val	1
+PMC3605219	no	train_val	3
+PMC2829100	no	test	
+PMC3291565	no	train_val	0
+PMC6110722	no	test	
+PMC1716192	yes	train_val	3
+PMC2774762	yes	train_val	0
+PMC8018548	yes	train_val	1
+PMC3881541	yes	train_val	3
+PMC10047759	yes	train_val	2
+PMC5270629	yes	train_val	1
+PMC5617860	yes	train_val	3
+PMC4589446	yes	train_val	2
+PMC4465535	no	test	
+PMC6092409	yes	test	
+PMC4902256	yes	train_val	3
+PMC3947114	yes	train_val	2
+PMC7200299	yes	train_val	1
+PMC2596650	yes	train_val	2
+PMC3617332	no	test	
+PMC9219815	no	train_val	0
+PMC4315517	no	train_val	0
+PMC6252225	no	test	
+PMC2254610	no	train_val	2
+PMC4618069	no	train_val	4
+PMC4090743	yes	train_val	2
+PMC6164566	yes	train_val	0
+PMC2360357	no	train_val	2
+PMC3299670	yes	train_val	4
+PMC3823990	no	test	
+PMC10133246	yes	train_val	4
+PMC2819199	no	test	
+PMC2812065	no	train_val	2
+PMC7007378	yes	train_val	3
+PMC3979856	no	train_val	2
+PMC8746354	no	train_val	2
+PMC5821091	no	train_val	0
+PMC5768757	no	train_val	0
+PMC2709768	no	train_val	1
+PMC7337105	no	train_val	2
+PMC3679954	yes	test	
+PMC3879229	yes	train_val	3
+PMC7216685	yes	train_val	0
+PMC4033659	yes	train_val	1
+PMC7271172	no	test	
+PMC2613177	no	test	
+PMC4898430	no	train_val	1
+PMC5541073	yes	test	
+PMC9840661	yes	train_val	0
+PMC5039679	yes	train_val	4
+PMC5295094	no	train_val	2
+PMC9556172	no	train_val	3
+PMC2716400	no	train_val	2
+PMC6907257	yes	train_val	4
+PMC5156671	no	test	
+PMC4367455	yes	train_val	2
+PMC8942214	no	train_val	0
+PMC10792906	no	train_val	1
+PMC10164737	yes	test	
+PMC5079016	yes	test	
+PMC4184782	no	train_val	0
+PMC3781063	no	train_val	2
+PMC8300883	no	train_val	1
+PMC5261858	yes	train_val	3
+PMC3982880	yes	train_val	3
+PMC4022548	no	train_val	4
+PMC8446539	no	train_val	4
+PMC6844636	yes	train_val	3
+PMC7353147	no	train_val	0
+PMC4082805	no	train_val	4
+PMC7212030	yes	train_val	4
+PMC4502285	no	test	
+PMC6280361	no	test	
+PMC2875372	no	train_val	1
+PMC3927141	no	test	
+PMC2397357	no	train_val	4
+PMC6109326	yes	test	
+PMC3617034	no	test	
+PMC9166611	no	train_val	1
+PMC4632282	no	train_val	1
+PMC3292890	yes	test	
+PMC3121069	no	train_val	2
+PMC4622054	no	train_val	1
+PMC2916879	no	train_val	3
+PMC7041741	no	train_val	1
+PMC4565901	yes	test	
+PMC6815399	yes	train_val	0
+PMC3409373	yes	train_val	4
+PMC4138288	yes	train_val	3
+PMC6489343	yes	train_val	3
+PMC4643959	yes	train_val	0
+PMC6222437	no	test	
+PMC3279566	no	train_val	4
+PMC4690064	yes	train_val	2
+PMC3669532	yes	train_val	4
+PMC9311709	no	train_val	4
+PMC6957561	no	train_val	3
+PMC6197279	no	train_val	1
+PMC10773253	yes	train_val	0
+PMC6389121	no	test	
+PMC6425951	yes	train_val	3
+PMC8998077	no	test	
+PMC8306483	no	train_val	0
+PMC4607974	no	train_val	1
+PMC3312347	yes	train_val	0
+PMC8836826	no	train_val	3
+PMC5943255	yes	train_val	0
+PMC9429584	yes	train_val	2
+PMC6822623	no	train_val	0
+PMC5688480	no	test	
+PMC7686130	yes	train_val	0
+PMC7264292	yes	train_val	3
+PMC6434173	no	train_val	0
+PMC3026945	no	test	
+PMC5543238	no	train_val	4
+PMC4012564	yes	train_val	4
+PMC10481559	no	test	
+PMC5204265	no	train_val	2
+PMC3747984	no	train_val	4
+PMC3366262	no	train_val	1
+PMC8426257	no	train_val	1
+PMC4430320	no	train_val	1
+PMC4631892	no	train_val	0
+PMC7443405	yes	train_val	0
+PMC4265789	yes	train_val	3
+PMC8312460	yes	test	
+PMC7913291	yes	train_val	2
+PMC5039295	yes	train_val	3
+PMC10835558	yes	train_val	4
+PMC3298687	no	train_val	4
+PMC7316837	yes	test	
+PMC9284604	no	train_val	4
+PMC7711739	no	train_val	4
+PMC8602369	no	train_val	3
+PMC5830595	yes	train_val	1
+PMC4973592	no	train_val	4
+PMC3299859	no	test	
+PMC7786928	no	train_val	4
+PMC2903770	yes	train_val	3
+PMC4388340	no	train_val	1
+PMC5865285	no	train_val	0
+PMC7156401	yes	train_val	4
+PMC3914321	no	train_val	1
+PMC5687087	no	train_val	1
+PMC8743627	no	test	
+PMC6692009	no	test	
+PMC6629439	no	train_val	3
+PMC10098373	yes	train_val	1
+PMC3985244	yes	train_val	3
+PMC8108386	yes	test	
+PMC6200337	no	test	
+PMC5482905	no	train_val	1
+PMC8579289	yes	train_val	3
+PMC9203457	no	train_val	4
+PMC8837422	no	train_val	4
+PMC2629125	no	train_val	3
+PMC7226963	yes	train_val	3
+PMC5410327	yes	train_val	4
+PMC5878206	yes	test	
+PMC6875866	no	test	
+PMC6597793	yes	train_val	3
+PMC2131617	no	test	
+PMC4753163	no	train_val	0
+PMC10765854	no	train_val	2
+PMC5928604	yes	train_val	0
+PMC6978467	yes	train_val	4
+PMC6582495	yes	train_val	0
+PMC3998158	no	train_val	0
+PMC8079698	no	train_val	1
+PMC3360742	yes	test	
+PMC4880332	no	test	
+PMC8162035	yes	train_val	1
+PMC6065445	yes	test	
+PMC2728573	no	test	
+PMC2995012	no	train_val	4
+PMC9967589	no	train_val	1
+PMC6273551	no	train_val	4
+PMC4366390	no	train_val	4
+PMC8057695	yes	train_val	3
+PMC8877601	yes	test	
+PMC9392762	yes	train_val	4
+PMC4133256	yes	train_val	3
+PMC4694875	yes	test	
+PMC8125246	no	train_val	2
+PMC6307770	yes	test	
+PMC7892975	no	test	
+PMC7757143	yes	test	
+PMC8820185	yes	train_val	4
+PMC5880726	no	train_val	4
+PMC6402958	yes	train_val	4
+PMC7864996	no	train_val	1
+PMC8766638	no	train_val	4
+PMC7700030	yes	train_val	4
+PMC7365768	no	train_val	2
+PMC9003379	yes	train_val	3
+PMC5192121	yes	train_val	2
+PMC9804477	no	test	
+PMC2791908	no	train_val	0
+PMC7174142	yes	train_val	3
+PMC7859201	yes	train_val	1
+PMC2589139	no	train_val	1
+PMC7289838	no	test	
+PMC3607501	no	train_val	1
+PMC1781650	no	test	
+PMC9865981	no	test	
+PMC4012728	yes	test	
+PMC2600646	no	train_val	1
+PMC6733662	no	test	
+PMC8998007	no	train_val	0
+PMC5598992	yes	train_val	1
+PMC3628909	yes	test	
+PMC6597166	no	train_val	0
+PMC10704630	no	test	
+PMC2776749	no	train_val	4
+PMC8016133	no	train_val	0
+PMC5395352	yes	train_val	3
+PMC3438318	yes	test	
+PMC4270927	no	train_val	2
+PMC2795023	no	train_val	0
+PMC3541191	yes	train_val	2
+PMC8422976	no	train_val	1
+PMC4882816	yes	train_val	2
+PMC4689281	yes	train_val	3
+PMC4278799	yes	test	
+PMC5743504	yes	train_val	0
+PMC4480732	yes	train_val	4
+PMC3741697	no	train_val	4
+PMC8964685	no	train_val	2
+PMC6498579	yes	train_val	3
+PMC7696585	no	train_val	1
+PMC10229329	no	train_val	0
+PMC4845647	no	train_val	0
+PMC7491126	yes	test	
+PMC9329381	yes	train_val	3
+PMC7854274	no	test	
+PMC2692831	yes	train_val	1
+PMC9782030	no	train_val	0
+PMC4852504	yes	train_val	3
+PMC5895969	no	test	
+PMC10778062	no	train_val	1
+PMC8903779	yes	test	
+PMC10512677	yes	train_val	0
+PMC8261289	no	train_val	3
+PMC8273992	yes	test	
+PMC9395207	no	train_val	3
+PMC9530779	yes	train_val	3
+PMC9108281	no	train_val	3
+PMC5868409	yes	train_val	4
+PMC10688594	no	train_val	2
+PMC9496712	no	train_val	4
+PMC2953635	no	train_val	0
+PMC2192607	no	test	
+PMC4306390	yes	train_val	2
+PMC2859216	no	test	
+PMC9173623	no	train_val	1
+PMC6990927	yes	test	
+PMC3507882	yes	test	
+PMC3431803	no	test	
+PMC8534848	no	train_val	3
+PMC7251737	no	test	
+PMC2987658	no	train_val	1
+PMC6996953	yes	test	
+PMC5154234	yes	train_val	0
+PMC4632503	yes	train_val	0
+PMC4294343	no	train_val	0
+PMC5374654	yes	train_val	4
+PMC10254386	no	train_val	4
+PMC5480248	yes	test	
+PMC9849951	yes	train_val	1
+PMC3090706	yes	train_val	4
+PMC5533449	no	test	
+PMC9564267	yes	train_val	4
+PMC10480780	no	test	
+PMC7946776	yes	test	
+PMC8683166	yes	train_val	4
+PMC8517204	yes	test	
+PMC6923248	yes	test	
+PMC2872502	no	train_val	2
+PMC5111601	no	test	
+PMC7324957	yes	train_val	2
+PMC4962118	no	test	
+PMC8625665	no	train_val	0
+PMC6006285	yes	test	
+PMC3877036	yes	train_val	4
+PMC3151008	no	train_val	2
+PMC7401407	no	train_val	3
+PMC4564143	no	train_val	3
+PMC6366417	no	train_val	2
+PMC9685224	yes	test	
+PMC6168941	yes	train_val	4
+PMC9646310	yes	test	
+PMC2124502	no	test	
+PMC3846809	no	train_val	0
+PMC7204623	no	train_val	0
+PMC6128696	no	train_val	2
+PMC10091452	no	test	
+PMC10162665	yes	train_val	1
+PMC7988735	no	train_val	1
+PMC9514506	yes	train_val	4
+PMC6738049	no	train_val	2
+PMC6534259	yes	train_val	4
+PMC4872774	yes	test	
+PMC2646641	no	train_val	1
+PMC7295119	yes	train_val	3
+PMC6754156	no	train_val	2
+PMC7152587	yes	train_val	1
+PMC3513602	no	train_val	3
+PMC7236024	yes	train_val	0
+PMC4106091	yes	test	
+PMC5937206	yes	train_val	2
+PMC6308327	no	train_val	2
+PMC3848871	no	train_val	0
+PMC7323156	no	train_val	4
+PMC2791323	no	train_val	2
+PMC4240862	yes	train_val	4
+PMC5876100	yes	train_val	0
+PMC6137423	no	test	
+PMC9589693	no	train_val	3
+PMC5808459	no	train_val	4
+PMC5652950	yes	train_val	4
+PMC2193652	no	test	
+PMC5718184	no	test	
+PMC6912534	yes	train_val	4
+PMC5117854	no	train_val	0
+PMC8948832	no	train_val	2
+PMC5797228	no	train_val	2
+PMC3349654	yes	train_val	2
+PMC4087080	no	train_val	4
+PMC10743148	yes	train_val	2
+PMC7082877	yes	test	
+PMC4779316	no	train_val	1
+PMC5040126	yes	test	
+PMC5993899	yes	train_val	0
+PMC5360637	no	train_val	2
+PMC8647563	yes	train_val	3
+PMC3192231	yes	train_val	2
+PMC4699202	yes	train_val	2
+PMC9209773	no	train_val	2
+PMC6366553	no	test	
+PMC6158674	yes	test	
+PMC7463443	no	train_val	3
+PMC7719489	no	train_val	2
+PMC8570830	no	train_val	3
+PMC4261065	no	train_val	3
+PMC8130202	no	train_val	0
+PMC10073061	yes	train_val	1
+PMC9328886	no	train_val	0
+PMC4005392	yes	train_val	2
+PMC7653765	yes	train_val	0
+PMC5124654	no	train_val	1
+PMC7591303	no	train_val	3
+PMC1241552	no	train_val	3
+PMC5432286	yes	train_val	0
+PMC3836589	yes	train_val	3
+PMC7177407	no	train_val	1
+PMC7655057	yes	train_val	3
+PMC5479268	yes	test	
+PMC5063896	yes	train_val	3
+PMC7295537	no	test	
+PMC8346785	no	test	
+PMC7915505	yes	test	
+PMC9009089	no	test	
+PMC7478171	no	test	
+PMC9779148	no	train_val	3
+PMC2656912	yes	train_val	0
+PMC5834524	yes	test	
+PMC5962356	no	train_val	3
+PMC3523508	yes	train_val	0
+PMC10464594	yes	train_val	1
+PMC3913736	yes	train_val	4
+PMC10326758	no	train_val	0
+PMC4673473	no	train_val	2
+PMC2394436	yes	train_val	1
+PMC5537814	yes	train_val	2
+PMC7296784	no	train_val	0
+PMC6607939	yes	train_val	1
+PMC7683371	yes	test	
+PMC4751443	no	test	
+PMC10362042	no	train_val	1
+PMC3356399	no	train_val	0
+PMC6637115	yes	train_val	1
+PMC5080763	no	test	
+PMC10102305	no	test	
+PMC9217531	no	train_val	0
+PMC4775298	no	test	
+PMC2606864	yes	test	
+PMC6231513	yes	train_val	4
+PMC10368918	yes	train_val	0
+PMC4132577	no	train_val	2
+PMC8040627	no	train_val	2
+PMC7904043	no	train_val	0
+PMC6272070	yes	train_val	3
+PMC6037705	yes	test	
+PMC4038461	no	train_val	4
+PMC8016805	yes	train_val	3
+PMC6373030	no	train_val	2
+PMC5701150	yes	test	
+PMC4529230	no	train_val	2
+PMC2880200	yes	train_val	4
+PMC7906186	no	train_val	0
+PMC7470874	yes	train_val	4
+PMC9932434	no	train_val	2
+PMC5154185	no	train_val	3
+PMC9102012	yes	train_val	3
+PMC9863805	yes	train_val	1
+PMC7181998	no	test	
+PMC6442583	yes	train_val	3
+PMC3878302	no	train_val	0
+PMC10061096	no	train_val	1
+PMC3906526	no	train_val	3
+PMC6334636	yes	train_val	2
+PMC5979868	yes	train_val	3
+PMC5422471	no	test	
+PMC9899631	yes	train_val	4
+PMC5548968	yes	train_val	4
+PMC4998324	no	test	
+PMC3807651	no	train_val	1
+PMC7146085	yes	train_val	4
+PMC9161934	yes	test	
+PMC5841188	yes	train_val	2
+PMC4465370	no	train_val	2
+PMC9462379	yes	train_val	4
+PMC7140470	yes	train_val	1
+PMC5859690	yes	test	
+PMC3850695	yes	train_val	2
+PMC9732798	no	train_val	4
+PMC5427774	no	test	
+PMC6435503	no	train_val	0
+PMC5866576	no	train_val	3
+PMC4235467	no	train_val	4
+PMC4057691	yes	train_val	3
+PMC4935907	no	train_val	4
+PMC7852052	yes	test	
+PMC6813847	yes	train_val	0
+PMC2191811	no	train_val	0
+PMC6700707	no	train_val	3
+PMC8026879	yes	train_val	4

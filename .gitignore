@@ -6,5 +6,11 @@ data/PCDB/*
 outputs/pcdb/*
 !data/PCDB/README.md
 !outputs/pcdb/README.md
+!outputs/pcdb/upstream_retrieval/
+outputs/pcdb/upstream_retrieval/*
+!outputs/pcdb/upstream_retrieval/classifier/
+outputs/pcdb/upstream_retrieval/classifier/*
+!outputs/pcdb/upstream_retrieval/classifier/*.tsv
 !data/PCDB/download.sh
+!data/PCDB/upstream_retrieval/
 !src/obesity_model_performance/ML_pipeline/utils/__init__.py
