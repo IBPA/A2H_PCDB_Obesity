@@ -1,0 +1,121 @@
+pmcid,link,relation_type,disease,drug,animal,gemma_label,gemma_reason,author_label
+PMC4961920,https://pmc.ncbi.nlm.nih.gov/articles/PMC4961920,disease-drug-animal,HIV Infections,Vitamin E,Rats,no,disease_not_modeled,no
+PMC6032969,https://pmc.ncbi.nlm.nih.gov/articles/PMC6032969,disease-drug-animal,Spinal Cord Injuries,Rosiglitazone,Rats,yes,,yes
+PMC3193563,https://pmc.ncbi.nlm.nih.gov/articles/PMC3193563,disease-drug,"Urinary Bladder, Overactive",Carbachol,,no,in_vitro_only,no
+PMC4116517,https://pmc.ncbi.nlm.nih.gov/articles/PMC4116517,disease-drug-animal,Breast Neoplasms,Ditiocarb,Mice,no,entity_not_in_paper,yes
+PMC10454119,https://pmc.ncbi.nlm.nih.gov/articles/PMC10454119,disease-animal,Oral Ulcer,,Rats,yes,,yes
+PMC7489285,https://pmc.ncbi.nlm.nih.gov/articles/PMC7489285,disease-drug-animal,Neoplasm Metastasis,Albumin-Bound Paclitaxel,Rats,no,entity_not_in_paper,no
+PMC3290749,https://pmc.ncbi.nlm.nih.gov/articles/PMC3290749,drug-animal,,Gemcitabine,Mice,yes,,yes
+PMC3090000,https://pmc.ncbi.nlm.nih.gov/articles/PMC3090000,drug-animal,,Ethanol,Rats,no,induction_agent,no
+PMC5410089,https://pmc.ncbi.nlm.nih.gov/articles/PMC5410089,disease-drug-animal,Sarcoma,Olaparib,Mice,yes,,yes
+PMC7922380,https://pmc.ncbi.nlm.nih.gov/articles/PMC7922380,disease-animal,Atherosclerosis,,Mice,no,disease_not_modeled,no
+PMC10733791,https://pmc.ncbi.nlm.nih.gov/articles/PMC10733791,disease-drug-animal,Ototoxicity,Neomycin,Mice,no,induction_agent,no
+PMC10340436,https://pmc.ncbi.nlm.nih.gov/articles/PMC10340436,disease-animal,Myelodysplastic Syndromes,,Mice,no,disease_not_modeled,no
+PMC4268712,https://pmc.ncbi.nlm.nih.gov/articles/PMC4268712,disease-drug,Breast Neoplasms,calcitonin gene-related peptide (8-37),,no,background_mention,no
+PMC10826342,https://pmc.ncbi.nlm.nih.gov/articles/PMC10826342,disease-drug,Parkinson Disease,Carbidopa/Levodopa,,yes,,yes
+PMC5706500,https://pmc.ncbi.nlm.nih.gov/articles/PMC5706500,disease-drug,Osteoarthritis,Andrographolide,,no,entity_not_in_paper,no
+PMC6371842,https://pmc.ncbi.nlm.nih.gov/articles/PMC6371842,disease-drug,Alzheimer Disease,Memantine,,no,background_mention,no
+PMC4297264,https://pmc.ncbi.nlm.nih.gov/articles/PMC4297264,disease-drug,Urinary Bladder Neoplasms,PF-477736,,yes,,yes
+PMC8473824,https://pmc.ncbi.nlm.nih.gov/articles/PMC8473824,disease-animal,Colorectal Neoplasms,,Mice,yes,,yes
+PMC10377202,https://pmc.ncbi.nlm.nih.gov/articles/PMC10377202,disease-drug-animal,Anxiety Disorders,SB 203580,Mice,no,disease_not_modeled,no
+PMC4181838,https://pmc.ncbi.nlm.nih.gov/articles/PMC4181838,disease-drug-animal,Lung Neoplasms,Oxaliplatin,Mice,no,different_experiment,no
+PMC5733971,https://pmc.ncbi.nlm.nih.gov/articles/PMC5733971,drug-animal,,Ubidecarenone,Rats,no,normalization_error,yes
+PMC7237708,https://pmc.ncbi.nlm.nih.gov/articles/PMC7237708,disease-drug-animal,"Bone Diseases, Metabolic",Calcium,Mice,yes,,yes
+PMC5146924,https://pmc.ncbi.nlm.nih.gov/articles/PMC5146924,disease-drug,Thrombosis,Acetylsalicylic acid,,yes,,yes
+PMC4998672,https://pmc.ncbi.nlm.nih.gov/articles/PMC4998672,disease-drug,"Depressive Disorder, Major",Scopolamine,,no,disease_not_modeled,no
+PMC10527034,https://pmc.ncbi.nlm.nih.gov/articles/PMC10527034,disease-drug-animal,Thyroid Neoplasms,Oxythiamine,Mice,no,different_experiment,no
+PMC4628660,https://pmc.ncbi.nlm.nih.gov/articles/PMC4628660,disease-animal,Hypersensitivity,,Mice,yes,,yes
+PMC8565061,https://pmc.ncbi.nlm.nih.gov/articles/PMC8565061,drug-animal,,Idasanutlin,Mice,yes,,yes
+PMC9106063,https://pmc.ncbi.nlm.nih.gov/articles/PMC9106063,disease-animal,Neuroinflammatory Diseases,,Mice,yes,,yes
+PMC7532683,https://pmc.ncbi.nlm.nih.gov/articles/PMC7532683,disease-drug,Obesity,Ampicillin,,no,induction_agent,no
+PMC8240219,https://pmc.ncbi.nlm.nih.gov/articles/PMC8240219,disease-drug,Myocardial Reperfusion Injury,Verapamil,,yes,,yes
+PMC6553477,https://pmc.ncbi.nlm.nih.gov/articles/PMC6553477,disease-drug,HIV Infections,Lopinavir,,yes,,no
+PMC6257619,https://pmc.ncbi.nlm.nih.gov/articles/PMC6257619,disease-drug,Hypertension,Betadex,,no,background_mention,no
+PMC5512036,https://pmc.ncbi.nlm.nih.gov/articles/PMC5512036,disease-drug,Coronary Disease,Cisplatin,,no,entity_not_in_paper,no
+PMC2596347,https://pmc.ncbi.nlm.nih.gov/articles/PMC2596347,disease-animal,"Arthritis, Rheumatoid",,Rats,no,disease_not_modeled,no
+PMC9897619,https://pmc.ncbi.nlm.nih.gov/articles/PMC9897619,disease-animal,COVID-19,,Rats,no,disease_not_modeled,no
+PMC8870377,https://pmc.ncbi.nlm.nih.gov/articles/PMC8870377,disease-drug,Psoriasis,Dimethyl fumarate,,no,background_mention,no
+PMC7825221,https://pmc.ncbi.nlm.nih.gov/articles/PMC7825221,disease-animal,Papillomavirus Infections,,Mice,yes,,yes
+PMC5560034,https://pmc.ncbi.nlm.nih.gov/articles/PMC5560034,disease-drug,Acute Coronary Syndrome,Acetylsalicylic acid,,no,disease_not_modeled,no
+PMC3986862,https://pmc.ncbi.nlm.nih.gov/articles/PMC3986862,disease-drug,Anxiety Disorders,Molsidomine,,yes,,yes
+PMC6838365,https://pmc.ncbi.nlm.nih.gov/articles/PMC6838365,disease-animal,Nasopharyngeal Carcinoma,,Mice,yes,,yes
+PMC10231015,https://pmc.ncbi.nlm.nih.gov/articles/PMC10231015,disease-animal,Colorectal Neoplasms,,Mice,yes,,yes
+PMC5833978,https://pmc.ncbi.nlm.nih.gov/articles/PMC5833978,disease-drug,Melanoma,Gemcitabine,,no,different_experiment,no
+PMC10682120,https://pmc.ncbi.nlm.nih.gov/articles/PMC10682120,disease-drug,Myocardial Reperfusion Injury,Peoniflorin,,no,entity_not_in_paper,no
+PMC6401361,https://pmc.ncbi.nlm.nih.gov/articles/PMC6401361,disease-drug,Parkinson Disease,Acetylsalicylic acid,,yes,,yes
+PMC6155612,https://pmc.ncbi.nlm.nih.gov/articles/PMC6155612,disease-drug-animal,Cardiovascular Diseases,Fenofibrate,Rats,no,background_mention,yes
+PMC6807311,https://pmc.ncbi.nlm.nih.gov/articles/PMC6807311,disease-animal,Leber Congenital Amaurosis,,Macaca fascicularis,no,disease_not_modeled,no
+PMC5962749,https://pmc.ncbi.nlm.nih.gov/articles/PMC5962749,disease-drug-animal,"Leukemia, Myelogenous, Chronic, BCR-ABL Positive",Y-27632,Rats,no,disease_not_modeled,no
+PMC3410621,https://pmc.ncbi.nlm.nih.gov/articles/PMC3410621,disease-drug,Intellectual Disability,Baclofen,,no,disease_not_modeled,no
+PMC3703644,https://pmc.ncbi.nlm.nih.gov/articles/PMC3703644,disease-drug,"Brain Injuries, Traumatic",Simvastatin,,yes,,yes
+PMC5978264,https://pmc.ncbi.nlm.nih.gov/articles/PMC5978264,drug-animal,,Foretinib,Mice,yes,,yes
+PMC4116689,https://pmc.ncbi.nlm.nih.gov/articles/PMC4116689,disease-drug,Melanoma,Protein Subunit Vaccines,,yes,,yes
+PMC4496346,https://pmc.ncbi.nlm.nih.gov/articles/PMC4496346,disease-drug-animal,"Carcinoma, Non-Small-Cell Lung",Gefitinib,Mice,yes,,yes
+PMC10150753,https://pmc.ncbi.nlm.nih.gov/articles/PMC10150753,disease-animal,COVID-19,,Rats,no,disease_not_modeled,no
+PMC9505496,https://pmc.ncbi.nlm.nih.gov/articles/PMC9505496,drug-animal,,Sirolimus,Rats,yes,,yes
+PMC5976916,https://pmc.ncbi.nlm.nih.gov/articles/PMC5976916,disease-drug,Inflammation,Gallic Acid,,no,normalization_error,no
+PMC6775231,https://pmc.ncbi.nlm.nih.gov/articles/PMC6775231,disease-animal,"Anemia, Sickle Cell",,Mice,no,different_experiment,no
+PMC4856402,https://pmc.ncbi.nlm.nih.gov/articles/PMC4856402,disease-animal,"Leishmaniasis, Mucocutaneous",,Mice,no,disease_not_modeled,no
+PMC6000854,https://pmc.ncbi.nlm.nih.gov/articles/PMC6000854,disease-animal,Rabies,,Mice,no,disease_not_modeled,no
+PMC6507338,https://pmc.ncbi.nlm.nih.gov/articles/PMC6507338,disease-drug-animal,Ovarian Neoplasms,Berberine,Mice,yes,,yes
+PMC6168390,https://pmc.ncbi.nlm.nih.gov/articles/PMC6168390,disease-drug-animal,"Leukemia, Myeloid, Acute",6-diazo-5-oxo-L-norleucine,Mice,yes,,yes
+PMC5621803,https://pmc.ncbi.nlm.nih.gov/articles/PMC5621803,drug-animal,,Saline Solution,Mice,yes,,no
+PMC10810238,https://pmc.ncbi.nlm.nih.gov/articles/PMC10810238,drug-animal,,Chloroquine,Mice,yes,,yes
+PMC7164290,https://pmc.ncbi.nlm.nih.gov/articles/PMC7164290,disease-drug,Urinary Incontinence,DA-8010,,no,background_mention,no
+PMC5390486,https://pmc.ncbi.nlm.nih.gov/articles/PMC5390486,disease-drug,Neoplasms,Sirolimus,,no,disease_not_modeled,no
+PMC3480743,https://pmc.ncbi.nlm.nih.gov/articles/PMC3480743,disease-drug-animal,"Diabetes Mellitus, Type 2",Rosiglitazone,Mice,yes,,yes
+PMC6092248,https://pmc.ncbi.nlm.nih.gov/articles/PMC6092248,disease-animal,"Shock, Hemorrhagic",,Macaca fascicularis,yes,,yes
+PMC4807396,https://pmc.ncbi.nlm.nih.gov/articles/PMC4807396,disease-animal,Neoplasms,,Mice,yes,,yes
+PMC9629661,https://pmc.ncbi.nlm.nih.gov/articles/PMC9629661,disease-animal,Pruritus,,Macaca mulatta,no,disease_not_modeled,yes
+PMC10399177,https://pmc.ncbi.nlm.nih.gov/articles/PMC10399177,disease-drug-animal,Alzheimer Disease,Tetrabenazine,Mice,no,background_mention,no
+PMC6099839,https://pmc.ncbi.nlm.nih.gov/articles/PMC6099839,disease-drug,Thrombosis,Dabigatran etexilate,,no,different_experiment,yes
+PMC6974439,https://pmc.ncbi.nlm.nih.gov/articles/PMC6974439,drug-animal,,-NAD 299.00,Mice,yes,,no
+PMC9912569,https://pmc.ncbi.nlm.nih.gov/articles/PMC9912569,disease-animal,Reperfusion Injury,,Rats,yes,,yes
+PMC5573683,https://pmc.ncbi.nlm.nih.gov/articles/PMC5573683,disease-drug,Multiple Myeloma,Zoledronic acid,,no,different_experiment,yes
+PMC10689482,https://pmc.ncbi.nlm.nih.gov/articles/PMC10689482,disease-drug,"Carcinoma, Hepatocellular",Doxorubicin,,no,entity_not_in_paper,no
+PMC10634043,https://pmc.ncbi.nlm.nih.gov/articles/PMC10634043,disease-drug-animal,"Diabetes Mellitus, Type 2",Gallic Acid,Mice,no,entity_not_in_paper,no
+PMC4198828,https://pmc.ncbi.nlm.nih.gov/articles/PMC4198828,disease-drug-animal,pancreatic ductal adenocarcinoma,Trastuzumab,Mice,yes,,yes
+PMC3445585,https://pmc.ncbi.nlm.nih.gov/articles/PMC3445585,drug-animal,,Cutamesine,Rats,yes,,yes
+PMC7226033,https://pmc.ncbi.nlm.nih.gov/articles/PMC7226033,drug-animal,,EC-8042,Mice,yes,,yes
+PMC7196514,https://pmc.ncbi.nlm.nih.gov/articles/PMC7196514,disease-animal,"Depressive Disorder, Major",,Mice,no,disease_not_modeled,no
+PMC5983938,https://pmc.ncbi.nlm.nih.gov/articles/PMC5983938,drug-animal,,goralatide,Rats,yes,,yes
+PMC6059714,https://pmc.ncbi.nlm.nih.gov/articles/PMC6059714,disease-animal,Uterine Cervical Neoplasms,,Mice,yes,,yes
+PMC7781482,https://pmc.ncbi.nlm.nih.gov/articles/PMC7781482,drug-animal,,Trazodone,Mice,yes,,yes
+PMC7777391,https://pmc.ncbi.nlm.nih.gov/articles/PMC7777391,drug-animal,,Galunisertib,Mice,yes,,yes
+PMC6513188,https://pmc.ncbi.nlm.nih.gov/articles/PMC6513188,disease-drug,Neoplasms,Cetirizine,,no,disease_not_modeled,no
+PMC10219450,https://pmc.ncbi.nlm.nih.gov/articles/PMC10219450,disease-drug,Diabetic Nephropathies,Metformin,,yes,,yes
+PMC7071376,https://pmc.ncbi.nlm.nih.gov/articles/PMC7071376,drug-animal,,LMK-235,Mice,yes,,yes
+PMC5356872,https://pmc.ncbi.nlm.nih.gov/articles/PMC5356872,disease-animal,Glioma,,Mice,yes,,yes
+PMC8100106,https://pmc.ncbi.nlm.nih.gov/articles/PMC8100106,disease-animal,Neoplasms,,Mice,no,disease_not_modeled,no
+PMC5880827,https://pmc.ncbi.nlm.nih.gov/articles/PMC5880827,disease-drug-animal,Hypersensitivity,Prednisolone,Rats,no,different_experiment,yes
+PMC5783418,https://pmc.ncbi.nlm.nih.gov/articles/PMC5783418,disease-drug-animal,Neoplasms,COTI-2,Mice,yes,,yes
+PMC4683964,https://pmc.ncbi.nlm.nih.gov/articles/PMC4683964,disease-drug,"Infertility, Male",Cyclophosphamide,,no,entity_not_in_paper,no
+PMC8085163,https://pmc.ncbi.nlm.nih.gov/articles/PMC8085163,disease-drug-animal,Pancreatic Neoplasms,VSW1198,Mice,no,disease_not_modeled,no
+PMC6920883,https://pmc.ncbi.nlm.nih.gov/articles/PMC6920883,disease-drug-animal,Osteomyelitis,Vancomycin,Rats,yes,,yes
+PMC4799854,https://pmc.ncbi.nlm.nih.gov/articles/PMC4799854,disease-animal,"Arthritis, Rheumatoid",,Rats,yes,,yes
+PMC9687486,https://pmc.ncbi.nlm.nih.gov/articles/PMC9687486,disease-drug-animal,"Urinary Bladder, Overactive",Vinpocetine,Rats,yes,,yes
+PMC6148276,https://pmc.ncbi.nlm.nih.gov/articles/PMC6148276,drug-animal,,protein tyrosine kinase 2 inhibitor BI 853520,Mice,yes,,yes
+PMC10383882,https://pmc.ncbi.nlm.nih.gov/articles/PMC10383882,disease-drug-animal,Dengue,Ezetimibe,Mice,yes,,yes
+PMC9279583,https://pmc.ncbi.nlm.nih.gov/articles/PMC9279583,disease-drug-animal,Cardiomegaly,Isoprenaline,Mice,yes,,no
+PMC6685079,https://pmc.ncbi.nlm.nih.gov/articles/PMC6685079,disease-drug-animal,Lung Neoplasms,Monoclonal Antibody DC101,Mice,no,different_experiment,no
+PMC9204647,https://pmc.ncbi.nlm.nih.gov/articles/PMC9204647,drug-animal,,Gabapentin,Rats,yes,,yes
+PMC3474540,https://pmc.ncbi.nlm.nih.gov/articles/PMC3474540,disease-animal,Stroke,,Rats,yes,,yes
+PMC3734284,https://pmc.ncbi.nlm.nih.gov/articles/PMC3734284,disease-drug,Breast Neoplasms,Dexrazoxane,,yes,,yes
+PMC4447500,https://pmc.ncbi.nlm.nih.gov/articles/PMC4447500,disease-drug-animal,Intracranial Aneurysm,Pioglitazone,Mice,yes,,yes
+PMC7163137,https://pmc.ncbi.nlm.nih.gov/articles/PMC7163137,disease-animal,Pneumonia,,Mice,no,disease_not_modeled,no
+PMC8021725,https://pmc.ncbi.nlm.nih.gov/articles/PMC8021725,disease-drug,Psoriasis,Selumetinib,,no,different_experiment,no
+PMC9737525,https://pmc.ncbi.nlm.nih.gov/articles/PMC9737525,disease-animal,Colorectal Neoplasms,,Mice,yes,,yes
+PMC5545198,https://pmc.ncbi.nlm.nih.gov/articles/PMC5545198,drug-animal,,GS-E3D,Rats,yes,,yes
+PMC6572554,https://pmc.ncbi.nlm.nih.gov/articles/PMC6572554,disease-drug,Parkinson Disease,Acetylcysteine,,no,disease_not_modeled,no
+PMC5331945,https://pmc.ncbi.nlm.nih.gov/articles/PMC5331945,disease-drug-animal,Obesity,narciclasine,Mice,yes,,yes
+PMC7054728,https://pmc.ncbi.nlm.nih.gov/articles/PMC7054728,disease-drug,"Arthritis, Rheumatoid",Morphine,,no,disease_not_modeled,no
+PMC3606385,https://pmc.ncbi.nlm.nih.gov/articles/PMC3606385,disease-drug-animal,Metabolic Syndrome,Curcumin,Rats,yes,,yes
+PMC7648083,https://pmc.ncbi.nlm.nih.gov/articles/PMC7648083,disease-drug-animal,Sepsis,"5,7-dihydroxy-6-methoxy-2-phenylchromen-4-one",Mice,yes,,yes
+PMC5363760,https://pmc.ncbi.nlm.nih.gov/articles/PMC5363760,drug-animal,,Acyclovir,Mice,no,background_mention,no
+PMC3991570,https://pmc.ncbi.nlm.nih.gov/articles/PMC3991570,disease-drug,Neoplasms,ONO-8430506,,no,disease_not_modeled,no
+PMC4207694,https://pmc.ncbi.nlm.nih.gov/articles/PMC4207694,disease-drug,"Leishmaniasis, Mucocutaneous",Tanespimycin,,no,disease_not_modeled,yes
+PMC3021692,https://pmc.ncbi.nlm.nih.gov/articles/PMC3021692,drug-animal,,Diclofenac,Mice,yes,,yes
+PMC5825103,https://pmc.ncbi.nlm.nih.gov/articles/PMC5825103,disease-drug,Heart Failure,AZD9977,,no,disease_not_modeled,no
+PMC6306720,https://pmc.ncbi.nlm.nih.gov/articles/PMC6306720,disease-drug,"Diabetes Mellitus, Type 2",Metformin,,no,disease_not_modeled,no
+PMC7402150,https://pmc.ncbi.nlm.nih.gov/articles/PMC7402150,drug-animal,,Insulin,Rats,no,background_mention,no
+PMC4307262,https://pmc.ncbi.nlm.nih.gov/articles/PMC4307262,disease-drug,Fibromyalgia,Lavender oil,,no,entity_not_in_paper,no
