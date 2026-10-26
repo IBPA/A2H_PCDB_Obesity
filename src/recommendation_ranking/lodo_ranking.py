@@ -2,9 +2,17 @@
 Fold-safe LODO ranking — the methodologically correct version.
 ==============================================================
 Imputation is performed STRICTLY WITHIN EACH TRAINING FOLD (the training-drug
-median of each continuous feature is applied to the held-out drug). 
-Hyperparameters are re-tuned per fold on that fold-safe-imputed
-training data (nested CV).
+median of each continuous feature is applied to the held-out drug).
+
+Every modelling decision is made inside the outer training fold:
+  * model family    — select_family_inner, inner LODO over the 8 training drugs
+  * hyperparameters — lono_tune_mae, inner leave-one-NCT-out
+
+Selecting the family per fold is what distinguishes this from model_selection.py,
+which compares families across all 9 drugs at once. That global comparison is
+still correct for the DEPLOYED model (train_production_model.py — no held-out
+set, so nothing to bias), but using it here would let each held-out drug help
+choose the family it is then scored against.
 
 Writes to  outputs/.
 
@@ -24,19 +32,27 @@ from sklearn.impute import SimpleImputer
 from ranking_core import (
     build_base, feat_cols_of, build_eval_cells,
     ohe_dummy_cols, _ohe,
-    lono_tune_mae, _make_model, aggregate, normalized_ranking_score, per_drug_summary,
+    select_family_inner, lono_tune_mae, _make_model,
+    aggregate, normalized_ranking_score, per_drug_summary,
     ABS_TGT, GROUP, NCT, EVAL_GROUP,
 )
 
 warnings.filterwarnings("ignore")
 
-FAMILY   = "LightGBM"
-N_TRIALS = 60
+N_TRIALS         = 60
+N_SELECTION_SEEDS = 10          # majority vote, mirrors model_selection.py
 
 SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT  = SCRIPT_DIR.parent.parent
 OUT_DIR    = REPO_ROOT / "outputs" / "ranking"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
+SELECTION_JSON = OUT_DIR / "model_selection.json"
+
+
+def production_family():
+    """The family the deployed model uses — recorded so SHAP fold-stability can
+    hold the family fixed while studying how explanations move with the data."""
+    return json.loads(SELECTION_JSON.read_text())["selected_family"]
 
 
 def foldsafe_lodo(cells, feat_cols, n_trials=N_TRIALS):
@@ -70,12 +86,18 @@ def foldsafe_lodo(cells, feat_cols, n_trials=N_TRIALS):
         assert (train_df[GROUP] != drug).all(), (
             f"NESTED-CV LEAKAGE: {int((train_df[GROUP] == drug).sum())} held-out "
             f"'{drug}' rows in the Optuna tuning frame")
-        fold_params, fold_mae = lono_tune_mae(train_df, feat_cols, FAMILY,
+        # ── family chosen from the 8 training drugs only (raw, so each inner
+        #    LODO fold re-imputes with its own training median) ──
+        family, votes = select_family_inner(cells.loc[tr], feat_cols,
+                                            seeds=range(N_SELECTION_SEEDS),
+                                            holdout_group=drug)
+        fold_params, fold_mae = lono_tune_mae(train_df, feat_cols, family,
                                               n_trials=n_trials, holdout_group=drug)
-        per_fold[drug] = {"params": fold_params, "lono_mae": fold_mae}
+        per_fold[drug] = {"family": family, "family_votes": votes,
+                          "params": fold_params, "lono_mae": fold_mae}
 
         sc = StandardScaler()
-        model = _make_model(FAMILY, fold_params)
+        model = _make_model(family, fold_params)
         model.fit(sc.fit_transform(Xtr.values), y[tr])
         te = cells.loc[~tr].copy()
         te["pred_abs_gap"] = model.predict(sc.transform(Xte.values))
@@ -97,7 +119,8 @@ def foldsafe_lodo(cells, feat_cols, n_trials=N_TRIALS):
                 "chosen_pct_rank": normalized_ranking_score(rows[ABS_TGT].values, chosen_gap),
                 "spearman_rho": rho, "spearman_p": pval, "picker": "LODO_model",
             })
-        print(f"  [{drug}] fold done  (lono_mae={fold_mae:.3f})", flush=True)
+        print(f"  [{drug}] fold done  family={family} {votes}  "
+              f"(lono_mae={fold_mae:.3f})", flush=True)
     return pd.DataFrame(records), per_fold
 
 
@@ -113,7 +136,12 @@ def main():
     lodo_df, per_fold = foldsafe_lodo(cells, feat_cols)
 
     lodo_df.to_csv(OUT_DIR / "lodo_ranking_results.csv", index=False)
-    json.dump({"model_family": FAMILY, "folds": per_fold},
+    # "model_family" is the DEPLOYED family (all 9 drugs). Per-fold families live
+    # under folds[drug]["family"] — consumers studying the deployed model keep
+    # reading the top-level key.
+    json.dump({"model_family": production_family(),
+               "family_selection": "per-fold (inner LODO over the 8 training drugs)",
+               "folds": per_fold},
               open(OUT_DIR / "lodo_per_fold_params.json", "w"), indent=2)
     per_drug = per_drug_summary(lodo_df)
     per_drug.to_csv(OUT_DIR / "lodo_per_drug_summary.csv", index=False)
@@ -124,6 +152,13 @@ def main():
     print("\n  Per-drug performance:")
     print(per_drug[["drug", "n_ncts", "n_cells", "status_quo", "chosen_gap",
                     "pct_improvement", "mean_pct_rank", "mean_rho", "n_sig"]].to_string(index=False))
+
+    # Stability of the per-fold family choice — reported, never used to select.
+    picks = pd.Series([f["family"] for f in per_fold.values()]).value_counts()
+    print(f"\n  Family selected per fold ({len(per_fold)} folds):")
+    for family, n in picks.items():
+        print(f"    {family}: {n}")
+    print(f"  Deployed family (all drugs, model_selection.py): {production_family()}")
     print(f"\n  Saved to {OUT_DIR}")
 
 

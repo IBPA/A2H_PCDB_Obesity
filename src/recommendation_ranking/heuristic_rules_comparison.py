@@ -51,7 +51,7 @@ RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Human-readable labels for each picker (display order is by gap, below).
 DISPLAY_NAME = {
-    "LODO_model":            "LightGBM recommendation (LODO)",
+    "LODO_model":            "Model recommendation (LODO, family per fold)",
     "random_pick":           "Random selection (baseline)",
     "rule_largest_n":        "Largest sample size",
     "rule_dose_ratio→1":     "Single-dose ratio → 1",

@@ -27,25 +27,29 @@ echo "  Python:    $("$PYTHON" --version 2>&1)"
 echo "================================================================"
 echo ""
 
-echo "── Step 1/5: model_selection.py  (family selection, majority vote / 10 seeds) ──"
+echo "── Step 1/6: model_selection.py  (family selection, majority vote / 10 seeds) ──"
 "$PYTHON" model_selection.py
 echo ""
 
-echo "── Step 2/5: lodo_ranking.py  (nested CV)  —  WARNING: ~1 hour ──"
+echo "── Step 2/6: lodo_ranking.py  (nested CV)  —  WARNING: ~1 hour ──"
 "$PYTHON" lodo_ranking.py
 "$PYTHON" aggregate_performance.py
 echo ""
 
-echo "── Step 3/5: train_production_model.py  (production model, all drugs) ──"
+echo "── Step 3/6: train_production_model.py  (production model, all drugs) ──"
 "$PYTHON" train_production_model.py
 echo ""
 
-echo "── Step 4/5: heuristic_rules_comparison.py  (rule-based baselines) ──"
+echo "── Step 4/6: heuristic_rules_comparison.py  (rule-based baselines) ──"
 "$PYTHON" heuristic_rules_comparison.py --write
 echo ""
 
-echo "── Step 5/5: preclinical_selection.py  (per-drug selected design; needs lodo_per_fold_params.json from step 2) ──"
+echo "── Step 5/6: preclinical_selection.py  (per-drug selected design; needs lodo_per_fold_params.json from step 2) ──"
 "$PYTHON" preclinical_selection.py
+echo ""
+
+echo "── Step 6/6: family_selection_detail.py  (per-fold family comparison; verifies against step 2)  —  WARNING: ~45 min ──"
+"$PYTHON" family_selection_detail.py
 echo ""
 
 echo "================================================================"

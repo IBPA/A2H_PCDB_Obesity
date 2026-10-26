@@ -1,0 +1,31 @@
+held_out_drug,family,mean_norm_rank,mean_top_rank_gap,seed_wins,win_frac,selected
+canagliflozin,LightGBM,0.695,7.81,4,0.4,True
+canagliflozin,XGBoost,0.681,8.65,4,0.4,False
+canagliflozin,RandomForest,0.676,7.22,2,0.2,False
+exenatide,LightGBM,0.668,8.9,9,0.9,True
+exenatide,XGBoost,0.58,13.25,1,0.1,False
+exenatide,RandomForest,0.583,11.35,0,0.0,False
+liraglutide,LightGBM,0.639,9.95,0,0.0,False
+liraglutide,XGBoost,0.772,8.16,10,1.0,True
+liraglutide,RandomForest,0.65,17.95,0,0.0,False
+medi0382,LightGBM,0.618,7.35,2,0.2,False
+medi0382,XGBoost,0.587,10.31,0,0.0,False
+medi0382,RandomForest,0.642,6.85,8,0.8,True
+metformin,LightGBM,0.54,10.44,0,0.0,False
+metformin,XGBoost,0.688,8.0,9,0.9,True
+metformin,RandomForest,0.559,10.55,1,0.1,False
+orlistat,LightGBM,0.604,8.14,3,0.3,False
+orlistat,XGBoost,0.607,8.63,5,0.5,True
+orlistat,RandomForest,0.58,9.13,2,0.2,False
+semaglutide,LightGBM,0.648,9.34,1,0.1,False
+semaglutide,XGBoost,0.761,7.01,9,0.9,True
+semaglutide,RandomForest,0.531,11.44,0,0.0,False
+survodutide,LightGBM,0.644,9.55,7,0.7,True
+survodutide,XGBoost,0.589,10.7,1,0.1,False
+survodutide,RandomForest,0.586,9.86,2,0.2,False
+tirzepatide,LightGBM,0.659,9.27,6,0.6,True
+tirzepatide,XGBoost,0.626,9.35,3,0.3,False
+tirzepatide,RandomForest,0.571,10.34,1,0.1,False
+all 9 drugs,LightGBM,0.668,8.44,6,0.6,True
+all 9 drugs,XGBoost,0.602,8.9,1,0.1,False
+all 9 drugs,RandomForest,0.624,9.48,3,0.3,False

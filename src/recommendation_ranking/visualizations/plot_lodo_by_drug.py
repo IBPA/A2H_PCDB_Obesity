@@ -134,8 +134,8 @@ legend_elements = [
     Patch(facecolor="#27ae60", label="Recommendation — reduces gap (▼)"),
     Patch(facecolor="#f5a623", label="Recommendation — increases gap (▲)"),
 ]
-ax.set_ylim(top=27)
-ax.set_yticks([0, 5, 10, 15, 20, 25])
+ax.set_ylim(top=34.5)
+ax.set_yticks([0, 5, 10, 15, 20, 25, 30])
 ax.legend(handles=legend_elements, loc="upper left")
 
 # ── Panel 2: Chosen-arm percentile rank per drug ──────────────────────────────

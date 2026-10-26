@@ -1,4 +1,4 @@
 family,seed_wins,win_frac,mean_pct_rank,mean_chosen_gap,selected
-LightGBM,6,0.6,70.2,8.2,True
-XGBoost,3,0.3,62.5,8.61,False
-RandomForest,1,0.1,62.5,9.53,False
+LightGBM,6,0.6,66.8,8.44,True
+RandomForest,3,0.3,62.4,9.48,False
+XGBoost,1,0.1,60.2,8.9,False

@@ -80,12 +80,17 @@ def load_explanation_matrix():
 def fold_importances(explain_rows, feat_cols: list[str]) -> dict[str, pd.Series]:
     """One model per held-out drug, rebuilt as lodo_ranking.py builds it."""
     saved = json.loads(LODO_PARAMS.read_text())
-    family = saved["model_family"]
+    # Family AND hyperparameters are both chosen per fold, and the tuned parameter
+    # names are family-specific — pairing one fold's params with another family
+    # fails silently (LightGBM ignores max_features/min_samples_leaf rather than
+    # raising). Read both from the same fold entry.
     fold_params = {drug: saved["folds"][drug]["params"] for drug in saved["folds"]}
+    fold_family = {drug: saved["folds"][drug]["family"] for drug in saved["folds"]}
     ohe_cols = ohe_dummy_cols(feat_cols)
 
     importances = {}
     for drug in sorted(fold_params):
+        family = fold_family[drug]
         train_rows = explain_rows[explain_rows[GROUP] != drug]
         # fold-safe one-hot: categories absent from the training drugs are zeroed in
         # the explained matrix too, matching what this model would see at predict time
@@ -95,7 +100,8 @@ def fold_importances(explain_rows, feat_cols: list[str]) -> dict[str, pd.Series]
         Xtr = scaler.fit_transform(imputer.fit_transform(Xtr_df.values))
 
         params = dict(fold_params[drug])
-        params.setdefault("verbose", -1)                   # no random_state, as in LODO
+        if family == "LightGBM":                           # RandomForest rejects verbose=-1
+            params.setdefault("verbose", -1)               # no random_state, as in LODO
         model = _make_model(family, params)
         model.fit(Xtr, train_rows[ABS_TGT].values)
 

@@ -1,15 +1,15 @@
 {
   "model_family": "LightGBM",
   "params": {
-    "n_estimators": 355,
-    "max_depth": 6,
-    "learning_rate": 0.02716845111267138,
-    "subsample": 0.755833746010367,
-    "colsample_bytree": 0.8433131284345875,
-    "reg_alpha": 0.02647609087836634,
-    "reg_lambda": 0.00013160175364307234
+    "n_estimators": 397,
+    "max_depth": 7,
+    "learning_rate": 0.04186107230041966,
+    "subsample": 0.836611740065974,
+    "colsample_bytree": 0.7654932782399508,
+    "reg_alpha": 1.4040775439375923,
+    "reg_lambda": 0.002106619010534072
   },
-  "lono_mae": 3.739041322107323,
+  "lono_mae": 3.6314445494152148,
   "n_rows": 1430,
   "n_features": 54,
   "trained_on": "complete dataset, all 11 drugs incl. single-candidate arms (production model \u2014 NOT the LODO generalization estimate; that uses per-fold params in lodo_per_fold_params.json)"

@@ -82,11 +82,15 @@ def _make_imputer(method):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def load_lodo_params():
+    """Family and hyperparameters are both per-fold, and the tuned parameter names
+    are family-specific — they must be read from the same fold entry. The top-level
+    'model_family' key is the DEPLOYED family and does not apply here."""
     d = json.load(open(LODO_PARAMS_PATH))
-    return d["model_family"], {drug: d["folds"][drug]["params"] for drug in d["folds"]}
+    return ({drug: d["folds"][drug]["family"] for drug in d["folds"]},
+            {drug: d["folds"][drug]["params"] for drug in d["folds"]})
 
 
-def lodo_foldsafe(cells, feat_cols, family, fold_params, method):
+def lodo_foldsafe(cells, feat_cols, fold_family, fold_params, method):
     """cells carries NaN in the imputed fields; the imputer is fit on the training
     drugs of each fold and applied to the held-out drug (no leakage)."""
     y = cells[ABS_TGT].values
@@ -102,7 +106,9 @@ def lodo_foldsafe(cells, feat_cols, family, fold_params, method):
         Xtr = imp.fit_transform(Xtr_df.values)   # fit on training drugs
         Xte = imp.transform(Xte_df.values)       # apply to held-out drug
         params = dict(fold_params[drug])             # tuned with this drug held out
-        params.setdefault("verbose", -1)             # NO random_state — LightGBM default seed
+        family = fold_family[drug]                   # family chosen in that same fold
+        if family == "LightGBM":                     # RandomForest rejects verbose=-1
+            params.setdefault("verbose", -1)         # NO random_state — default seed
         sc = StandardScaler()
         model = _make_model(family, params)
         model.fit(sc.fit_transform(Xtr), y[tr])
@@ -175,15 +181,17 @@ def main():
     print("  Imputation sensitivity — FOLD-SAFE imputation (fit within training fold),")
     print("  LODO with published fold-safe per-fold params")
     print("=" * 80)
-    family, fold_params = load_lodo_params()
-    print(f"  Loaded fold-safe per-fold params ({family}) for {len(fold_params)} folds")
+    fold_family, fold_params = load_lodo_params()
+    tally = ", ".join(f"{f}×{sum(v == f for v in fold_family.values())}"
+                      for f in dict.fromkeys(fold_family.values()))
+    print(f"  Loaded fold-safe per-fold params for {len(fold_params)} folds ({tally})")
 
     rows = []
     records = {}                       # variant -> per-cell records, for the paired test
     for method, drop_w, label in VARIANTS:
         cells = build_eval_cells(build_base(drop_weight_missing=drop_w))  # NaN left in-fold
         feat_cols = feat_cols_of(cells)
-        rec = lodo_foldsafe(cells, feat_cols, family, fold_params, method)
+        rec = lodo_foldsafe(cells, feat_cols, fold_family, fold_params, method)
         records["complete_case" if drop_w else method] = rec
         agg = aggregate(rec)
         # Per-drug mean pct_rank: the drug-level point estimate (drug_mean_pct_rank

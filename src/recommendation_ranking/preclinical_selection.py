@@ -40,16 +40,20 @@ FOLD_PARAMS_PATH = FOLDSAFE_DIR / "lodo_per_fold_params.json"
 OUT_CSV          = FOLDSAFE_DIR / "selected_design.csv"
 
 
-def predict_holdout(cells, feat_cols, ohe_cols, y, groups, drug, family, fold_params):
+def predict_holdout(cells, feat_cols, ohe_cols, y, groups, drug, fold_family, fold_params):
     """Fold-safe LODO: fit on the other drugs, predict this drug's candidate arms.
     Returns the held-out rows with a 'pred' column (predicted absolute gap)."""
     tr, te = groups != drug, groups == drug
     Xtr_df, Xte_df = _ohe(cells.loc[tr, feat_cols], cells.loc[te, feat_cols], ohe_cols)
     imp = SimpleImputer(strategy="median")      # median of the training drugs only
     Xtr, Xte = imp.fit_transform(Xtr_df.values), imp.transform(Xte_df.values)
-    params = dict(fold_params[drug]); params.setdefault("verbose", -1)   # no random_state
+    params = dict(fold_params[drug])
+    if fold_family[drug] == "LightGBM":          # RandomForest rejects verbose=-1
+        params.setdefault("verbose", -1)         # no random_state
     sc = StandardScaler()
-    model = _make_model(family, params); model.fit(sc.fit_transform(Xtr), y[tr])
+    # family is per-fold; the tuned parameter names are family-specific, so the two
+    # must come from the same fold entry
+    model = _make_model(fold_family[drug], params); model.fit(sc.fit_transform(Xtr), y[tr])
     te_df = cells.loc[te].copy()
     te_df["pred"] = model.predict(sc.transform(Xte))
     return te_df
@@ -78,8 +82,8 @@ def summarize_designs(te_df, drug):
 
 def main():
     fp = json.load(open(FOLD_PARAMS_PATH))
-    family = fp["model_family"]
     fold_params = {d: fp["folds"][d]["params"] for d in fp["folds"]}
+    fold_family = {d: fp["folds"][d]["family"] for d in fp["folds"]}
 
     cells = build_eval_cells(build_base()).copy()
     feat_cols = feat_cols_of(cells)
@@ -93,7 +97,7 @@ def main():
 
     tables = []
     for drug in DRUGS:
-        te_df = predict_holdout(cells, feat_cols, ohe_cols, y, groups, drug, family, fold_params)
+        te_df = predict_holdout(cells, feat_cols, ohe_cols, y, groups, drug, fold_family, fold_params)
         tables.append(summarize_designs(te_df, drug))
 
     cols = ["drug", "design_id", "pmcid", "n_cells_selected", "n_cells_total",
