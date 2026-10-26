@@ -1,7 +1,7 @@
 preclinical_arm_id,pmcid,preclinical_dosage_amount_value(mg/kg),preclinical_dosage_frequency,preclinical_dosage_duration(days),preclinical_administration_route,preclinical_animal_age_before_experiment(days),preclinical_animal_age_before_treatment(days),preclinical_animal_weight_before_experiment(grams),preclinical_animal_weight_before_treatment(grams),preclinical_animal_strain,preclinical_animal_species,preclinical_animal_sex,preclinical_animal_subject_size,preclinical_disease_model,preclinical_outcome,preclinical_total_doses,preclinical_total_dosage_amount(mg/kg),intervention
 0,PMC10006666,0.6,1 + every 1 day,7,intraperitoneal,42,133,,40.1,C57BL/6J,mice,male,,diet:high-fat,-22.443890274314214,7.0,4.2,semaglutide
-1,PMC10063902,0.12340923,1 + every 1 day,84,intraperitoneal,42,133,,20.5,C57BL/6JC,mice,male,8,diet:high-fat,-66.25000000000003,84.0,10.36637532,semaglutide
-2,PMC10064769,0.12340923,1 + every 1 day,84,intraperitoneal,42,126,19.700000000000003,20.2,C57BL/6J,mice,male,8,diet:high-fat,-64.35643564356435,84.0,10.36637532,semaglutide
+1,PMC10063902,0.12340923,1 + every 1 day,84,intraperitoneal,42,133,20.5,39.5,C57BL/6JC,mice,male,8,diet:high-fat,-33.12500000000001,84.0,10.36637532,semaglutide
+2,PMC10064769,0.12340923,1 + every 1 day,84,intraperitoneal,42,126,19.700000000000003,40.0,C57BL/6J,mice,male,8,diet:high-fat,-32.5,84.0,10.36637532,semaglutide
 4,PMC10090563,468.0,1 + every 1 day,36,intragastric,,,20.0,21.49,ICR,mice,both,10,diet:high-fat+high-cholesterol,-24.589416058394164,36.0,16848.0,orlistat
 14,PMC10131131,0.2,2 + every 1 day,14,subcutaneous,77,105,,,C57BL/6J,mice,male,16,diet:high-fat+high-sugar,-14.0,28.0,5.6000000000000005,liraglutide
 16,PMC10131131,0.2,2 + every 1 day,14,subcutaneous,77,105,,,C57BL/6J,mice,male,7,diet:high-fat,-21.0,28.0,5.6000000000000005,liraglutide
