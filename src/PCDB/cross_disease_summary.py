@@ -1,22 +1,36 @@
 """Cross-disease PCDB summary tables (revision edit #1).
 
-Reads outputs/pcdb/ and prints the main-text table to stdout. Nothing is saved.
+Reads a PCDB release and prints the main-text table to stdout. Nothing is saved.
+
+    python cross_disease_summary.py
+    python cross_disease_summary.py --pcdb-dir /data/PCDB --release preclinical-db-v1.2
 
 Two universes underlie the reported figures:
   * "Classified" = all preclinical articles in pcdb_complete.tsv whose
     disease_PCDB_id list contains the target disease (134,565-article frame).
   * "Structured" = the subset of classified pubs with all three entity types
     (disease + drug + animal) successfully normalized; equal to pcdb.tsv
-    filtered by disease (72,134-article frame). Verified by set equality.
+    filtered by disease. Verified by set equality, and printed by this script
+    rather than quoted here, so that it cannot go stale against a rebuild.
+
+The last column reports how many of each disease's disease-drug-animal
+triples a language model found to be supported by an in vivo experiment in
+the paper, rather than merely co-mentioned. The same figure over the whole
+corpus is printed above the table, since that is the number the main text
+quotes. See src/PCDB/relations/.
 """
 from __future__ import annotations
+import argparse
 import ast
+import sys
 from collections import Counter
 from pathlib import Path
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parent / "relations"))
+import relation_statistics
+
 ROOT = Path(__file__).resolve().parents[2]
-PCDB_DIR = ROOT / "outputs" / "pcdb"
 
 # PCDB IDs are positional and shift when the pipeline is rebuilt, so each disease is
 # keyed on its (stable) entity name and the PCDB_id is resolved at runtime. First field
@@ -44,9 +58,9 @@ def has_entity(x):
     return bool(parse_list(x))
 
 
-def load_structured():
+def load_structured(release: Path):
     df = pd.read_csv(
-        PCDB_DIR / "pcdb.tsv", sep="\t",
+        release / "pcdb.tsv", sep="\t",
         usecols=["pmcid", "disease_PCDB_id", "drug_PCDB_id",
                  "animal_PCDB_id", "animal_species", "date"],
     )
@@ -60,9 +74,9 @@ def load_structured():
     return df
 
 
-def load_classified():
+def load_classified(release: Path):
     df = pd.read_csv(
-        PCDB_DIR / "pcdb_complete.tsv", sep="\t",
+        release / "pcdb_complete.tsv", sep="\t",
         usecols=["pmcid", "disease_PCDB_id", "drug_PCDB_id",
                  "animal_PCDB_id", "date"],
     )
@@ -152,11 +166,11 @@ def structured_stats(structured, did, drug_name):
     )
 
 
-def resolve_disease_ids() -> dict[str, str]:
+def resolve_disease_ids(release: Path) -> dict[str, str]:
     """Map each case disease's entity name to its current PCDB_id, failing if a name
     is absent or ambiguous. Resolving by name keeps the report correct across rebuilds,
     which reshuffle the positional PCDB IDs."""
-    entities = pd.read_csv(PCDB_DIR / "disease_entities.tsv", sep="\t",
+    entities = pd.read_csv(release / "disease_entities.tsv", sep="\t",
                            usecols=["PCDB_id", "disease_name"])
     id_of = {}
     for entity_name, label, _ in DISEASES:
@@ -171,20 +185,66 @@ def resolve_disease_ids() -> dict[str, str]:
     return id_of
 
 
+def parse_arguments() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pcdb-dir", type=Path, default=ROOT / "data/PCDB",
+                        help="directory holding the PCDB release")
+    parser.add_argument("--release", type=Path,
+                        default=Path("preclinical-db-v1.1"),
+                        help="release directory, relative to --pcdb-dir or absolute")
+    args = parser.parse_args()
+    if not args.release.is_absolute():
+        args.release = args.pcdb_dir / args.release
+    for name in ("pcdb_complete.tsv", "pcdb.tsv", "disease_entities.tsv",
+                 "drug_entities.tsv", "pcdb_relations_all.jsonl"):
+        if not (args.release / name).exists():
+            raise FileNotFoundError(
+                f"{args.release / name} not found; point --pcdb-dir and "
+                f"--release at a PCDB release carrying relation results")
+    return args
+
+
 def main():
+    args = parse_arguments()
+    print(f"=== RELEASE: {args.release} ===")
     print("=== DISEASE ID CHECK ===")
-    disease_id = resolve_disease_ids()
-    structured = load_structured()
-    classified = load_classified()
-    drugs = pd.read_csv(PCDB_DIR / "drug_entities.tsv", sep="\t",
+    disease_id = resolve_disease_ids(args.release)
+    structured = load_structured(args.release)
+    classified = load_classified(args.release)
+    drugs = pd.read_csv(args.release / "drug_entities.tsv", sep="\t",
                         usecols=["PCDB_id", "drug_name"])
     drug_name = dict(zip(drugs["PCDB_id"], drugs["drug_name"]))
+
+    triples = relation_statistics.per_disease_triples(
+        args.release / "pcdb_complete.tsv",
+        args.release / "pcdb_relations_all.jsonl")
+    corpus = relation_statistics.corpus_statistics(
+        args.release / "pcdb_complete.tsv",
+        args.release / "pcdb_relations_all.jsonl")
+
+    print(f"\n=== ENTITY-RESOLVED FRAME ===")
+    print(f"  {structured['pmcid'].nunique():,} publications with disease, drug "
+          f"and animal all resolved")
+
+    print(f"\n=== EXPERIMENTAL SUPPORT, WHOLE CORPUS ===")
+    print(f"  disease-drug-animal triples asserted   "
+          f"{corpus['triples_asserted']:>9,}")
+    print(f"  experimentally supported               "
+          f"{corpus['triples_confirmed']:>9,}   "
+          f"{corpus['pct_triples_confirmed']}%   <- X")
+    print(f"  publications with >=1 supported triple "
+          f"{corpus['publications_with_confirmed_triple']:>9,}   "
+          f"{corpus['pct_entity_resolved_with_confirmed_triple']}% of "
+          f"entity-resolved")
+    print(f"  publications with all triples rejected "
+          f"{corpus['publications_all_triples_rejected']:>9,}")
 
     main_rows = []
     for entity_name, label, interp in DISEASES:
         did = disease_id[entity_name]
         c = classified_stats(classified, did)
         s = structured_stats(structured, did, drug_name)
+        t = triples.get(did)
         assert c["n_structured"] == s["n_pubs"], (
             f"Universe mismatch for {did}: classified-derived structured "
             f"{c['n_structured']} != pcdb.tsv structured {s['n_pubs']}")
@@ -199,6 +259,8 @@ def main():
             "% mouse": f"{s['pct_mouse']:.1f}",
             "% rat": f"{s['pct_rat']:.1f}",
             "Dominant compound (%)": s["dom_cell"],
+            "Experimentally supported triples (%)":
+                f"{t['pct_triples_confirmed']:.1f}" if t else "—",
             "Interpretation": interp,
         })
     print("=== MAIN TABLE ===")
@@ -206,4 +268,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (FileNotFoundError, KeyError, ValueError) as error:
+        print(f"error: {error}", file=sys.stderr)
+        sys.exit(1)

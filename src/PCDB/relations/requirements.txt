@@ -1,0 +1,9 @@
+# Input building
+pandas>=2.0
+lxml>=5.0
+
+# Serving the extraction model. vLLM pins its own torch; install it with
+#   uv pip install --pre vllm --torch-backend=auto
+# The published labels were produced with vllm 0.32.1rc1 / torch 2.14.0+cu132.
+# run_extraction.py itself speaks HTTP over the stdlib and needs neither.
+vllm

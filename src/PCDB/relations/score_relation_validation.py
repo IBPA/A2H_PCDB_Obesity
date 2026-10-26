@@ -19,7 +19,7 @@ none is reported here. The two conditional rates needed to correct a
 database-wide rate are printed instead, since they are what the sample can
 support; reweighting them belongs with the file that holds the database.
 
-    python relation_figures.py        # the database-wide figures
+    python relation_statistics.py     # the database-wide statistics
 
 Per-relation-type accuracy is shown because a reviewer will ask for it, but
 the sample was stratified by label and not by type, so each type rests on
