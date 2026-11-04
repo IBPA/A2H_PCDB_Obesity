@@ -14,6 +14,15 @@ curl -fL "https://ucdavis.app.box.com/index.php?rm=box_download_shared_file&shar
 # Unzip the utils file, creates data/PCDB/external_database_mapping_utils
 unzip PCDB_utils.zip
 
+echo 'Downloading the relation-extraction predictions (frozen model outputs, see src/PCDB/relations/README.md)...'
+
+# all_predictions.jsonl: one verdict per asserted relation from the google/gemma-4-E4B-it sweep (181 MB).
+# publications.jsonl: all 134,565 PCDB publications with the sweep's input status and text source (10 MB).
+# Together they let scripts/run_pcdb_relations.sh release rebuild the v2.0 tables without re-running the model.
+mkdir -p pcdb_relations
+curl -fL "https://ucdavis.box.com/shared/static/ztf7s0n2m1x54lswrp5d7azk8r3feo0i.jsonl" --output pcdb_relations/all_predictions.jsonl
+curl -fL "https://ucdavis.box.com/shared/static/27dkeb7cx53jjau6zqu5vs9y2weho9sg.jsonl" --output pcdb_relations/publications.jsonl
+
 # Unzip MRCONSO.RRF and MRSTY.RRF to the current folder data/PCDB/
 unzip umls-2024AB-mrconso.zip
 unzip umls-2025AB-metathesaurus-full.zip '*MRSTY.RRF'
