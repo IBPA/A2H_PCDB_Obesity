@@ -3,14 +3,16 @@
 Reads a PCDB release and prints the main-text table to stdout. Nothing is saved.
 
     python cross_disease_summary.py
-    python cross_disease_summary.py --pcdb-dir /data/PCDB --release preclinical-db-v1.2
+    python cross_disease_summary.py --pcdb-dir /data/PCDB --release preclinical-db-v2.1 \
+        --entity-table /path/to/outputs/pcdb/pcdb_complete.tsv
 
 Two universes underlie the reported figures:
-  * "Classified" = all preclinical articles in pcdb_complete.tsv whose
-    disease_PCDB_id list contains the target disease (134,565-article frame).
+  * "Classified" = all preclinical articles in the entity-linking table
+    (outputs/pcdb/pcdb_complete.tsv, one row per publication x animal group)
+    whose disease_PCDB_id list contains the target disease (134,565-article frame).
   * "Structured" = the subset of classified pubs with all three entity types
-    (disease + drug + animal) successfully normalized; equal to pcdb.tsv
-    filtered by disease. Verified by set equality, and printed by this script
+    (disease + drug + animal) successfully normalized: the rows of that table
+    with all three ids, filtered by disease. Verified by set equality, and printed by this script
     rather than quoted here, so that it cannot go stale against a rebuild.
 
 The last column reports how many of each disease's disease-drug-animal
@@ -58,14 +60,18 @@ def has_entity(x):
     return bool(parse_list(x))
 
 
-def load_structured(release: Path):
+def load_structured(entity_table: Path):
+    """Rows with disease, drug and animal all resolved - how pcdb.tsv was
+    defined before the relation stage."""
     df = pd.read_csv(
-        release / "pcdb.tsv", sep="\t",
+        entity_table, sep="\t",
         usecols=["pmcid", "disease_PCDB_id", "drug_PCDB_id",
                  "animal_PCDB_id", "animal_species", "date"],
     )
     for col in ["disease_PCDB_id", "drug_PCDB_id", "animal_PCDB_id"]:
         df[col] = df[col].map(parse_list)
+    df = df[df["disease_PCDB_id"].map(bool) & df["drug_PCDB_id"].map(bool)
+            & df["animal_PCDB_id"].map(bool)].reset_index(drop=True)
     df["year"] = pd.to_datetime(df["date"], errors="coerce").dt.year
     df["species_set"] = df["animal_species"].map(
         lambda s: {s.strip().lower()} if isinstance(s, str) and s.strip()
@@ -74,9 +80,9 @@ def load_structured(release: Path):
     return df
 
 
-def load_classified(release: Path):
+def load_classified(entity_table: Path):
     df = pd.read_csv(
-        release / "pcdb_complete.tsv", sep="\t",
+        entity_table, sep="\t",
         usecols=["pmcid", "disease_PCDB_id", "drug_PCDB_id",
                  "animal_PCDB_id", "date"],
     )
@@ -190,17 +196,26 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument("--pcdb-dir", type=Path, default=ROOT / "data/PCDB",
                         help="directory holding the PCDB release")
     parser.add_argument("--release", type=Path,
-                        default=Path("preclinical-db-v1.1"),
+                        default=Path("preclinical-db-v2.0"),
                         help="release directory, relative to --pcdb-dir or absolute")
+    parser.add_argument("--entity-table", type=Path,
+                        default=ROOT / "outputs/pcdb/pcdb_complete.tsv",
+                        help="entity-linking output: one row per publication x animal group")
+    parser.add_argument("--relations", type=Path,
+                        default=ROOT / "outputs/relations/pcdb_relations_all.jsonl",
+                        help="the labelled relations build_release_relations.py wrote")
     args = parser.parse_args()
     if not args.release.is_absolute():
         args.release = args.pcdb_dir / args.release
-    for name in ("pcdb_complete.tsv", "pcdb.tsv", "disease_entities.tsv",
-                 "drug_entities.tsv", "pcdb_relations_all.jsonl"):
+    for name in ("entity_table", "relations"):
+        if not getattr(args, name).exists():
+            raise FileNotFoundError(f"{getattr(args, name)} not found; "
+                                    f"set --{name.replace('_', '-')}")
+    for name in ("disease_entities.tsv", "drug_entities.tsv"):
         if not (args.release / name).exists():
             raise FileNotFoundError(
                 f"{args.release / name} not found; point --pcdb-dir and "
-                f"--release at a PCDB release carrying relation results")
+                f"--release at a PCDB release")
     return args
 
 
@@ -209,18 +224,14 @@ def main():
     print(f"=== RELEASE: {args.release} ===")
     print("=== DISEASE ID CHECK ===")
     disease_id = resolve_disease_ids(args.release)
-    structured = load_structured(args.release)
-    classified = load_classified(args.release)
+    structured = load_structured(args.entity_table)
+    classified = load_classified(args.entity_table)
     drugs = pd.read_csv(args.release / "drug_entities.tsv", sep="\t",
                         usecols=["PCDB_id", "drug_name"])
     drug_name = dict(zip(drugs["PCDB_id"], drugs["drug_name"]))
 
-    triples = relation_statistics.per_disease_triples(
-        args.release / "pcdb_complete.tsv",
-        args.release / "pcdb_relations_all.jsonl")
-    corpus = relation_statistics.corpus_statistics(
-        args.release / "pcdb_complete.tsv",
-        args.release / "pcdb_relations_all.jsonl")
+    triples = relation_statistics.per_disease_triples(args.entity_table, args.relations)
+    corpus = relation_statistics.corpus_statistics(args.entity_table, args.relations)
 
     print(f"\n=== ENTITY-RESOLVED FRAME ===")
     print(f"  {structured['pmcid'].nunique():,} publications with disease, drug "
@@ -247,7 +258,7 @@ def main():
         t = triples.get(did)
         assert c["n_structured"] == s["n_pubs"], (
             f"Universe mismatch for {did}: classified-derived structured "
-            f"{c['n_structured']} != pcdb.tsv structured {s['n_pubs']}")
+            f"{c['n_structured']} != entity-table structured {s['n_pubs']}")
         rate = 100.0 * s["n_pubs"] / c["n_classified"]
 
         main_rows.append({

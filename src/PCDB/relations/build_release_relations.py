@@ -3,9 +3,14 @@
 
     data/PCDB/pcdb_relations/all_predictions.jsonl   every model verdict
     data/PCDB/pcdb_relations/publications.jsonl      every PCDB publication
-    preclinical-db-v1.1/pcdb_complete.tsv            which relations are in scope
-        -> preclinical-db-v1.1/pcdb_relations_all.jsonl
-        -> preclinical-db-v1.1/pcdb_relations_all.csv
+    outputs/pcdb/pcdb_complete.tsv                   entity-linking output: which
+                                                     relations are in scope
+        -> outputs/relations/pcdb_relations_all.jsonl
+        -> outputs/relations/pcdb_relations_all.csv
+
+The two outputs are stage intermediates, not release files: the release's
+pcdb_complete.tsv carries every relation and label, so build_release_tables.py
+reads the JSONL and the bundle does not ship it.
 
 Three inputs, because none alone is enough. The predictions carry a verdict per
 relation but no notion of which are in scope: enumeration resolved entities
@@ -19,11 +24,11 @@ unioned over its rows - PCDB stores one row per (publication x animal group),
 so reading any single row understates the animal axis.
 
     python build_release_relations.py
-    python build_release_relations.py --pcdb-dir /data/PCDB --release preclinical-db-v1.2
+    python build_release_relations.py --pcdb-dir /data/PCDB --out-dir /data/relations
 
---pcdb-dir is the directory holding the release and the predictions; --release
-names the release inside it, or is an absolute path elsewhere. Every individual
-path can still be overridden, so inputs and outputs need not live together.
+--pcdb-dir is the directory holding the predictions under pcdb_relations/;
+--out-dir is where the two outputs go. Every individual path can still be
+overridden, so inputs and outputs need not live together.
 """
 
 import argparse
@@ -46,11 +51,13 @@ VERDICTS = {"yes", "no", "unclear"}
 
 def main() -> int:
     args = resolve_paths(parse_arguments())
-    scope = pcdb_scope(args.pcdb_complete)
+    scope = pcdb_scope(args.entity_table)
     publications = read_publications(args.publications)
     predictions = read_predictions(args.predictions)
     records = assemble(publications, predictions, scope)
     verify(records, scope)
+    args.out_jsonl.parent.mkdir(parents=True, exist_ok=True)
+    args.out_csv.parent.mkdir(parents=True, exist_ok=True)
     write_jsonl(records, args.out_jsonl)
     write_csv(records, args.out_csv)
     report(records, predictions, args)
@@ -60,15 +67,17 @@ def main() -> int:
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pcdb-dir", type=Path, default=ROOT / "data/PCDB",
-                        help="directory holding the release and pcdb_relations/")
-    parser.add_argument("--release", type=Path, default=Path("preclinical-db-v1.1"),
-                        help="release directory, relative to --pcdb-dir or absolute")
+                        help="directory holding pcdb_relations/")
+    parser.add_argument("--out-dir", type=Path, default=ROOT / "outputs/relations",
+                        help="where pcdb_relations_all.{jsonl,csv} are written")
     parser.add_argument("--relations-dir", type=Path,
                         help="where the prediction files live "
                              "(default: <pcdb-dir>/pcdb_relations)")
     parser.add_argument("--predictions", type=Path)
     parser.add_argument("--publications", type=Path)
-    parser.add_argument("--pcdb-complete", type=Path)
+    parser.add_argument("--entity-table", type=Path,
+                        default=ROOT / "outputs/pcdb/pcdb_complete.tsv",
+                        help="entity-linking output: one row per publication x animal group")
     parser.add_argument("--out-jsonl", type=Path)
     parser.add_argument("--out-csv", type=Path)
     return parser.parse_args()
@@ -80,21 +89,19 @@ def resolve_paths(args: argparse.Namespace) -> argparse.Namespace:
     Derived after parsing rather than as argparse defaults, because a default
     computed at definition time cannot depend on another flag's value.
     """
-    release = args.release if args.release.is_absolute() else args.pcdb_dir / args.release
     relations = args.relations_dir or args.pcdb_dir / "pcdb_relations"
 
     defaults = {
         "predictions": relations / "all_predictions.jsonl",
         "publications": relations / "publications.jsonl",
-        "pcdb_complete": release / "pcdb_complete.tsv",
-        "out_jsonl": release / "pcdb_relations_all.jsonl",
-        "out_csv": release / "pcdb_relations_all.csv",
+        "out_jsonl": args.out_dir / "pcdb_relations_all.jsonl",
+        "out_csv": args.out_dir / "pcdb_relations_all.csv",
     }
     for name, path in defaults.items():
         if getattr(args, name) is None:
             setattr(args, name, path)
 
-    for name in ("predictions", "publications", "pcdb_complete"):
+    for name in ("predictions", "publications", "entity_table"):
         path = getattr(args, name)
         if not path.exists():
             raise FileNotFoundError(
@@ -113,8 +120,8 @@ def parse_list(cell) -> list:
         return []
 
 
-def pcdb_scope(pcdb_complete: Path) -> dict[str, set[tuple]]:
-    frame = pd.read_csv(pcdb_complete, sep="\t", dtype=str,
+def pcdb_scope(entity_table: Path) -> dict[str, set[tuple]]:
+    frame = pd.read_csv(entity_table, sep="\t", dtype=str,
                         usecols=["pmcid", "disease_PCDB_id", "drug_PCDB_id",
                                  "animal_PCDB_id"])
     entities = {}

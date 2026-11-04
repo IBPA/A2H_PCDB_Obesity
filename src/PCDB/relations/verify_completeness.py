@@ -21,7 +21,9 @@ publication, unioned over all of its rows:
 
 Exits non-zero if anything PCDB asserts is missing.
 
-    python verify_completeness.py --release ../../../data/PCDB/preclinical-db-v1.1
+    python verify_completeness.py \
+        --relations ../../../outputs/relations/pcdb_relations_all.jsonl \
+        --entity-table ../../../outputs/pcdb/pcdb_complete.tsv
 """
 
 import argparse
@@ -37,8 +39,8 @@ import pandas as pd
 
 def main() -> int:
     args = parse_arguments()
-    expected = expected_relations(args.release)
-    actual = actual_relations(args.release)
+    expected = expected_relations(args.entity_table)
+    actual = actual_relations(args.relations)
     missing, surplus = compare(expected, actual)
     report(expected, actual, missing, surplus)
     return 1 if missing else 0
@@ -47,8 +49,12 @@ def main() -> int:
 def parse_arguments() -> argparse.Namespace:
     here = Path(__file__).resolve().parents[3]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--release", type=Path,
-                        default=here / "data/PCDB/preclinical-db-v1.1")
+    parser.add_argument("--relations", type=Path,
+                        default=here / "outputs/relations/pcdb_relations_all.jsonl",
+                        help="the labelled relations build_release_relations.py wrote")
+    parser.add_argument("--entity-table", type=Path,
+                        default=here / "outputs/pcdb/pcdb_complete.tsv",
+                        help="entity-linking output: one row per publication x animal group")
     parser.add_argument("--show", type=int, default=5)
     return parser.parse_args()
 
@@ -63,13 +69,13 @@ def parse_list(cell) -> list:
         return []
 
 
-def pcdb_entities(release: Path) -> dict[str, dict[str, set]]:
+def pcdb_entities(entity_table: Path) -> dict[str, dict[str, set]]:
     """Every entity PCDB records for a publication, unioned over its rows.
 
     The union is the whole point: PCDB stores one row per (publication x animal
     group), so reading any single row understates the animal axis.
     """
-    frame = pd.read_csv(release / "pcdb_complete.tsv", sep="\t", dtype=str,
+    frame = pd.read_csv(entity_table, sep="\t", dtype=str,
                         usecols=["pmcid", "disease_PCDB_id", "drug_PCDB_id",
                                  "animal_PCDB_id"])
     entities = {}
@@ -81,9 +87,9 @@ def pcdb_entities(release: Path) -> dict[str, dict[str, set]]:
     return entities
 
 
-def expected_relations(release: Path) -> set[tuple]:
+def expected_relations(entity_table: Path) -> set[tuple]:
     expected = set()
-    for pmcid, entry in pcdb_entities(release).items():
+    for pmcid, entry in pcdb_entities(entity_table).items():
         diseases, drugs, animals = entry["disease"], entry["drug"], entry["animal"]
         for d, r in product(diseases, drugs):
             expected.add((pmcid, "disease-drug", d, r, ""))
@@ -96,9 +102,9 @@ def expected_relations(release: Path) -> set[tuple]:
     return expected
 
 
-def actual_relations(release: Path) -> set[tuple]:
+def actual_relations(relations: Path) -> set[tuple]:
     actual = set()
-    with (release / "pcdb_relations_all.jsonl").open(encoding="utf-8") as handle:
+    with relations.open(encoding="utf-8") as handle:
         for line in handle:
             record = json.loads(line)
             for relation in record["relations"]:

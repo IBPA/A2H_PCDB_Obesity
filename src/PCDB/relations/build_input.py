@@ -16,7 +16,8 @@ truncation in whatever reads it, and shards let annotation run in parallel.
 Also writes an index CSV with every field except `prompt`, so the set can be
 inspected and filtered without touching gigabytes.
 
-    python build_input.py --pcdb-dir /path/to/preclinical-db-v1.1 \
+    python build_input.py --pcdb-dir /path/to/preclinical-db-v2.0 \
+        --entity-table /path/to/outputs/pcdb/pcdb_complete.tsv \
         --text-dir /path/to/pmc_articles --outdir full_input/
 
 Article text is supplied as directories of PMC files named by accession -
@@ -41,6 +42,7 @@ import pandas as pd
 import pcdb_entities
 import prompt as prompt_module
 
+ROOT = Path(__file__).resolve().parents[3]
 MAX_RELATIONS = 40          # above this the roster dwarfs the paper; max in PCDB is 175
 SHARD_SIZE = 10_000
 MIN_BODY_CHARS = 1_000      # below this the 'paper' is an abstract with noise
@@ -51,7 +53,7 @@ def main() -> int:
     args = parse_arguments()
     args.outdir.mkdir(parents=True, exist_ok=True)
 
-    pcdb = pcdb_entities.load_pcdb(args.pcdb_dir)
+    pcdb = pcdb_entities.load_entity_table(args.entity_table)
     catalogs = pcdb_entities.load_catalogs(args.pcdb_dir)
     print("indexing PCDB...", flush=True)
     resolver = pcdb_entities.build_resolver(pcdb, catalogs)
@@ -69,7 +71,10 @@ def main() -> int:
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pcdb-dir", type=Path, required=True,
-                        help="a PCDB release directory (holds pcdb_complete.tsv)")
+                        help="a PCDB release directory (holds the entity catalogs)")
+    parser.add_argument("--entity-table", type=Path,
+                        default=ROOT / "outputs/pcdb/pcdb_complete.tsv",
+                        help="entity-linking output: one row per publication x animal group")
     parser.add_argument("--text-dir", type=Path, nargs="+", required=True,
                         help="directories of PMC*.xml / PMC*.txt, searched recursively")
     parser.add_argument("--outdir", type=Path, required=True)

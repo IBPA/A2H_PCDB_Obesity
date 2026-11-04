@@ -7,12 +7,17 @@ database, and most of those pairs were never tested together.
 
 This code asks a language model, once per publication, which of the relations
 PCDB asserts are actually supported by an in vivo experiment in that paper. It
-reproduces the `pcdb_relations_all.jsonl` shipped in the PCDB release.
+reproduces the labels behind the release's `pcdb_complete.tsv` and `pcdb.tsv`.
 
 ## What you need
 
-- A PCDB release directory — the one holding `pcdb_complete.tsv`,
-  `disease_entities.tsv`, `drug_entities.tsv`, `animal_entities.tsv`.
+- A PCDB release directory holding `disease_entities.tsv`,
+  `drug_entities.tsv` and `animal_entities.tsv`.
+- The entity-linking table: `outputs/pcdb/pcdb_complete.tsv` as written by
+  `build_pcdb.py`, one row per publication x animal group with list-valued
+  `*_PCDB_id` columns. It is the stage input and is not a release file:
+  since v2.0 the release's `pcdb_complete.tsv` is derived from the labels and
+  has a different shape.
 - Full text for the publications, as files named by accession:
   `PMC1234567.xml` (JATS) or `PMC1234567.txt` (BioC plain text), in any
   directory layout. The PMC Open Access bulk subsets are the usual source.
@@ -35,7 +40,8 @@ top-level modules.
 
 ```
 python build_input.py \
-    --pcdb-dir /path/to/preclinical-db-v1.1 \
+    --pcdb-dir /path/to/preclinical-db-v2.0 \
+    --entity-table /path/to/outputs/pcdb/pcdb_complete.tsv \
     --text-dir /path/to/pmc_oa \
     --outdir full_input/
 ```
@@ -82,6 +88,21 @@ caused the disease rather than treating it), `in_vitro_only`,
 `different_experiment`, `disease_not_modeled`, `background_mention`,
 `imaging_or_reagent`, `normalization_error`.
 
+## Into the release tables
+
+`build_release_relations.py` turns the predictions into one labelled record
+per publication, `outputs/relations/pcdb_relations_all.jsonl` (with a flat
+CSV beside it). That file is a stage intermediate: the release does not ship
+it, because `build_release_tables.py` derives the release's row tables from
+it and they carry every relation and label: `pcdb_complete.tsv`, one row per asserted relation with its
+label, and `pcdb.tsv`, one row per disease-drug-animal triple labelled
+`yes`. The reason codes stay in the intermediate; the release carries the
+label only. It also collapses the entity-linking table to one row per
+publication as `publication_extractions.tsv`, keeping the extracted names,
+identifiers and resolutions and leaving out animal strain and group size. The
+workbook is rebuilt from the three tables and the catalogs. `scripts/run_pcdb_relations.sh release`
+runs both, the completeness check and the statistics in order.
+
 ## The context window is the lever
 
 Prompt and completion share one window. At `MAXLEN=20480` the longest prompts
@@ -123,7 +144,8 @@ means reweighting those two rates, which is not done here.
 | `run_extraction.py` | resumable extraction driver |
 | `vllm_client.py` | stdlib HTTP client and reply parsing |
 | `verify_completeness.py` | fails unless every relation PCDB asserts is labelled |
-| `build_release_relations.py` | predictions to the release's `pcdb_relations_all.{jsonl,csv}` |
+| `build_release_relations.py` | predictions to the labelled `outputs/relations/pcdb_relations_all.{jsonl,csv}` |
+| `build_release_tables.py` | the release's `pcdb_complete.tsv` (one row per labelled relation), `pcdb.tsv` (confirmed triples), `publication_extractions.tsv` and workbook |
 | `relation_statistics.py` | every reported statistic, derived from the release |
 | `score_relation_validation.py` | accuracy, kappa and the conditional error rates |
 | `requirements.txt` | pinned dependencies |

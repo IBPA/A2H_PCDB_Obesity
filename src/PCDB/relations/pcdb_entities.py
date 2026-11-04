@@ -30,8 +30,9 @@ TABLE_CHAR_CAP = 6_000
 CAPTION_CHAR_CAP = 6_000
 
 
-def load_pcdb(release: Path) -> pd.DataFrame:
-    return pd.read_csv(require(release / "pcdb_complete.tsv"), sep="\t", dtype=str)
+def load_entity_table(path: Path) -> pd.DataFrame:
+    """The entity-linking output: one row per publication x animal group."""
+    return pd.read_csv(require(path), sep="\t", dtype=str)
 
 
 def load_catalogs(release: Path) -> dict:

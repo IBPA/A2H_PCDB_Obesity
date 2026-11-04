@@ -20,14 +20,16 @@ found that all three took part in the same in vivo experiment in the paper.
 Rejection does not mean the paper is wrong - it means PCDB's row is a
 co-mention rather than an experiment.
 
-Two inputs, and only two: the database rows and the extraction verdicts. The
+Two inputs, and only two: the entity-linking rows (one per publication x
+animal group, the stage input the release does not ship) and the extraction
+verdicts. The
 relations file holds exactly what PCDB asserts, so no statistic here depends on
 how the audit resolved entities.
 
     python relation_statistics.py
     python relation_statistics.py \
-        --pcdb-complete /path/to/pcdb_complete.tsv \
-        --relations /path/to/pcdb_relations_all.jsonl
+        --entity-table /path/to/outputs/pcdb/pcdb_complete.tsv \
+        --relations /path/to/outputs/relations/pcdb_relations_all.jsonl
 """
 
 import argparse
@@ -40,16 +42,15 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
-DEFAULT_RELEASE = ROOT / "data/PCDB/preclinical-db-v1.1"
 TRIPLE = "disease-drug-animal"
 
 
 def main() -> int:
     args = parse_arguments()
-    inputs = [require(args.pcdb_complete), require(args.relations)]
+    inputs = [require(args.entity_table), require(args.relations)]
     statistics = {
         "inputs": {str(p): sha256(p) for p in inputs},
-        **corpus_statistics(args.pcdb_complete, args.relations),
+        **corpus_statistics(args.entity_table, args.relations),
     }
     report(statistics)
     print_paper_sentence(statistics)
@@ -61,11 +62,11 @@ def main() -> int:
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--pcdb-complete", type=Path,
-                        default=DEFAULT_RELEASE / "pcdb_complete.tsv",
-                        help="PCDB rows: one per (publication x animal group)")
+    parser.add_argument("--entity-table", type=Path,
+                        default=ROOT / "outputs/pcdb/pcdb_complete.tsv",
+                        help="entity-linking output: one row per publication x animal group")
     parser.add_argument("--relations", type=Path,
-                        default=DEFAULT_RELEASE / "pcdb_relations_all.jsonl",
+                        default=ROOT / "outputs/relations/pcdb_relations_all.jsonl",
                         help="extraction verdicts, one record per publication")
     parser.add_argument("--out", type=Path,
                         default=ROOT / "outputs/relations/relation_statistics.json")
@@ -99,10 +100,10 @@ def parse_list(value) -> list:
         return []
 
 
-def entity_resolved(pcdb_complete: Path) -> tuple[set[str], dict]:
+def entity_resolved(entity_table: Path) -> tuple[set[str], dict]:
     """Publications with a disease, a drug and an animal all resolved to PCDB
     identifiers - the frame Table 1 reports rates against."""
-    frame = pd.read_csv(require(pcdb_complete), sep="\t", dtype=str,
+    frame = pd.read_csv(require(entity_table), sep="\t", dtype=str,
                         usecols=["pmcid", "disease_PCDB_id", "drug_PCDB_id",
                                  "animal_PCDB_id"])
     for kind in ("disease", "drug", "animal"):
@@ -123,7 +124,7 @@ def read_relations(relations: Path):
                 yield record["pmcid"], relation
 
 
-def corpus_statistics(pcdb_complete: Path, relations: Path) -> dict:
+def corpus_statistics(entity_table: Path, relations: Path) -> dict:
     """Counts in both frames, because the reported statistics use different
     ones and neither is a subset of the claim the other makes.
 
@@ -140,7 +141,7 @@ def corpus_statistics(pcdb_complete: Path, relations: Path) -> dict:
     reported as out_of_frame. That count is expected, not a defect: it is
     simply the relations that cannot be triples, dominated by the 37.6% of
     publications with no resolvable drug."""
-    resolved, universe = entity_resolved(pcdb_complete)
+    resolved, universe = entity_resolved(entity_table)
     asserted = confirmed = labelled = total = 0
     out_of_frame = 0
     out_of_frame_pubs = set()
@@ -200,12 +201,12 @@ def corpus_statistics(pcdb_complete: Path, relations: Path) -> dict:
     }
 
 
-def per_disease_triples(pcdb_complete: Path, relations: Path) -> dict[str, dict]:
+def per_disease_triples(entity_table: Path, relations: Path) -> dict[str, dict]:
     """Per disease PCDB id: triples asserted, confirmed, and the publications
     behind them. Restricted to the entity-resolved frame, so these percentages
     compose with the corpus statistics. Keyed on disease_id because PCDB ids are
     positional and disease names are not unique across a rebuild."""
-    resolved, _ = entity_resolved(pcdb_complete)
+    resolved, _ = entity_resolved(entity_table)
     stats = {}
     for pmcid, relation in read_relations(relations):
         if pmcid not in resolved:
